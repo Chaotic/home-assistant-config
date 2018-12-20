@@ -1,0 +1,7 @@
+
+secrets.yaml
+known_devices.yaml
+*.log
+OZW_Log.txt
+plex.conf
+pyozw.sqlite
