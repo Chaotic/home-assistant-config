@@ -1,0 +1,10 @@
+---
+# Zigbee Home Automation integration for Home Assistant allows you
+# to connect many off-the-shelf Zigbee devices to Home Assistant,
+# using a compatible Zigbee radio.
+#
+# https://www.home-assistant.io/components/zha/
+#
+zha:
+  usb_path: /dev/zigbee
+  database_path: zigbee_new.db 

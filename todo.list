@@ -1,0 +1,11 @@
+Move the following to secrets.yaml
+lat
+long
+elevation
+Wemo IP Addresses
+Samsung TV IP Address
+Tomato IP Address
+
+Add the Samsung Mac to Secrets and update that
+Add Zwave key to secrets
+Open Zwave configuration

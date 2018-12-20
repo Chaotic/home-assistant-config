@@ -1,0 +1,13 @@
+---
+# The wemo component is the main component to integrate various
+# Belkin WeMo devices with Home Assistant.
+#
+# https://www.home-assistant.io/components/wemo/
+#
+# Move the IPs to Secrets
+wemo:
+  discovery: true
+  static:
+  - 192.168.1.215
+  - 192.168.1.216
+  - 192.168.1.217
