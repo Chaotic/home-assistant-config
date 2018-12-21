@@ -1,7 +1,37 @@
-
-secrets.yaml
-known_devices.yaml
+# Extension ignores
 *.log
-OZW_Log.txt
-plex.conf
-pyozw.sqlite
+*.db
+*.db-shm
+*.db-wal
+*.pyc
+
+# Directory (contents) ignores
+config/.cloud
+config/.storage
+config/deps
+
+# Specific file ignores
+config/.config_entries.json
+config/.homekit.state
+config/.ios.conf
+config/.spotify-token-cache
+config/.tradfri_psk.conf
+config/.uuid
+config/aircast.xml
+config/core
+config/ip_bans.yaml
+config/known_devices.yaml
+config/notebooks
+config/options.xml
+config/OZW_Log.txt
+config/pyozw.sqlite
+config/secrets.yaml
+config/zwcfg_*
+config/zwscene.xml
+
+# Some other generic stuff
+.vscode
+.theia
+
+# Specific keeps
+!.gitkeep

@@ -1,0 +1,13 @@
+---
+#
+# MQTT virtual switch from smartthings
+#
+platform: mqtt
+name: "Master Bedroom Closet"
+state_topic: "smartthings/Master Bedroom Closet/switch/state"
+command_topic: "smartthings/Master Bedroom Closet/switch/cmd"
+brightness_state_topic: "smartthings/Master Bedroom Closet/level/state"
+brightness_command_topic: "smartthings/Master Bedroom Closet/level/cmd"
+payload_on: "on"
+payload_off: "off"
+retain: true
