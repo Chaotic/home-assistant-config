@@ -5,14 +5,14 @@
 # https://www.home-assistant.io/components/sensor.transmission/
 #
 platform: transmission
-    name: Unraid Transmission
-    host: !secret server_ip
-    username: !secret transmission_user
-    password: !secret transmission_password
-    monitored_variables:
-      - 'current_status'
-      - 'download_speed'
-      - 'upload_speed'
-      - 'active_torrents'
-      - 'paused_torrents'
-      - 'total_torrents'
+name: Unraid Transmission
+host: !secret server_ip
+username: !secret transmission_user
+password: !secret transmission_password
+monitored_variables:
+  - 'current_status'
+  - 'download_speed'
+  - 'upload_speed'
+  - 'active_torrents'
+  - 'paused_torrents'
+  - 'total_torrents'

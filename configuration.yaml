@@ -17,3 +17,28 @@ homeassistant:
   
   # Load packages
   packages: !include_dir_named components/packages
+
+# Show links to resources in log and frontend
+introduction:
+
+# Enables the frontend
+frontend:
+
+# Enables configuration UI
+config:
+
+# Uncomment this if you are using SSL/TLS, running in Docker container, etc.
+ http:
+   base_url: chaoticunreal.duckdns.org:8123
+   api_password: !secret http_password
+# Enables support for tracking state changes over time
+history:
+
+# View all events in a logbook
+logbook:
+
+# Enables a map showing the location of tracked devices
+map:
+
+# Track the sun
+sun:
