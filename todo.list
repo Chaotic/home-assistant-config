@@ -1,13 +1,1 @@
-Move the following to secrets.yaml
-lat
-long
-elevation
-Wemo IP Addresses
-Samsung TV IP Address
-Tomato IP Address
-mariadb
-
-Add the Samsung Mac to Secrets and update that
-Add Zwave key to secrets
-///   https://www.home-assistant.io/docs/z-wave/installation
 Open Zwave configuration ?

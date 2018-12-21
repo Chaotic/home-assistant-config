@@ -5,6 +5,6 @@
 #
 platform: samsungtv
 name: livingroom_tv
-host: 192.168.1.218
+host: !secret living_room_tv_ip
 port: 8001
-mac: UPDATE_ME
+mac: !secret living_room_tv_mac

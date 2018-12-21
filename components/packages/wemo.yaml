@@ -8,6 +8,6 @@
 wemo:
   discovery: true
   static:
-  - 192.168.1.215
-  - 192.168.1.216
-  - 192.168.1.217
+  - !secret wemo_1
+  - !secret wemo_2
+  - !secret wemo_3

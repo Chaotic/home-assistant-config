@@ -6,7 +6,7 @@
 # https://www.home-assistant.io/components/device_tracker.tomato/
 #
 platform: tomato
-    host: 192.168.1.1
+    host: !secret tomato_ip
     username: !secret tomato_user
     password: !secret tomato_password
     http_id: !secret tomato_http_id
