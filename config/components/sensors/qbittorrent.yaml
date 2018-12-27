@@ -1,0 +1,11 @@
+---
+# The qbittorrent platform allows you to monitor your downloads with qbittorrent
+# from within Home Assistant and setup automation based on the information.
+#
+# https://www.home-assistant.io/components/sensor.qbittorrent/
+#
+platform: qbittorrent
+name: Unraid qBittorrent
+host: !secret server_ip
+username: !secret transmission_user
+password: !secret transmission_password
