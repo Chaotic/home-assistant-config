@@ -4,7 +4,7 @@
 # https://www.home-assistant.io/components/media_player.samsungtv/
 #
 platform: samsungtv
-name: livingroom_tv
+name: Samsung Living Room
 host: !secret living_room_tv_ip
 port: 8001
 mac: !secret living_room_tv_mac

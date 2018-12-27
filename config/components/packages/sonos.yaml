@@ -1,0 +1,9 @@
+---
+#
+# The sonos component allows you to control your Sonos HiFi wireless speakers
+# and audio components from Home Assistant.
+#
+# https://www.home-assistant.io/components/sonos/
+#
+# There is no real configuration for these currently and they are all found via discovery
+sonos:

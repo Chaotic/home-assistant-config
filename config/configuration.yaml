@@ -17,8 +17,3 @@ homeassistant:
   
   # Load packages
   packages: !include_dir_named components/packages
-
-# eventually want to remove everything below this lines.
-
-# Show links to resources in log and frontend
-introduction:

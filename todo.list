@@ -1,4 +1,16 @@
-update sensor/qbittorrent
-add qbittorrent info to secrets.
+update components/sensor/qbittorrent secrets
+update components/sensor/tautulli secrets
+setup components/zones/mswork
+setup components/zones/eswork
+setup components/zones/ktwork1
+setup components/zones/ktwork2
+setup components/zones/school
+setup components/zones/dads
+setup components/zones/nana&grampy
+Update components/sensors/Waze
+Update components/input_selects/waze
+add components/media_players/plex authentication secrets
+update components/packages/http secrets
+setup components/packages/influxdb
 
 Open Zwave configuration ?

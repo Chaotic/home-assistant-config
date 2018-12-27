@@ -1,0 +1,9 @@
+---
+# The Tautulli sensor platform will monitor activity on a given Tautulli Server.
+# It will create a sensor that shows the number of currently active streams as the state.
+#
+# https://www.home-assistant.io/components/sensor.tautulli/
+#
+platform: tautulli
+api_key: TAUTULLI_API_KEY
+host: TAUTULLI_HOST
