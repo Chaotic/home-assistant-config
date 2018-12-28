@@ -43,4 +43,4 @@ Copy the config files and recreate the secrets.yaml file Also you need the same 
 
 ## Acknowledgments
 
-Heavily inspired by Frenck's config https://github.com/frenck/home-assistant-config  (some of the basic stub files were copied directly)
+Heavily inspired by [Frenck's config](https://github.com/frenck/home-assistant-config)  (some of the basic stub files were copied directly)
