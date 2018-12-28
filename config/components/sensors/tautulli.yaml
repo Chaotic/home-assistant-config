@@ -5,5 +5,5 @@
 # https://www.home-assistant.io/components/sensor.tautulli/
 #
 platform: tautulli
-api_key: TAUTULLI_API_KEY
-host: TAUTULLI_HOST
+api_key: !secret tautulli_api_key
+host: !secret server_ip

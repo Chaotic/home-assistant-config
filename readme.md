@@ -12,7 +12,7 @@ Copy the config files and recreate the secrets.yaml file Also you need the same 
 ## Hardware
    
 <b>Plugs</b>
-    Wemo mini plugs
+    Wemo mini plugs,
 	Gosund
 
 <b>Lights</b>
@@ -22,16 +22,16 @@ Copy the config files and recreate the secrets.yaml file Also you need the same 
     Zooz dimmer switches
 	
 <b>Sensors</b>
-   Bosch Motion sensors
-   Zooz 4-in-1 sensors
+   Bosch Motion sensors,
+   Zooz 4-in-1 sensors,
    smartthings door sensor
    
 <b>Speakers</b>
    Sonos speakers
  
 <b>Media Players</b>
-   Chromecast
-   Plex Media Server
+   Chromecast,
+   Plex Media Server,
    Samsung Smart TV
    
 <b>Other</b>
