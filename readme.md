@@ -2,8 +2,9 @@
 
 This is the config for my active home assistant system.  This setup is heavily inspired by [Frenck's Home Assistant Config](https://github.com/frenck/home-assistant-config).
 
-I'm still in the process of setting everything up and moving off a smartthings hub (or getting the smartthings2mqtt bridge to work)
 Everything is set up in its own file so that I can more easily add/remove components.
+
+I'm still in the process of setting everything up part of which is putting on every possible component that seems interesting and figuring out what I want to actually keep.
 
 ## Deployment
 
@@ -12,30 +13,58 @@ Copy the config files and recreate the secrets.yaml file Also you need the same 
 ## Hardware
    
 <b>Plugs</b>
-    Wemo mini plugs,
-	Gosund
+    Wemo mini plugs (wifi),
+    Gosund (wifi)
 
 <b>Lights</b>
-    Sengled Light bulbs
+    Sengled Light bulbs (Zigbee)
 
 <b>Switches</b>
-    Zooz dimmer switches
-	
+    Zooz dimmer switches (Z-wave)
+
 <b>Sensors</b>
-   Bosch Motion sensors,
-   Zooz 4-in-1 sensors,
-   smartthings door sensor
-   
+   Bosch Motion sensors (Zigbee),
+   Zooz 4-in-1 sensors (Z-wave),
+   smartthings door sensor (Zigbee)
+
 <b>Speakers</b>
-   Sonos speakers
- 
+   Sonos speakers (wifi)
+
 <b>Media Players</b>
-   Chromecast,
-   Plex Media Server,
-   Samsung Smart TV
-   
+   Chromecast (wifi),
+   Samsung Smart TV (wifi)
+
 <b>Other</b>
-   Xiaomi Smart Cube
+   Xiaomi Smart Cube (Zigbee),
+   SmartThings Hub (Wired),
+   Tomato Router (Wired)
+
+## Software
+   SmartThings to MQTT Bridge,
+   Plex Media Server,
+   MQTT Broker,
+   Owntracks,
+   qBittorrent,
+   Transmission,
+   MariaDB,
+   Tautulli
+   
+## Other Components
+These are various Components that don't directly link to hardware/software
+
+   Pushbullet (notifications),
+   ISS (virtual sensors for if the ISS is overhead),
+   Workday (virtual sensor for if it's a workday),
+   Waze (travel time),
+   WAke on Lan (let me wake up other computers),
+   Launch (Next space launch),
+   Moon (Moon phases),
+   Sun (Sunrise),
+   Season (lets me know the season),
+   yr (Weather),
+   Google TTS (Text to Speech),
+   Dark Sky (Weather)
+
 
 ## Authors
 
