@@ -1,0 +1,9 @@
+---
+#
+# MQTT virtual sensor from smartthings
+#
+platform: mqtt
+name: "Freezer Sensor"
+state_topic: "smartthings/Freezer Sensor/contact/state"
+payload_on: "Open"
+payload_off: "Closed"

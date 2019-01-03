@@ -4,9 +4,9 @@
 #
 # https://www.home-assistant.io/components/zone
 #
-name: home
-latitude: !secret zone_home_latitude
-longitude: !secret zone_home_longitude
+name: The Dads
+latitude: !secret zone_dads_latitude
+longitude: !secret zone_dads_longitude
 radius: 100
 passive: false
 icon: mdi:home-heart

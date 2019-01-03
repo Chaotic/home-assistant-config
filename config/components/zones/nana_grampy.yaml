@@ -4,9 +4,9 @@
 #
 # https://www.home-assistant.io/components/zone
 #
-name: home
-latitude: !secret zone_home_latitude
-longitude: !secret zone_home_longitude
+name: Nana & Grampy
+latitude: !secret zone_nana_latitude
+longitude: !secret zone_nana_longitude
 radius: 100
 passive: false
 icon: mdi:home-heart

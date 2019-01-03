@@ -1,0 +1,13 @@
+---
+#
+# MQTT virtual light from smartthings
+#
+platform: mqtt
+name: "Kids Bedroom"
+state_topic: "smartthings/Kids Room/switch/state"
+command_topic: "smartthings/Kids Room/switch/cmd"
+brightness_state_topic: "smartthings/Kids Room/level/state"
+brightness_command_topic: "smartthings/Kids Room/level/cmd"
+payload_on: "on"
+payload_off: "off"
+retain: true

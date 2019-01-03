@@ -6,6 +6,6 @@
 #
 platform: qbittorrent
 name: Unraid qBittorrent
-host: !secret server_ip
-username: !secret transmission_user
-password: !secret transmission_password
+url: !secret qBittorrent_server_ip
+username: !secret qBittorrent_user
+password: !secret qBittorrent_password

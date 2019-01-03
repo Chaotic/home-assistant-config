@@ -1,0 +1,9 @@
+---
+#
+# MQTT virtual sensor from smartthings
+#
+platform: mqtt
+name: "Living Room Motion Sensor"
+state_topic: "smartthings/Living Room Motion Sensor/motion/state"
+payload_on: "active"
+payload_off: "inactive"

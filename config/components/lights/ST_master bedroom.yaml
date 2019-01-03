@@ -1,0 +1,13 @@
+---
+#
+# MQTT virtual light from smartthings
+#
+platform: mqtt
+name: "Master Bedroom"
+state_topic: "smartthings/Master Bedroom/switch/state"
+command_topic: "smartthings/Master Bedroom/switch/cmd"
+brightness_state_topic: "smartthings/Master Bedroom/level/state"
+brightness_command_topic: "smartthings/Master Bedroom/level/cmd"
+payload_on: "on"
+payload_off: "off"
+retain: true

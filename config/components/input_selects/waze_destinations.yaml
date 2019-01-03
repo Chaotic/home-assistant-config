@@ -11,3 +11,5 @@ destination:
       - Work
       - Dads
       - Nana & Grampy
+    initial: Home
+    icon: mdi:directions-fork

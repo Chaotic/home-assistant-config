@@ -4,7 +4,7 @@
 # https://www.home-assistant.io/components/sensor.waze_travel_time/
 #
 platform: waze_travel_time
-    name: "Me to destination"
-    origin: device_tracker.myphone
-    destination: sensor.dest_address
-    region: 'US'
+name: "Me to destination"
+origin: device_tracker.owntracks_matt
+destination: sensor.dest_address
+region: 'US'
