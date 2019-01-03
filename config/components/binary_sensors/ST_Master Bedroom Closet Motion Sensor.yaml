@@ -4,6 +4,9 @@
 #
 platform: mqtt
 name: "Master Bedroom Closet Motion Sensor"
+unique_id: "Master Bedroom Closet Motion Sensor Motion"
 state_topic: "smartthings/Master Bedroom Closet Motion Sensor/motion/state"
 payload_on: "active"
 payload_off: "inactive"
+device_class: "motion"
+device: "Master Bedroom Closet Motion Sensor"

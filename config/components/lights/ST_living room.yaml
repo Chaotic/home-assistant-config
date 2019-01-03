@@ -4,6 +4,7 @@
 #
 platform: mqtt
 name: "Living Room"
+unique_id: "Living Room"
 state_topic: "smartthings/Living Room/switch/state"
 command_topic: "smartthings/Living Room/switch/cmd"
 brightness_state_topic: "smartthings/Living Room/level/state"

@@ -1,0 +1,10 @@
+---
+#
+# MQTT virtual sensor from smartthings
+#
+platform: mqtt
+name: "Freezer Sensor"
+unique_id: "Freezer Sensor Temp"
+state_topic: "smartthings/Freezer Sensor/temperature/state"
+device_class: "temperature"
+device: "Freezer Sensor"

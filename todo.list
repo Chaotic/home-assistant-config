@@ -1,13 +1,3 @@
-setup components/zones/mswork
-setup components/zones/eswork
-setup components/zones/ktwork1
-setup components/zones/ktwork2
-setup components/zones/school
-setup components/zones/dads
-setup components/zones/nana&grampy
-Update components/sensors/Waze
-Update components/input_selects/waze
-update components/packages/http secrets
 setup components/packages/influxdb
 
 Open Zwave configuration ?

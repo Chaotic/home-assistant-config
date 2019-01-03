@@ -4,6 +4,7 @@
 #
 platform: mqtt
 name: "Master Bedroom"
+unique_id: "Master Bedroom"
 state_topic: "smartthings/Master Bedroom/switch/state"
 command_topic: "smartthings/Master Bedroom/switch/cmd"
 brightness_state_topic: "smartthings/Master Bedroom/level/state"

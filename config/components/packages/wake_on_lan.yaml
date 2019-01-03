@@ -1,0 +1,9 @@
+---
+#
+# The wake_on_lan component enables the ability to send magic packets to Wake on
+# LAN capable devices, to turn them on.
+#
+# https://www.home-assistant.io/components/wake_on_lan/
+#
+# There is no real configuration
+wake_on_lan:

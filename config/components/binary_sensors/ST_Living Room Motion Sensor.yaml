@@ -4,6 +4,9 @@
 #
 platform: mqtt
 name: "Living Room Motion Sensor"
+unique_id: "Living Room Motion Sensor Motion"
 state_topic: "smartthings/Living Room Motion Sensor/motion/state"
 payload_on: "active"
 payload_off: "inactive"
+device_class: "motion"
+device: "Living Room Motion Sensor"

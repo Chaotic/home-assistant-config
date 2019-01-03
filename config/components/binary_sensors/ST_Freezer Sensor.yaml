@@ -4,6 +4,9 @@
 #
 platform: mqtt
 name: "Freezer Sensor"
+unique_id: "Freezer Sensor Contact"
 state_topic: "smartthings/Freezer Sensor/contact/state"
 payload_on: "Open"
 payload_off: "Closed"
+device_class: "door"
+device: "Freezer Sensor"

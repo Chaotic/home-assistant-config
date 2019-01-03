@@ -4,6 +4,7 @@
 #
 platform: mqtt
 name: "Kids Bedroom"
+unique_id: "Kids Bedroom"
 state_topic: "smartthings/Kids Room/switch/state"
 command_topic: "smartthings/Kids Room/switch/cmd"
 brightness_state_topic: "smartthings/Kids Room/level/state"
