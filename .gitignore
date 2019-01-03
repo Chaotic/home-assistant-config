@@ -28,6 +28,7 @@ config/pyozw.sqlite
 config/secrets.yaml
 config/zwcfg_*
 config/zwscene.xml
+config/plex.conf
 
 # Some other generic stuff
 .vscode
