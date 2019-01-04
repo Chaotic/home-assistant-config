@@ -1,6 +1,6 @@
 ---
 #
-# Scene to shut off the overhead light and turn on the side nightstand lights
+# Scene to dim the overhead light when watching a movie
 #
 name: Movie Mode On
 entities:
