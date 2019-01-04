@@ -1,0 +1,12 @@
+---
+#
+# Scene to shut off the overhead light and turn on the side nightstand lights
+#
+name: Laying in Bed
+entities:
+  light.master_bedroom:
+    state: off
+  switch.kedar_night_light:
+    state: on
+  switch.master_bedroom_lamp:
+    state: on

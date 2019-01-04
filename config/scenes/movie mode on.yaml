@@ -1,0 +1,9 @@
+---
+#
+# Scene to shut off the overhead light and turn on the side nightstand lights
+#
+name: Movie Mode On
+entities:
+  light.living_room:
+    state: on
+    brightness: 20

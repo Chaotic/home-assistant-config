@@ -9,6 +9,7 @@ state_topic: "smartthings/Living Room/switch/state"
 command_topic: "smartthings/Living Room/switch/cmd"
 brightness_state_topic: "smartthings/Living Room/level/state"
 brightness_command_topic: "smartthingsLiving Room/level/cmd"
+brightness_scale: 100
 payload_on: "on"
 payload_off: "off"
 retain: true
