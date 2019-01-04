@@ -1,15 +1,15 @@
 platform: template
-  sensors:
-     dest_address:
-       value_template: >-
-          {%- if is_state("input_select.destination", "Home")  -%}
-            85 fort hill ave, lowell, MA 01852, USA
-          {%- elif is_state("input_select.destination", "Work")  -%}
-            550 Cochituate Road, Framingham, MA 01701, USA
-          {%- elif is_state("input_select.destination", "Dads")  -%}
-            28 Woolworth St, Longmeadow, MA 01106, USA
-          {%- elif is_state("input_select.destination", "Nana & Grampy")  -%}
-            22 Madison Dr, Hudson, NH 03051, USA
-          {%- else -%}
-            Unknown
-          {%- endif %}
+sensors:
+   dest_address:
+     value_template: >-
+        {%- if is_state("input_select.destination", "Home")  -%}
+          85 fort hill ave, lowell, MA 01852, USA
+        {%- elif is_state("input_select.destination", "Work")  -%}
+          550 Cochituate Road, Framingham, MA 01701, USA
+        {%- elif is_state("input_select.destination", "Dads")  -%}
+          28 Woolworth St, Longmeadow, MA 01106, USA
+        {%- elif is_state("input_select.destination", "Nana & Grampy")  -%}
+          22 Madison Dr, Hudson, NH 03051, USA
+        {%- else -%}
+          Unknown
+        {%- endif %}

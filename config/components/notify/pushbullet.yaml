@@ -1,3 +1,3 @@
 platform: pushbullet
-name: "PushBullet
-api_key: !Secret pushbullet_api_key
+name: "PushBullet"
+api_key: !secret pushbullet_api_key
