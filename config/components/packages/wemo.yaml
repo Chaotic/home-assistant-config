@@ -10,4 +10,4 @@ wemo:
   static:
   - !secret wemo_1
   - !secret wemo_2
-  - !secret wemo_3
+#  - !secret wemo_3
