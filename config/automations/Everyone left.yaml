@@ -1,0 +1,13 @@
+---
+#
+# shut everything off when everyone leaves
+#
+id: Shut if all off
+alias: All off when everyone leaves
+trigger:
+  - entity_id: group.device_trackers
+    platform: state
+    to: not_home
+action:
+  - service: homeassistant.turn_off
+    entity_id: group.all_lights_custom

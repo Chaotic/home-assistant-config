@@ -2,6 +2,7 @@
 #
 # Code to turn off the living room lights when there is no motion
 #
+id: Shut if all off
 alias: Turn off living room light when there is no movement
 trigger:
   platform: state

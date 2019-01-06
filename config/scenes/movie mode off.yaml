@@ -6,4 +6,4 @@ name: Movie Mode Off
 entities:
   light.living_room:
     state: on
-    brightness: 100
+    brightness_pct: 100

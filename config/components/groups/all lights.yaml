@@ -1,0 +1,13 @@
+---
+#
+# Group used to shut everything off
+#
+all lights custom:
+    control: hidden
+    entities:
+      - light.kids_bedroom
+      - light.living_room
+      - light.master_bedroom
+      - light.master_bedroom_closet
+      - switch.kedar_night_light
+      - switch.master_bedroom_lamp

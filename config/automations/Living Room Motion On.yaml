@@ -2,6 +2,7 @@
 #
 # Code to turn on the living room lights when there is motion
 #
+id: Living Room Off
 alias: Turn on living room light when there is movement
 trigger:
   platform: state

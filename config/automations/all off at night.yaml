@@ -1,0 +1,12 @@
+---
+#
+# shut everything off at night
+#
+id: Shut if all off to sleep
+alias: All off at night
+trigger:
+  - platform: time
+    at: "23:00:00"
+action:
+  - service: homeassistant.turn_off
+    entity_id: group.all_lights_custom

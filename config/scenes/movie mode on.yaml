@@ -1,9 +1,9 @@
 ---
 #
-# Scene to dim the overhead light when watching a movie
+# Scene to dim the lights when watching movies
 #
 name: Movie Mode On
 entities:
   light.living_room:
     state: on
-    brightness: 100
+    brightness_pct: 35

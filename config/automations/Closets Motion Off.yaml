@@ -2,6 +2,7 @@
 #
 # Code to turn off the master bedroom closet lights when there is no motion
 #
+id: Closet Light off
 alias: Turn off closet light when there is movement
 trigger:
   platform: state

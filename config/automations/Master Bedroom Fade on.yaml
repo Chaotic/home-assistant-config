@@ -2,6 +2,7 @@
 #
 # Fade in the master bedroom lights over 15 mins
 #
+id: Master Bedroom Wake up
 alias: Master Bedroom Light Fade In
 trigger:
   - platform: time

@@ -2,6 +2,7 @@
 #
 # Fade in the kids bedroom lights over 15 mins
 #
+id: Kids morning Wake Up
 alias: Kids Bedroom Light Fade In
 trigger:
   - platform: time
