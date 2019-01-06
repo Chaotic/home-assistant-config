@@ -1,0 +1,16 @@
+---
+#
+# Code to turn on the living room lights when there is motion
+#
+alias: Turn on closet light when there is movement
+trigger:
+  platform: state
+  entity_id: binary_sensor.master_bedroom_closet_motion_sensor
+  to: 'on'
+condition:
+  - condition: time
+    after: '06:00'
+    before: '23:00'
+action:
+  service: homeassistant.turn_on
+  entity_id: light.master_bedroom_closet

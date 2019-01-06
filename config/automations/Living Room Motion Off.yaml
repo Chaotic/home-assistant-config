@@ -1,0 +1,20 @@
+---
+#
+# Code to turn off the living room lights when there is no motion
+#
+alias: Turn off kitchen light when there is no movement
+trigger:
+  platform: state
+  entity_id: binary_sensor.living_room_motion_sensor
+  to: 'off'
+  for:
+    minutes: 20
+condition:
+  - condition: template
+    value_template: "{{ not is_state('media_player.living_room_tv', 'playing') }}"
+  - condition: time
+    after: '06:00'
+    before: '23:00'
+action:
+  service: homeassistant.turn_off
+  entity_id: llight.living_room
