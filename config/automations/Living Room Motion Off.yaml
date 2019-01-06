@@ -11,7 +11,7 @@ trigger:
     minutes: 20
 condition:
   - condition: template
-    value_template: "{{ not is_state('media_player.living_room_tv', 'playing') }}"
+    value_template:  "{{ not is_state('media_player.living_room_tv', 'playing') == false }}"
   - condition: time
     after: '06:00'
     before: '23:00'
