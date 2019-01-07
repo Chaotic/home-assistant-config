@@ -1,6 +1,6 @@
 ---
 #
-# Group used to shut everything off
+# Group of everything
 #
 all lights custom:
     control: hidden

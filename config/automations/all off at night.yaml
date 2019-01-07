@@ -2,7 +2,7 @@
 #
 # shut everything off at night
 #
-id: Shut if all off to sleep
+id: Shut it all off to sleep
 alias: All off at night
 trigger:
   - platform: time
