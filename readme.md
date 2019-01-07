@@ -14,7 +14,7 @@ Copy the config files and recreate the secrets.yaml file Also you need the same 
    
 <b>Plugs</b>
     Wemo mini plugs (wifi),
-    Gosund (wifi)
+    Gosund (wifi) (not in use yet)
 
 <b>Lights</b>
     Sengled Light bulbs (Zigbee)
