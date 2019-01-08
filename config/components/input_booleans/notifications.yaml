@@ -1,0 +1,10 @@
+---
+# This is an input boolean to use with automations
+# in case we go on vactaions.
+#
+# https://www.home-assistant.io/components/input_boolean/
+#
+all_notifications:
+  name: Enable Notifications
+  initial: true
+  icon: mdi:bell

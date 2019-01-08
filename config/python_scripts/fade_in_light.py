@@ -1,3 +1,12 @@
+#
+# Script to fade lights in slowly
+# Takes the following inputs
+# entity_id = The light you want to fade in
+# delay_in_sec = The delay before increasing the light
+# start_level_pct = The percent to start on
+# end_level_pct = The percent to end on
+# step_pct = the percent to increase each step
+#
 entity_id  = data.get('entity_id')
 sleep_delay = int(data.get('delay_in_sec'))
 start_level_pct = int(data.get('start_level_pct'))
@@ -17,7 +26,7 @@ while new_level < end_level :
 		break;
 	else :
 		logger.info('Setting brightness of ' + str(entity_id) + ' from ' + str(current_level) + ' to ' + str(new_level))
-		data = { "entity_id" : entity_id, "state" : on, "brightness" : new_level }
+		data = { "entity_id" : entity_id, "brightness" : new_level }
 		hass.services.call('light', 'turn_on', data)
 		new_level = new_level + step
 		time.sleep(sleep_delay)

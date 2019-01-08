@@ -1,16 +1,17 @@
 ---
 #
-# Fade in the kids bedroom lights over 15 mins
+# Fade in the kids bedroom lights over 5 mins
 #
 id: Kids morning Wake Up
 alias: Kids Bedroom Light Fade In
+initial_state: 'on'
 trigger:
   - platform: time
     at: "05:55:00"
 condition:
-  condition: state
-  entity_id: 'binary_sensor.workday_sensor'
-  state: 'On'
+  - condition: state
+    entity_id: 'binary_sensor.workday'
+    state: 'on'
 action:
   - service: python_script.fade_in_light
     data:

@@ -1,0 +1,10 @@
+---
+# This is an input boolean to use with automations
+# in case we go on vactaions.
+#
+# https://www.home-assistant.io/components/input_boolean/
+#
+vacation:
+  name: Enables vacation Mode
+  initial: false
+  icon: mdi:beach

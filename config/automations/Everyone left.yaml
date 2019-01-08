@@ -4,6 +4,7 @@
 #
 id: Shut if all off
 alias: All off when everyone leaves
+initial_state: 'on'
 trigger:
   - entity_id: group.device_trackers
     platform: state

@@ -4,6 +4,7 @@
 #
 id: Shut it all off to sleep
 alias: All off at night
+initial_state: 'on'
 trigger:
   - platform: time
     at: "23:00:00"

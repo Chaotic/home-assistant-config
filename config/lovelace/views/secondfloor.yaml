@@ -19,6 +19,13 @@ cards:
   - type: vertical-stack
     cards:
       - type: entities
+        title: Devices
+        entities:
+          - switch.kedar_night_light
+          - switch.master_bedroom_lamp
+  - type: vertical-stack
+    cards:
+      - type: entities
         title: Media
         entities:
           - type: custom:mini-media-player
