@@ -1,0 +1,41 @@
+---
+id: Second Floor
+title: Second Floor
+icon: mdi:bed-empty
+cards:
+  - type: vertical-stack
+    cards:
+      - type: entities
+        title: Lights
+        entities:
+          - type: custom:slider-entity-row
+            entity: light.master_bedroom
+            name: Bedroom
+            toggle: true
+          - type: custom:slider-entity-row
+            entity: light.master_bedroom_closet
+            name: Closet
+            toggle: true
+  - type: vertical-stack
+    cards:
+      - type: entities
+        title: Media
+        entities:
+          - type: custom:mini-media-player
+            entity: media_player.master_bedroom_tv
+            show_tts: false
+            show_source: true
+            show_progress: false
+            hide_controls: false
+            power_color: true
+            more_info: false
+            volume_stateless: true
+          - type: custom:mini-media-player
+            entity: media_player.adult_sonos
+            show_tts: true
+            show_source: true
+            show_progress: false
+            hide_controls: false
+            power_color: true
+            more_info: false
+            volume_stateless: true

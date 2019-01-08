@@ -1,0 +1,36 @@
+---
+id: Automations
+title: Automations
+icon: mdi:settings
+cards:
+  - type: vertical-stack
+    cards:
+      - type: entities
+        title: Automations
+        entities:
+          - automation.all_off_at_night
+          - automation.all_off_when_everyone_leaves
+          - automation.kids_bedroom_light_fade_in
+          - automation.master_bedroom_light_fade_in
+          - automation.media_player_pausedstopped
+          - automation.media_player_playing
+          - automation.turn_off_closet_light_when_there_is_movement
+          - automation.turn_off_living_room_light_when_there_is_no_movement
+          - automation.turn_on_closet_light_when_there_is_movement
+          - automation.turn_on_living_room_light_when_there_is_movement
+  - type: vertical-stack
+    cards:
+      - type: entities
+        title: Scenes
+        entities:
+          - scene.laying_in_bed
+          - scene.movie_mode_off
+          - scene.movie_mode_on
+  - type: vertical-stack
+    cards:
+      - type: entities
+        title: Devices
+        entities:
+          - device_tracker.owntracks_erin
+          - device_tracker.owntracks_kedar
+          - device_tracker.owntracks_matt
