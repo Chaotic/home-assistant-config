@@ -16,6 +16,7 @@ cards:
             entity: light.master_bedroom_closet
             name: Closet
             toggle: true
+          - scene.laying_in_bed
   - type: vertical-stack
     cards:
       - type: entities

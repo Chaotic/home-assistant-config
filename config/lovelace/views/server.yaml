@@ -1,0 +1,25 @@
+---
+id: Server
+title: Server
+icon: mdi:nas
+cards:
+  - type: vertical-stack
+    cards:
+      - type: sensor
+        entity: sensor.tautulli
+        name: tautulli
+      - type: sensor
+        entity: sensor.unraid_qbittorrent_down_speed
+        name: qBittorrent Down
+      - type: sensor
+        entity: sensor.unraid_qbittorrent_up_speed
+        name: qBittorrent Up
+      - type: sensor
+        entity: sensor.unraid_qbittorrent_down_speed
+        name: qBittorrent Down
+      - type: sensor
+        entity: sensor.unraid_transmission_down_speed
+        name: Transmission Up
+      - type: sensor
+        entity: sensor.unraid_transmission_up_speed
+        name: Transmission Down

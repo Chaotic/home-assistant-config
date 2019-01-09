@@ -10,7 +10,9 @@
 title: Home Control Panel
 resources: !include_dir_list lovelace/resources
 views:
+  - !include lovelace/views/general.yaml
   - !include lovelace/views/firstfloor.yaml
   - !include lovelace/views/secondfloor.yaml
   - !include lovelace/views/thirdfloor.yaml
   - !include lovelace/views/automations.yaml
+  - !include lovelace/views/server.yaml
