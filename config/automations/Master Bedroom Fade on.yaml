@@ -12,6 +12,9 @@ condition:
   - condition: state
     entity_id: 'binary_sensor.workday'
     state: 'on'
+  - condition: state
+    entity_id: 'input_boolean.vacation'
+    state: 'off'
 action:
   - service: python_script.fade_in_light
     data:

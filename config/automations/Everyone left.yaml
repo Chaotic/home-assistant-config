@@ -9,6 +9,10 @@ trigger:
   - entity_id: group.device_trackers
     platform: state
     to: not_home
+condition:
+  - condition: state
+    entity_id: 'input_boolean.guest_mode'
+    state: 'off'
 action:
   - service: homeassistant.turn_off
     entity_id: group.all_lights_custom
