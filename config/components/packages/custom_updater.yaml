@@ -1,0 +1,11 @@
+---
+#
+# Custom component to track other custom components
+#
+# https://github.com/custom-components/custom_updater
+#
+custom_updater:
+  track:
+    - cards
+    - components
+    - pythons_scripts

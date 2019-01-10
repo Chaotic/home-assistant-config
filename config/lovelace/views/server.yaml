@@ -23,3 +23,8 @@ cards:
       - type: sensor
         entity: sensor.unraid_transmission_up_speed
         name: Transmission Down
+  - type: custom:tracker-card
+    title: "Custom Components"
+    trackers:
+      - sensor.custom_card_tracker
+      - sensor.custom_component_tracker
