@@ -1,0 +1,7 @@
+---
+#
+# Enable Z-wave thermostats
+#
+# https://www.home-assistant.io/components/climate.zwave/
+#
+platform: zwave
