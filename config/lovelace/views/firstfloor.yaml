@@ -34,3 +34,4 @@ cards:
             power_color: true
             more_info: false
             volume_stateless: true
+            sonos_grouping: !include sonosgroups.yaml

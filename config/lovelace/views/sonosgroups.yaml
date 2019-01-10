@@ -1,0 +1,6 @@
+- entity_id: media_player.adult_sonos
+  name: Master Bedroom Sonos
+- entity_id: media_player.kids_bedroom
+  name: Kids Bedroom Sonos
+- entity_id: media_player.livingroom_sonos
+  name: Living Room Sonos

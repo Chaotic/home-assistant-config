@@ -9,3 +9,5 @@ custom_updater:
     - cards
     - components
     - pythons_scripts
+  card_urls:
+    - https://raw.githubusercontent.com/kalkih/mini-media-player/master/tracker.json
