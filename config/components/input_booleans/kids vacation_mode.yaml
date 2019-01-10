@@ -4,7 +4,7 @@
 #
 # https://www.home-assistant.io/components/input_boolean/
 #
-kids vacation:
+kids_vacation:
   name: Enables kids vacation Mode
   initial: false
   icon: mdi:beach
