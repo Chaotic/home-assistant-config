@@ -1,0 +1,12 @@
+---
+#
+# Zones allow you to specify certain regions on earth (for now). 
+#
+# https://www.home-assistant.io/components/zone
+#
+name: YMCA
+latitude: !secret zone_ymca_latitude
+longitude: !secret zone_ymca_longitude
+radius: 100
+passive: false
+icon: mdi:run

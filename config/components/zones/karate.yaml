@@ -1,0 +1,12 @@
+---
+#
+# Zones allow you to specify certain regions on earth (for now). 
+#
+# https://www.home-assistant.io/components/zone
+#
+name: Karate
+latitude: !secret zone_karate_latitude
+longitude: !secret zone_karate_longitude
+radius: 100
+passive: false
+icon: mdi:karate
