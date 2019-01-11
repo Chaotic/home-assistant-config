@@ -3,5 +3,13 @@ id: General
 title: General
 icon: mdi:function
 cards:
-  - type: weather-forecast
+  - type: custom:weather-card
     entity: weather.dark_sky
+  - type: vertical-stack
+    cards:
+      - type: entities
+        title: Devices
+        entities:
+          - device_tracker.owntracks_erin
+          - device_tracker.owntracks_kedar
+          - device_tracker.owntracks_matt
