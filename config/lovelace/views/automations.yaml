@@ -34,6 +34,7 @@ cards:
           - input_boolean.all_notifications
           - input_boolean.guest_mode
           - input_boolean.vacation
+          - input_boolean.movie_mode
   - type: vertical-stack
     cards:
       - type: entities
