@@ -29,6 +29,7 @@ config/secrets.yaml
 config/zwcfg_*
 config/zwscene.xml
 config/plex.conf
+config/fitbit.conf
 entities.txt
 
 # Some other generic stuff
