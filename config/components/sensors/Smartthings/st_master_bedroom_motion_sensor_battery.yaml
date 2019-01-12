@@ -3,7 +3,7 @@
 # MQTT virtual sensor from smartthings
 #
 platform: mqtt
-name: "Master Bedroom Closet Motion Sensor"
+name: "Master Bedroom Closet Motion Sensor battery"
 unique_id: "Master Bedroom Closet Motion Sensor Battery"
 state_topic: "smartthings/Master Bedroom Closet Motion Sensor/battery/state"
 device_class: "battery"

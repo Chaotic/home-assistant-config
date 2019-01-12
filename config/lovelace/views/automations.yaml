@@ -35,3 +35,4 @@ cards:
           - input_boolean.guest_mode
           - input_boolean.vacation
           - input_boolean.movie_mode
+          - input_boolean.kids_vacation
