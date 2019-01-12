@@ -12,7 +12,7 @@ cards:
           - automation.all_off_when_everyone_leaves
           - automation.kids_bedroom_light_fade_in
           - automation.master_bedroom_light_fade_in
-          - automation.media_player_pausedstopped
+          - automation.media_player_paused
           - automation.media_player_playing
           - automation.turn_off_closet_light_when_there_is_movement
           - automation.turn_off_living_room_light_when_there_is_no_movement
