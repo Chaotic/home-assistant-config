@@ -3,6 +3,10 @@ id: General
 title: General
 icon: mdi:function
 cards:
+  - type: thermostat
+    entity: climate.2gig_technologies_ct101_thermostat_iris_cooling_1
+  - type: thermostat
+    entity: climate.2gig_technologies_ct101_thermostat_iris_heating_1
   - type: custom:weather-card
     entity: weather.dark_sky
   - type: vertical-stack
