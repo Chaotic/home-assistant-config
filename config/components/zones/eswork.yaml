@@ -4,7 +4,7 @@
 #
 # https://www.home-assistant.io/components/zone
 #
-name: Erin's Work
+name: Erins Work
 latitude: !secret zone_eswork_latitude
 longitude: !secret zone_eswork_longitude
 radius: 100

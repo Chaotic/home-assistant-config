@@ -4,7 +4,7 @@
 #
 # https://www.home-assistant.io/components/zone
 #
-name: Kedar's Work (chelmsford)
+name: Kedars Work chelmsford
 latitude: !secret zone_ktwork2_latitude
 longitude: !secret zone_ktwork2_longitude
 radius: 100
