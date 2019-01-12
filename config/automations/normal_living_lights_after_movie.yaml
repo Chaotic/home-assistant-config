@@ -3,7 +3,7 @@
 # Code to return the living room lights to normal after playing a video
 #
 id: The player Stopped
-alias: "Media player paused/stopped"
+alias: "Media player paused"
 initial_state: 'on'
 trigger:
   - platform: state
