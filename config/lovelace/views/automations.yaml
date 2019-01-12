@@ -36,3 +36,9 @@ cards:
           - input_boolean.vacation
           - input_boolean.movie_mode
           - input_boolean.kids_vacation
+  - type: custom:monster-card
+    card:
+      - type: entities
+    filter:
+      include:
+        - entity_id: sensor.*

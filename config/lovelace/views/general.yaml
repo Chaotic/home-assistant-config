@@ -7,6 +7,28 @@ cards:
     entity: climate.2gig_technologies_ct101_thermostat_iris_cooling_1
   - type: thermostat
     entity: climate.2gig_technologies_ct101_thermostat_iris_heating_1
+  - type: custom:circle-sensor-card
+    entity: sensor.global_temperature
+    max: 80
+    min: 50
+    stroke_width: 10
+    gradient: true
+    units:  "°F"
+    show_max: true
+    font_style:
+      color: red
+      font-size: 1.5em
+      text-shadow: '2px 2px black'
+      font-family: 'Trebuchet MS'
+    color_stops:
+      50: '#55FF55'
+      75: '#5555FF'
+      100: '#FF5555'
+    style:
+      top: 50%
+      left: 50%
+      width: 75px
+      height: 75px
   - type: custom:weather-card
     entity: weather.dark_sky
   - type: vertical-stack

@@ -10,7 +10,7 @@ trigger:
   entity_id: binary_sensor.master_bedroom_closet_motion_sensor
   to: 'off'
   for:
-    minutes: 5
+    minutes: 3
 condition:
   - condition: time
     after: '06:00'
