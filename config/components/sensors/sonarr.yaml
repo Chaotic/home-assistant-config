@@ -1,8 +1,0 @@
----
-#
-# This sonarr sensor platform pulls data from a given Sonarr instance.
-#
-# https://www.home-assistant.io/components/sensor.sonarr/
-#
-platform: sonarr
-api_key: !secret sonarr_api_key

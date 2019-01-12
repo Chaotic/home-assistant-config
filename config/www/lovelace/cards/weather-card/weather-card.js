@@ -117,7 +117,7 @@ class WeatherCard extends LitElement {
       <ha-card @click="${this._handleClick}">
           <span
             class="icon bigger"
-            style="background: none, url(/local/custom-lovelace/weather-card/icons/${
+            style="background: none, url(/local/lovelace/cards/weather-card/icons/${
               this.getWeatherIcon(stateObj.state.toLowerCase(), this.hass.states["sun.sun"].state)
             }.svg) no-repeat; background-size: contain;"
             >${stateObj.state}</span
@@ -162,7 +162,7 @@ class WeatherCard extends LitElement {
                       <span class="dayname">${
                         new Date(daily.datetime).toLocaleDateString(lang, {weekday: 'short'}).split(" ")[0]
                       }</span>
-                      <br><i class="icon" style="background: none, url(/local/custom-lovelace/weather-card/icons/${
+                      <br><i class="icon" style="background: none, url(/local/lovelace/cards/weather-card/icons/${
                         weatherIconsDay[daily.condition.toLowerCase()]
                       }.svg) no-repeat; background-size: contain;"></i>
                       <br><span class="highTemp">${daily.temperature}${this.getUnit(
