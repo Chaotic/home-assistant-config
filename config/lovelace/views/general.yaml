@@ -9,7 +9,7 @@ cards:
     entity: climate.2gig_technologies_ct101_thermostat_iris_heating_1
   - type: custom:circle-sensor-card
     entity: sensor.global_temperature
-    max: 80
+    max: 90
     min: 50
     stroke_width: 10
     gradient: true
@@ -25,10 +25,10 @@ cards:
       75: '#5555FF'
       100: '#FF5555'
     style:
-      top: 50%
-      left: 50%
-      width: 75px
-      height: 75px
+      top: 25%
+      left: 25%
+      width: 25px
+      height: 25px
   - type: custom:weather-card
     entity: weather.dark_sky
   - type: vertical-stack
