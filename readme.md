@@ -34,6 +34,9 @@ Copy the config files and recreate the secrets.yaml file Also you need the same 
    Chromecast (wifi),
    Samsung Smart TV (wifi)
 
+<b>Thermostat</b>
+   Radio Thermostat Z-Wave CT101 (Really cheap z-wave thermostat)
+
 <b>Other</b>
    Xiaomi Smart Cube (Zigbee),
    SmartThings Hub (Wired),
@@ -48,6 +51,8 @@ Copy the config files and recreate the secrets.yaml file Also you need the same 
    Transmission,
    MariaDB,
    Tautulli
+   InfluxDB
+   Grafana
    
 ## Other Components
 These are various Components that don't directly link to hardware/software
