@@ -1,6 +1,6 @@
 ---
 #
-# Fade in the master bedroom lights over 15 mins
+# Fade in the master bedroom lights over 30 mins
 #
 id: Master Bedroom Wake up
 alias: Master Bedroom Light Fade In
