@@ -1,9 +1,9 @@
-import {
-  LitElement, html,
-} from 'https://unpkg.com/@polymer/lit-element@^0.6.4/lit-element.js?module';
+const LitElement = Object.getPrototypeOf(customElements.get("ha-panel-lovelace"));
+const html = LitElement.prototype.html;
 
 const weatherIconsDay = {
   clear: "day",
+  "clear-night": "night",
   cloudy: "cloudy",
   fog: "cloudy",
   hail: "rainy-7",
@@ -76,8 +76,8 @@ function hasConfigOrEntityChanged(element, changedProps) {
     return (
       oldHass.states[element._config.entity] !==
       element.hass.states[element._config.entity] ||
-      oldHass.states[sun.sun] !==
-      element.hass.states[sun.sun]
+      oldHass.states["sun.sun"] !==
+      element.hass.states["sun.sun"]
     );
   }
 
@@ -111,45 +111,37 @@ class WeatherCard extends LitElement {
 
     const stateObj = this.hass.states[this._config.entity];
     const lang = this.hass.selectedLanguage || this.hass.language;
-    
+
     return html`
       ${this.renderStyle()}
       <ha-card @click="${this._handleClick}">
           <span
             class="icon bigger"
-            style="background: none, url(/local/lovelace/cards/weather-card/icons/${
-              this.getWeatherIcon(stateObj.state.toLowerCase(), this.hass.states["sun.sun"].state)
-            }.svg) no-repeat; background-size: contain;"
-            >${stateObj.state}</span
-          >
-          <span class="temp">${Math.round(stateObj.attributes.temperature)}</span
-          ><span class="tempc"> ${this.getUnit("temperature")}</span>
-          <span>
-            <ul class="variations right">
-              <li>
-                <span class="ha-icon"
-                  ><ha-icon icon="mdi:water-percent"></ha-icon></span
-                >${stateObj.attributes.humidity}<span class="unit"> %</span>
-              </li>
-              <li>
-                <span class="ha-icon"><ha-icon icon="mdi:gauge"></ha-icon></span
-                >${stateObj.attributes.pressure}<span class="unit">
-                  ${this.getUnit("air_pressure")}</span
-                >
-              </li>
-            </ul>
+            style="background: none, url(${
+              this.getWeatherIcon(stateObj.state.toLowerCase(), this.hass.states["sun.sun"].state)}) no-repeat; background-size: contain;">${stateObj.state}
+          </span>
+          <span class="temp">${Math.round(stateObj.attributes.temperature)}</span>
+            <span class="tempc"> ${this.getUnit("temperature")}</span>
+            <span>
             <ul class="variations">
               <li>
-                <span class="ha-icon"
-                  ><ha-icon icon="mdi:weather-windy"></ha-icon></span
-                >${windDirections[(parseInt((stateObj.attributes.wind_bearing + 11.25) / 22.5))]} ${stateObj.attributes.wind_speed}<span class="unit">
-                  ${this.getUnit("length")}/h</span
-                >
+                <span class="ha-icon"><ha-icon icon="mdi:water-percent"></ha-icon></span>
+                  ${stateObj.attributes.humidity}<span class="unit"> %
+                </span>
+                <br>
+                <span class="ha-icon"><ha-icon icon="mdi:weather-windy"></ha-icon></span>
+                  ${windDirections[(parseInt((stateObj.attributes.wind_bearing + 11.25) / 22.5))]} ${stateObj.attributes.wind_speed}<span class="unit">
+                  ${this.getUnit("length")}/h
+                </span>
               </li>
               <li>
-                <span class="ha-icon"
-                  ><ha-icon icon="mdi:weather-fog"></ha-icon></span
-                >${stateObj.attributes.visibility}<span class="unit"> ${this.getUnit("length")}</span>
+                <span class="ha-icon"><ha-icon icon="mdi:gauge"></ha-icon></span>${stateObj.attributes.pressure}<span class="unit">
+                  ${this.getUnit("air_pressure")}
+                </span>
+                <br>
+                <span class="ha-icon"><ha-icon icon="mdi:weather-fog"></ha-icon></span>
+                ${stateObj.attributes.visibility}<span class="unit"> ${this.getUnit("length")}
+                </span>
               </li>
             </ul>
           </span>
@@ -160,11 +152,11 @@ class WeatherCard extends LitElement {
                   (daily) => html`
                   <div class="day">
                       <span class="dayname">${
-                        new Date(daily.datetime).toLocaleDateString(lang, {weekday: 'short'}).split(" ")[0]
+                        new Date(daily.datetime).toLocaleDateString(lang, {weekday: 'short'})
                       }</span>
-                      <br><i class="icon" style="background: none, url(/local/lovelace/cards/weather-card/icons/${
-                        weatherIconsDay[daily.condition.toLowerCase()]
-                      }.svg) no-repeat; background-size: contain;"></i>
+                      <br><i class="icon" style="background: none, url(${
+                        this.getWeatherIcon(daily.condition.toLowerCase())
+                      }) no-repeat; background-size: contain;"></i>
                       <br><span class="highTemp">${daily.temperature}${this.getUnit(
                     "temperature"
                   )}</span>
@@ -180,9 +172,9 @@ class WeatherCard extends LitElement {
   }
 
   getWeatherIcon(condition, sun) {
-    return sun == "above_horizon" ? weatherIconsDay[condition] : weatherIconsNight[condition];
+    return `${ this._config.icons ? this._config.icons : "https://cdn.jsdelivr.net/gh/bramkragten/custom-ui@master/weather-card/icons/animated/" }${ (sun && sun == "below_horizon") ? weatherIconsNight[condition] : weatherIconsDay[condition] }.svg`;
   }
-  
+
    getUnit(measure) {
       const lengthUnit = this.hass.config.unit_system.length;
       switch (measure) {
@@ -217,17 +209,17 @@ class WeatherCard extends LitElement {
             padding-right:1em;
             position: relative;
           }
-          
+
           .clear {
             clear: both;
           }
-            
+
           .ha-icon {
             height: 18px;
             margin-right: 5px;
             color: var(--paper-item-icon-color);
           }
-        
+
           .temp {
             font-weight: 300;
             font-size: 4em;
@@ -235,7 +227,7 @@ class WeatherCard extends LitElement {
             position: absolute;
             right: 1em;
           }
-        
+
           .tempc {
             font-weight: 300;
             font-size: 1.5em;
@@ -246,33 +238,32 @@ class WeatherCard extends LitElement {
             margin-top: -14px;
             margin-right: 7px;
           }
-        
+
           .variations {
-            display: inline-block;
+            display: flex;
+            flex-flow:row wrap;
+            justify-content: space-between;
             font-weight: 300;
             color: var(--primary-text-color);
             list-style: none;
             margin-left: -2em;
             margin-top: 4.5em;
           }
-        
-          .variations.right {
-            position: absolute;
-            right: 1em;
-            margin-left: 0;
-            margin-right: 1em;
+
+          .variations li{
+            flex-basis: auto;
           }
-        
+
           .unit {
             font-size: .8em;
           }
-        
+
           .forecast {
             width: 100%;
             margin: 0 auto;
             height: 9em;
           }
-        
+
           .day {
             display: block;
             width: 20%;
@@ -283,28 +274,28 @@ class WeatherCard extends LitElement {
             line-height: 2;
             box-sizing: border-box;
           }
-        
+
           .dayname {
             text-transform: uppercase;
           }
-        
+
           .forecast .day:first-child {
             margin-left: 0;
           }
-        
+
           .forecast .day:nth-last-child(1) {
             border-right: none;
             margin-right: 0;
           }
-        
+
           .highTemp {
             font-weight: bold;
           }
-        
+
           .lowTemp {
             color: var(--secondary-text-color);
           }
-        
+
           .icon.bigger {
             width: 10em;
             height: 10em;
@@ -312,7 +303,7 @@ class WeatherCard extends LitElement {
             position: absolute;
             left: 0em;
           }
-        
+
           .icon {
             width: 50px;
             height: 50px;
@@ -324,7 +315,7 @@ class WeatherCard extends LitElement {
             background-repeat: no-repeat;
             text-indent: -9999px;
           }
-        
+
           .weather {
             font-weight: 300;
             font-size: 1.5em;
@@ -340,5 +331,4 @@ class WeatherCard extends LitElement {
     `;
   }
 }
-
 customElements.define("weather-card", WeatherCard);

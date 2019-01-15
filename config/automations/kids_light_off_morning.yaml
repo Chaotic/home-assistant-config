@@ -1,0 +1,20 @@
+---
+#
+# shut the kids room off in the mornings when they should be in school
+#
+id: Kids off for school
+alias: Kids off for school
+initial_state: 'on'
+trigger:
+  - platform: time
+    at: "07:15:00"
+condition:
+  - condition: state
+    entity_id: 'binary_sensor.workday'
+    state: 'on'
+  - condition: state
+    entity_id: 'input_boolean.kids_vacation'
+    state: 'off'
+action:
+  - service: homeassistant.turn_off
+    entity_id: light.kids_bedroom
