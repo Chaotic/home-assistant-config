@@ -1,0 +1,17 @@
+---
+#
+# Template sensor to display the thermostat battery_level
+#
+# https://www.home-assistant.io/components/sensor.template/
+# 
+platform: template
+sensors:
+  thermostat_battery:
+    friendly_name: "Thermostat Battery"
+    unit_of_measurement: "%"
+    value_template: >-
+      {%- if state_attr('zwave.2gig_technologies_ct101_thermostat_iris', 'battery_level') %}
+          {{ state_attr('zwave.2gig_technologies_ct101_thermostat_iris', 'battery_level') }}
+      {% else %}
+          Unknown
+      {%- endif %}

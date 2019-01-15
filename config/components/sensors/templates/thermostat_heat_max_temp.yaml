@@ -1,0 +1,16 @@
+---
+#
+# Template sensor to display the thermostat heat max temp
+#
+# https://www.home-assistant.io/components/sensor.template/
+# 
+platform: template
+sensors:
+  thermostat_heat_max_temp:
+    friendly_name: "Thermostat Heat Maximum Temperature"
+    value_template: >-
+      {%- if state_attr('climate.2gig_technologies_ct101_thermostat_iris_heating_1', 'max_temp') %}
+          {{ state_attr('climate.2gig_technologies_ct101_thermostat_iris_heating_1', 'max_temp') }}
+      {% else %}
+          Unknown
+      {%- endif %}

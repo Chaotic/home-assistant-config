@@ -1,0 +1,16 @@
+---
+#
+# Template sensor to display the thermostat heat temp
+#
+# https://www.home-assistant.io/components/sensor.template/
+# 
+platform: template
+sensors:
+  thermostat_heat_temperature:
+    friendly_name: "Thermostat Heat Temperature"
+    value_template: >-
+      {%- if state_attr('climate.2gig_technologies_ct101_thermostat_iris_heating_1', 'temperature') %}
+          {{ state_attr('climate.2gig_technologies_ct101_thermostat_iris_heating_1', 'temperature') }}
+      {% else %}
+          Unknown
+      {%- endif %}
