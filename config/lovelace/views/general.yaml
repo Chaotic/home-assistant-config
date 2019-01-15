@@ -3,10 +3,12 @@ id: General
 title: General
 icon: mdi:function
 cards:
-  - type: thermostat
-    entity: climate.2gig_technologies_ct101_thermostat_iris_cooling_1
-  - type: thermostat
-    entity: climate.2gig_technologies_ct101_thermostat_iris_heating_1
+  - type: custom:dual-thermostat
+    name: Thermostat
+    entities:
+      cool: climate.2gig_technologies_ct101_thermostat_iris_cooling_1
+      heat: climate.2gig_technologies_ct101_thermostat_iris_heating_1
+    fan_control: true
   - type: custom:circle-sensor-card
     entity: sensor.global_temperature
     max: 90
