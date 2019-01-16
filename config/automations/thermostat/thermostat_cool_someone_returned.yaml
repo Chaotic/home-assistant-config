@@ -1,0 +1,21 @@
+---
+#
+# turn AC on when someone comes home
+#
+id: turn ac on cause someone is home
+alias: AC on cause someone is home
+initial_state: 'on'
+trigger:
+  - entity_id: group.device_trackers
+    platform: state
+    to: home
+    for: "00:02:00"
+condition:
+  - condition: state
+    entity_id: 'sensor.season'
+    state: 'Summer'
+action:
+  - service: climate.set_temperature
+    data:
+      entity_id: climate.2gig_technologies_ct101_thermostat_iris_cooling_1
+      temperature: 72

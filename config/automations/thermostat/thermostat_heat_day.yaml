@@ -1,0 +1,22 @@
+---
+#
+# Shut the heat on the morning during the winter
+#
+id: Thermostat heat on in the morning
+alias: Thermostat heat on in the morning
+initial_state: 'on'
+trigger:
+  - platform: time
+    at: "05:30:00"
+condition:
+  - condition: state
+    entity_id: 'sensor.season'
+    state: 'Winter'
+  - condition: state
+    entity_id: 'binary_sensor.workday'
+    state: 'on'
+action:
+  - service: climate.set_temperature
+    data:
+      entity_id: climate.2gig_technologies_ct101_thermostat_iris_heating_1
+      temperature: 65

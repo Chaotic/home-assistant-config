@@ -1,0 +1,24 @@
+---
+#
+# shut heat off when everyone leaves
+#
+id: shut heat off cause everyone left
+alias: Heat off when everyone leaves
+initial_state: 'on'
+trigger:
+  - entity_id: group.device_trackers
+    platform: state
+    to: not_home
+    for: "00:10:00"
+condition:
+  - condition: state
+    entity_id: 'input_boolean.guest_mode'
+    state: 'off'
+  - condition: state
+    entity_id: 'sensor.season'
+    state: 'Winter'
+action:
+  - service: climate.set_temperature
+    data:
+      entity_id: climate.2gig_technologies_ct101_thermostat_iris_heating_1
+      temperature: 50

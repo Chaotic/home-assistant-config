@@ -1,0 +1,22 @@
+---
+#
+# Shut the AC on the morning during the summer
+#
+id: Thermostat AC on in the morning
+alias: Thermostat AC on in the morning
+initial_state: 'on'
+trigger:
+  - platform: time
+    at: "05:30:00"
+condition:
+  - condition: state
+    entity_id: 'sensor.season'
+    state: 'Summer'
+  - condition: state
+    entity_id: 'binary_sensor.workday'
+    state: 'on'
+action:
+  - service: climate.set_temperature
+    data:
+      entity_id: climate.2gig_technologies_ct101_thermostat_iris_cooling_1
+      temperature: 72
