@@ -7,3 +7,12 @@
 platform: tautulli
 api_key: !secret tautulli_api_key
 host: !secret server_ip
+monitored_users:
+  - ChaoticUnreal
+  - Kedar
+  - Erin
+monitored_conditions:
+  - library_name
+  - player
+  - full_title
+  - state
