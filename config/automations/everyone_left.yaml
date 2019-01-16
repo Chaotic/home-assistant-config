@@ -2,7 +2,7 @@
 #
 # shut everything off when everyone leaves
 #
-id: Shut if all off
+id: Shut it all off
 alias: All off when everyone leaves
 initial_state: 'on'
 trigger:
