@@ -1,0 +1,19 @@
+---
+#
+# Shut the AC off at night in the summer
+#
+id: Thermostat AC up at night
+alias: Thermostat AC up at night
+initial_state: 'on'
+trigger:
+  - platform: time
+    at: "23:00:00"
+condition:
+  - condition: state
+    entity_id: 'sensor.season'
+    state: 'Summer'
+action:
+  - service: climate.set_temperature
+    data:
+      entity_id: 2gig_technologies_ct101_thermostat_iris_cooling_1
+      temperature: 75

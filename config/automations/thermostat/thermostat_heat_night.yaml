@@ -1,0 +1,19 @@
+---
+#
+# Shut the heat off at night in the winter
+#
+id: Thermostat heat down at night
+alias: Thermostat heat down at night
+initial_state: 'on'
+trigger:
+  - platform: time
+    at: "23:00:00"
+condition:
+  - condition: state
+    entity_id: 'sensor.season'
+    state: 'Winter'
+action:
+  - service: climate.set_temperature
+    data:
+      entity_id: climate.2gig_technologies_ct101_thermostat_iris_heating_1
+      temperature: 50
