@@ -13,6 +13,4 @@ monitored_users:
   - Erin
 monitored_conditions:
   - library_name
-  - player
   - full_title
-  - state
