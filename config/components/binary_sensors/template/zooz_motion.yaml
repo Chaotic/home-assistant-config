@@ -1,0 +1,13 @@
+---
+#
+# Template sensor to convert alarm level into motion
+#
+# https://www.home-assistant.io/components/binary_sensor.template/
+# 
+platform: template
+    sensors:
+      zooz_motion:
+        value_template: "{{ states('sensor.zooz_zse40_4in1_sensor_alarm_level') > 0 }}"
+        friendly_name: "Kids Motion"
+        device_class: motion
+        entity_id: sensor.zooz_zse40_4in1_sensor_alarm_level
