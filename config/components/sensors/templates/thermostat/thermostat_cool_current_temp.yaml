@@ -8,6 +8,8 @@ platform: template
 sensors:
   thermostat_cool_current_temperature:
     friendly_name: "Thermostat Cool Current Temperature"
+    device_class: "temperature"
+    unit_of_measurement: "°F"
     value_template: >-
       {%- if state_attr('climate.2gig_technologies_ct101_thermostat_iris_cooling_1', 'current_temperature') %}
           {{ state_attr('climate.2gig_technologies_ct101_thermostat_iris_cooling_1', 'current_temperature') }}
