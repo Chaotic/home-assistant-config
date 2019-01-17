@@ -16,7 +16,7 @@ condition:
     state: 'off'
   - condition: state
     entity_id: 'sensor.season'
-    state: 'Winter'
+    state: 'winter'
 action:
   - service: climate.set_temperature
     data:

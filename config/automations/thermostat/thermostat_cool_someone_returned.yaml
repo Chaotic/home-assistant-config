@@ -13,7 +13,7 @@ trigger:
 condition:
   - condition: state
     entity_id: 'sensor.season'
-    state: 'Summer'
+    state: 'summer'
 action:
   - service: climate.set_temperature
     data:
