@@ -11,4 +11,6 @@ trigger:
   to: 'on'
 action:
   service: homeassistant.turn_on
-  entity_id: light.master_bedroom_closet
+  entity_id:
+    - light.sengled_e11_g13_030ba25e_1
+    - light.sengled_e11_g13_030bbabf_1
