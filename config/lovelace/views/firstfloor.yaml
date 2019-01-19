@@ -26,6 +26,15 @@ cards:
             more_info: false
             volume_stateless: true
           - type: custom:mini-media-player
+            entity: media_player.samsung_living_room
+            show_tts: false
+            show_source: true
+            show_progress: false
+            hide_controls: false
+            power_color: true
+            more_info: false
+            volume_stateless: true
+          - type: custom:mini-media-player
             entity: media_player.livingroom_sonos
             show_tts: true
             show_source: true

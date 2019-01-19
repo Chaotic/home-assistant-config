@@ -19,7 +19,7 @@ cards:
         name: qBittorrent Down
       - type: sensor
         entity: sensor.unraid_transmission_down_speed
-        name: Transmission Up
+        name: Transmission Down
       - type: sensor
         entity: sensor.unraid_transmission_up_speed
-        name: Transmission Down
+        name: Transmission Up
