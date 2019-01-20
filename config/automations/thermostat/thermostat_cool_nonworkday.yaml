@@ -2,8 +2,8 @@
 #
 # Shut the AC on the morning during the summer
 #
-id: Thermostat AC on in the morning
-alias: Thermostat AC on in the morning
+id: Thermostat AC on in the morning nonworkday
+alias: Thermostat AC on in the morning nonworkday
 initial_state: 'on'
 trigger:
   - platform: time

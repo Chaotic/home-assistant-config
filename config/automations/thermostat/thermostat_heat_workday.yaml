@@ -2,8 +2,8 @@
 #
 # Shut the heat on the morning during the winter
 #
-id: Thermostat heat on in the morning
-alias: Thermostat heat on in the morning
+id: Thermostat heat on in the morning workday
+alias: Thermostat heat on in the morning workday
 initial_state: 'on'
 trigger:
   - platform: time
