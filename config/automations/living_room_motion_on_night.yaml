@@ -15,8 +15,7 @@ condition:
   - condition: state
     entity_id: 'input_boolean.movie_mode'
     state: 'off'
-  - condition:
-    condition: or
+  - condition: or
     conditions:
       - condition: time 
         after: "23:00:00" #11pm - midnight 

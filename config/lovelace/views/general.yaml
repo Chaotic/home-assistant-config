@@ -43,5 +43,5 @@ cards:
           - device_tracker.owntracks_kedar
           - device_tracker.owntracks_matt
   - type: "custom:day-countdown"
-    date: "Jan 28 2019"
-    title: "Kedar's Birthday"
+    date: "March 8 2019"
+    title: "Erin's Birthday"
