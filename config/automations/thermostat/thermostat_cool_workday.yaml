@@ -15,6 +15,9 @@ condition:
   - condition: state
     entity_id: 'binary_sensor.workday'
     state: 'on'
+  - condition: state
+    entity_id: 'input_boolean.vacation'
+    state: 'off'
 action:
   - service: climate.set_temperature
     data:
