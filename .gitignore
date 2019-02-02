@@ -38,3 +38,7 @@ entities.txt
 
 # Specific keeps
 !.gitkeep
+/config/google_calendars.yaml
+/config/zwave_device_config.yaml
+/config/tts/*.mp3
+/config/components/sensors/templates/*.disable
