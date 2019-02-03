@@ -1,0 +1,19 @@
+---
+#
+# notify when a door opens
+#
+id: Door Open
+alias: Door Opened
+initial_state: 'on'
+trigger:
+  - platform: state
+    entity_id: 
+      - binary_sensor.neo_coolcam_door_window_detector_sensor_2
+      - binary_sensor.neo_coolcam_door_window_detector_sensor
+    to: 'on'
+action:
+- service: notify.pushbullet
+  data:
+    message: 'An alarm has been Triggered!'
+  data_template:
+    message: 'Hey!  someone opened the {{ trigger.to_state.name }}! '

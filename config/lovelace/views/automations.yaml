@@ -27,7 +27,14 @@ cards:
   - type: custom:monster-card
     card:
       type: entities
-      title: "Entities"
+      title: "Sensors"
     filter:
       include:
         - entity_id: sensor.*
+  - type: custom:monster-card
+    card:
+      type: entities
+      title: "Binary Sensors"
+    filter:
+      include:
+        - entity_id: binary_sensor.*

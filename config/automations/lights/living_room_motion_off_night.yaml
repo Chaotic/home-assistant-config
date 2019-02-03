@@ -19,5 +19,8 @@ condition:
     - condition: time 
       before: "05:30:00" #midnight - 5:30am
 action:
-  service: homeassistant.turn_off
-  entity_id: light.living_room
+  service: light.turn_off
+  data:
+    entity_id:
+      - light.sengled_e11_g13_030ba3b9_1
+      - light.sengled_e11_g13_030bbd4e_1
