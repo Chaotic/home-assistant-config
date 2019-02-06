@@ -1,6 +1,6 @@
 ---
 #
-# notify when a door opens
+# notify when a door opens and no one should be home
 #
 id: Door Open
 alias: Door Opened
@@ -11,9 +11,14 @@ trigger:
       - binary_sensor.neo_coolcam_door_window_detector_sensor_2
       - binary_sensor.neo_coolcam_door_window_detector_sensor
     to: 'on'
+condition:
+  - condition: state
+    entity_id: 'input_boolean.guest_mode'
+    state: 'off'
+  - condition: state
+    entity_id: group.device_trackers
+    state: 'not_home'
 action:
 - service: notify.pushbullet
-  data:
-    message: 'An alarm has been Triggered!'
   data_template:
     message: 'Hey!  someone opened the {{ trigger.to_state.name }}! '

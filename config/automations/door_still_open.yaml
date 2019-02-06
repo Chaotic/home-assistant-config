@@ -1,0 +1,19 @@
+---
+#
+# notify when a door remains open
+#
+id: Door Still Open
+alias: Door Still Opened
+initial_state: 'on'
+trigger:
+  - platform: state
+    entity_id: 
+      - binary_sensor.neo_coolcam_door_window_detector_sensor_2
+      - binary_sensor.neo_coolcam_door_window_detector_sensor
+    to: 'on'
+    for: "00:05:00"
+condition:
+action:
+- service: notify.pushbullet
+  data_template:
+    message: 'Hey!  Close the {{ trigger.to_state.name }}! '
