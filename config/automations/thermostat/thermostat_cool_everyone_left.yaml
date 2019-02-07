@@ -2,8 +2,8 @@
 #
 # shut AC off when everyone leaves
 #
-id: Shut ac off cause everyone left
-alias: AC off when everyone leaves
+id: Thermostat Shut ac off cause everyone left
+alias: Thermostat AC off when everyone leaves
 initial_state: 'on'
 trigger:
   - entity_id: group.device_trackers

@@ -2,8 +2,8 @@
 #
 # turn heat on when someone comes home
 #
-id: turn heat on cause someone is home
-alias: Heat on cause someone is home
+id: Thermostat turn heat on cause someone is home
+alias: Thermostat Heat on cause someone is home
 initial_state: 'on'
 trigger:
   - entity_id: group.device_trackers
