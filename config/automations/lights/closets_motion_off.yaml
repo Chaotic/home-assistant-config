@@ -10,7 +10,7 @@ trigger:
   entity_id: binary_sensor.master_bedroom_closet_motion_sensor
   to: 'off'
   for:
-    minutes: 3
+    minutes: 5
 action:
   service: homeassistant.turn_off
   entity_id:       
