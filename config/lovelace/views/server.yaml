@@ -18,10 +18,10 @@ cards:
         entity: sensor.unraid_qbittorrent_down_speed
         name: qBittorrent Down
       - type: sensor
-        entity: sensor.unraid_transmission_down_speed
+        entity: sensor.transmission_down_speed
         name: Transmission Down
       - type: sensor
-        entity: sensor.unraid_transmission_up_speed
+        entity: sensor.transmission_up_speed
         name: Transmission Up
   - type: custom:tracker-card
     title: "Custom Components"

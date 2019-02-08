@@ -1,4 +1,5 @@
 ---
+#
 # Connects to my MQTT broker, for which I use the Community add-on:
 # "MQTT Server & Web Client".
 #
@@ -9,6 +10,8 @@
 mqtt:
   broker: !secret server_ip
   port: 1883
+  discovery: true
+  discovery_prefix: homeassistant
   birth_message:
     topic: 'homeassistant/status'
     payload: 'online'
