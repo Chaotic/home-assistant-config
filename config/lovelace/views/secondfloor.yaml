@@ -26,7 +26,7 @@ cards:
       - type: entities
         title: Devices
         entities:
-          - switch.kedar_night_light
+          - switch.gosund_1
           - switch.master_bedroom_lamp
   - type: vertical-stack
     cards:
