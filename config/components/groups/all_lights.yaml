@@ -15,4 +15,4 @@ all lights custom:
       - light.sengled_e11_g13_030bbabf_1
 #      These switches control lights normally
       - switch.gosund_1
-      - switch.master_bedroom_lamp
+      - switch.gosund_2

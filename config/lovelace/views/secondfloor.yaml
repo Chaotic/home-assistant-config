@@ -27,7 +27,7 @@ cards:
         title: Devices
         entities:
           - switch.gosund_1
-          - switch.master_bedroom_lamp
+          - switch.gosund_2
   - type: vertical-stack
     cards:
       - type: entities

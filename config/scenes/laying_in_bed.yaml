@@ -8,5 +8,5 @@ entities:
     state: off
   switch.gosund_1:
     state: on
-  switch.master_bedroom_lamp:
+  switch.gosund_2:
     state: on
