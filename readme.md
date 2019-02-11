@@ -13,8 +13,8 @@ Copy the config files and recreate the secrets.yaml file Also you need the same 
 ## Hardware
    
 <b>Plugs</b>
-    Wemo mini plugs (wifi),
-    Gosund (wifi) (not in use yet)
+    Wemo mini plugs (wifi) (Not currently in use cause the suck)
+    Gosund (wifi) Flashed to Tasmota so connects via MQTT
 
 <b>Lights</b>
     Sengled Light bulbs (Zigbee)
@@ -25,7 +25,8 @@ Copy the config files and recreate the secrets.yaml file Also you need the same 
 <b>Sensors</b>
    Bosch Motion sensors (Zigbee),
    Zooz 4-in-1 sensors (Z-wave),
-   smartthings door sensor (Zigbee)
+   smartthings door sensor (Zigbee),
+   NEO Z-wave pluss door sensors (Z-wave)
 
 <b>Speakers</b>
    Sonos speakers (wifi)
