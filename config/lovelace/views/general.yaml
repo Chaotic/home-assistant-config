@@ -31,6 +31,9 @@ cards:
       left: 25%
       width: 25px
       height: 25px
+  - type: custom:mini-graph-card
+    entities:
+     - sensor.global_temperature
   - type: custom:weather-card
     entity: weather.dark_sky
     icons: '/local/lovelace/cards/weather-card/icons/'
