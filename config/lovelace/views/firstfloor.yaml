@@ -30,29 +30,11 @@ cards:
         entities:
           - type: custom:mini-media-player
             entity: media_player.living_room_tv
-            show_tts: false
-            show_source: true
-            show_progress: false
-            hide_controls: false
-            power_color: true
-            more_info: false
-            volume_stateless: true
           - type: custom:mini-media-player
+            volume_stateless: true
             entity: media_player.samsung_living_room
-            show_tts: false
-            show_source: true
-            show_progress: false
-            hide_controls: false
-            power_color: true
-            more_info: false
             volume_stateless: true
           - type: custom:mini-media-player
             entity: media_player.livingroom_sonos
-            show_tts: true
-            show_source: true
-            show_progress: false
-            hide_controls: false
-            power_color: true
-            more_info: false
             volume_stateless: true
-            sonos_grouping: !include sonosgroups.yaml
+            sonos: !include sonosgroups.yaml
