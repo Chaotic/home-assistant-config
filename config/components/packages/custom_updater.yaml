@@ -5,6 +5,8 @@
 # https://github.com/custom-components/custom_updater
 #
 custom_updater:
+  card_urls:
+    - https://raw.githubusercontent.com/kalkih/mini-media-player/master/tracker.json
   track:
     - cards
     - components
