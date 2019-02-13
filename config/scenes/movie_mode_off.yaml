@@ -4,6 +4,10 @@
 #
 name: Movie Mode Off
 entities:
-  light.living_room:
+  light.sengled_e11_g13_030ba3b9_1:
     state: on
     brightness_pct: 100
+  light.sengled_e11_g13_030bbd4e_1:
+    state: on
+    brightness_pct: 100
+
