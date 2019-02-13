@@ -1,1 +1,0 @@
-https://github.com/ciotlosm/custom-lovelace/tree/master/thermostat-card
