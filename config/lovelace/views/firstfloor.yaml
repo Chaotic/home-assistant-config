@@ -34,4 +34,7 @@ cards:
             entity: media_player.samsung_living_room
           - type: custom:mini-media-player
             entity: media_player.livingroom_sonos
-            sonos: !include sonosgroups.yaml
+            sonos: 
+              show_group_count:true
+              entities:
+                !include sonosgroups.yaml

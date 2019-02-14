@@ -20,4 +20,7 @@ cards:
             entity: media_player.erins_room_tv
           - type: custom:mini-media-player
             entity: media_player.kids_bedroom
-            sonos: !include sonosgroups.yaml
+            sonos: 
+              show_group_count:true
+              entities:
+                !include sonosgroups.yaml
