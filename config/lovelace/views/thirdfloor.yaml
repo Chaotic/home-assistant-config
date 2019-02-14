@@ -18,8 +18,6 @@ cards:
         entities:
           - type: custom:mini-media-player
             entity: media_player.erins_room_tv
-            volume_stateless: true
           - type: custom:mini-media-player
             entity: media_player.kids_bedroom
-            volume_stateless: true
             sonos: !include sonosgroups.yaml

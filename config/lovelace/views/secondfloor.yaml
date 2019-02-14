@@ -35,8 +35,6 @@ cards:
         entities:
           - type: custom:mini-media-player
             entity: media_player.master_bedroom_tv
-            volume_stateless: true
           - type: custom:mini-media-player
             entity: media_player.adult_sonos
-            volume_stateless: true
             sonos: !include sonosgroups.yaml
