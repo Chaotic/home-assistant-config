@@ -20,9 +20,8 @@ cards:
       title: "Doors"
     filter:
       include:
-        - entity_id: 
-          - binary_sensor.neo_coolcam_door_window_detector_sensor_2
-          - binary_sensor.neo_coolcam_door_window_detector_sensor
+        - entity_id: binary_sensor.neo_coolcam_door_window_detector_sensor_2
+        - entity_id: binary_sensor.neo_coolcam_door_window_detector_sensor
   - type: vertical-stack
     cards:
       - type: entities
