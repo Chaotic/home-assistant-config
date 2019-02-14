@@ -1,0 +1,5 @@
+logger:
+  default: error
+  logs:
+    custom_components.media_player.samsungtv: debug
+    samsungctl: debug
