@@ -21,6 +21,5 @@ cards:
           - type: custom:mini-media-player
             entity: media_player.kids_bedroom
             sonos: 
-              show_group_count:true
-              entities:
-                !include sonosgroups.yaml
+              show_group_count: true
+              entities: !include sonosgroups.yaml
