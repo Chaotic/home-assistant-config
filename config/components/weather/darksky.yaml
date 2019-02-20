@@ -7,5 +7,3 @@
 platform: darksky
 api_key: !secret dark_sky_api
 mode: daily
-update_interval:
-  minutes: 5
