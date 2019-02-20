@@ -1,0 +1,16 @@
+---
+#
+# test the sonos tts
+#
+id: sonos_test
+alias: sonos_test
+initial_state: 'on'
+trigger:
+  - platform: state
+    entity_id: input_text.sonos_says
+action:
+- service: script.sonos_say
+  data:
+    sonos_entity: adult_sonos
+    volume: 0.5
+    message: Need to figure out how to get the input_text

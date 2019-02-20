@@ -4,5 +4,3 @@
 # https://www.home-assistant.io/components/media_player.samsungtv/
 #
 platform: samsungtv
-name: Samsung Living Room
-host: !secret living_room_tv_ip

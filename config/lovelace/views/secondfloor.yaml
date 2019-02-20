@@ -37,6 +37,8 @@ cards:
             entity: media_player.master_bedroom_tv
           - type: custom:mini-media-player
             entity: media_player.adult_sonos
+            tts:
+              platform: 'google'
             sonos: 
               show_group_count: true
               entities: !include sonosgroups.yaml

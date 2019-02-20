@@ -20,6 +20,9 @@ cards:
             entity: media_player.erins_room_tv
           - type: custom:mini-media-player
             entity: media_player.kids_bedroom
+            tts:
+              platform: 'google'
             sonos: 
               show_group_count: true
               entities: !include sonosgroups.yaml
+

@@ -1,0 +1,16 @@
+---
+# 
+# The darksky platform uses the Dark Sky web service as a source for meteorological
+# data for your location. The location is based on the longitude and latitude
+# coordinates configured in your configuration.yaml file.
+#
+# https://www.home-assistant.io/components/sensor.darksky/
+#
+platform: darksky
+api_key: !secret dark_sky_api
+forecast:
+  - 0
+monitored_conditions:
+  - summary
+  - icon
+  - temperature

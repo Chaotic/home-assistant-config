@@ -38,3 +38,10 @@ cards:
     filter:
       include:
         - entity_id: binary_sensor.*
+  - type: custom:monster-card
+    card:
+      type: entities
+      title: "Binary Sensors"
+    filter:
+      include:
+        - entity_id: input_text.*

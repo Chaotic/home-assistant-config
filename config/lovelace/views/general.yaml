@@ -9,28 +9,6 @@ cards:
       cool: climate.2gig_technologies_ct101_thermostat_iris_cooling_1
       heat: climate.2gig_technologies_ct101_thermostat_iris_heating_1
     fan_control: true
-  - type: custom:circle-sensor-card
-    entity: sensor.global_temperature
-    max: 90
-    min: 50
-    stroke_width: 10
-    gradient: true
-    units:  "°F"
-    show_max: true
-    font_style:
-      color: red
-      font-size: 1.5em
-      text-shadow: '2px 2px black'
-      font-family: 'Trebuchet MS'
-    color_stops:
-      50: '#55FF55'
-      75: '#5555FF'
-      100: '#FF5555'
-    style:
-      top: 25%
-      left: 25%
-      width: 25px
-      height: 25px
   - type: custom:mini-graph-card
     entities:
      - sensor.global_temperature
@@ -46,11 +24,11 @@ cards:
           - device_tracker.owntracks_kedar
           - device_tracker.owntracks_matt
   - type: "custom:day-countdown"
+    date: "January 28 2020"
+    title: "Kedar's Birthday"
+  - type: "custom:day-countdown"
     date: "March 8 2019"
     title: "Erin's Birthday"
-  - type: "custom:day-countdown"
-    date: "January 28 2019"
-    title: "Kedar's Birthday"
   - type: "custom:day-countdown"
     date: "May 25 2019"
     title: "Matt's Birthday"
