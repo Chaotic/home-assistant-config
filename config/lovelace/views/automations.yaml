@@ -41,7 +41,7 @@ cards:
   - type: custom:monster-card
     card:
       type: entities
-      title: "Binary Sensors"
+      title: "Input Text"
     filter:
       include:
         - entity_id: input_text.*
