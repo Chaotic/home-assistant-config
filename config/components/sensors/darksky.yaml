@@ -14,3 +14,5 @@ monitored_conditions:
   - summary
   - icon
   - temperature
+  - temperature_max
+  - hourly_summary
