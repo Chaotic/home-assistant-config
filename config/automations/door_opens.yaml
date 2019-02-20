@@ -1,24 +1,19 @@
 ---
 #
-# notify when a door opens and no one should be home
+# notify when a door opens
 #
 id: Door Open
 alias: Door Opened
-initial_state: 'on'
+initial_state: 'off'
 trigger:
   - platform: state
     entity_id: 
       - binary_sensor.neo_coolcam_door_window_detector_sensor_2
       - binary_sensor.neo_coolcam_door_window_detector_sensor
     to: 'on'
-condition:
-  - condition: state
-    entity_id: 'input_boolean.guest_mode'
-    state: 'off'
-  - condition: state
-    entity_id: group.device_trackers
-    state: 'not_home'
 action:
-- service: notify.pushbullet
-  data_template:
-    message: 'Hey!  someone opened the {{ trigger.to_state.name }}! '
+- service: script.sonos_say
+  data:
+    sonos_entity: livingroom_sonos
+    volume: 0.5
+    message: 'Welcome to our Home!  Please close the {{ trigger.to_state.name }} behind you.! '
