@@ -10,7 +10,7 @@ trigger:
     entity_id: input_text.sonos_says
 action:
 - service: script.sonos_say
-  data:
+  data_template:
     sonos_entity: adult_sonos
     volume: 0.5
-    message: Need to figure out how to get the input_text
+    message: "{{ states.input_text.sonos_says.state }}"

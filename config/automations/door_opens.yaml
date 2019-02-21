@@ -13,7 +13,7 @@ trigger:
     to: 'on'
 action:
 - service: script.sonos_say
-  data:
+  data_template:
     sonos_entity: livingroom_sonos
     volume: 0.5
     message: 'Welcome to our Home!  Please close the {{ trigger.to_state.name }} behind you.! '

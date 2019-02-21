@@ -18,7 +18,7 @@ action:
   data_template:
     message: 'Hey!  Close the {{ trigger.to_state.name }}! '
 - service: script.sonos_say
-  data:
+  data_template:
     sonos_entity: livingroom_sonos
     volume: 0.5
     message: 'Hey!  Close the {{ trigger.to_state.name }}! '
