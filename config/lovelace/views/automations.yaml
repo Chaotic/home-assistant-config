@@ -45,3 +45,10 @@ cards:
     filter:
       include:
         - entity_id: input_text.*
+  - type: custom:monster-card
+    card:
+      type: entities
+      title: "Dockers"
+    filter:
+      include:
+        - entity_id: "switch.ha_dockermon_*"

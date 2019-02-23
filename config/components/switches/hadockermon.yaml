@@ -1,5 +1,3 @@
 platform: hadockermon
 host: !secret server_ip
 port: 8126
-exclude:
-  - 'ha-dockermon'
