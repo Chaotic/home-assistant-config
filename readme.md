@@ -54,6 +54,7 @@ Copy the config files and recreate the secrets.yaml file Also you need the same 
    Tautulli
    InfluxDB
    Grafana
+   [Dockermon](https://philhawthorne.com/ha-dockermon-use-home-assistant-to-monitor-start-or-stop-docker-containers/) (Lets me monitor dockers with Home Assistant and restart them.)
    
 ## Other Components
 These are various Components that don't directly link to hardware/software
