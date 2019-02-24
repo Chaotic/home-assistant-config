@@ -6,7 +6,7 @@
 #
 http:
   # Protects Home Assistant with a password.
-  # api_password: !secret http_api_password
+  api_password: !secret http_password
 
   # Contains the URL that Home Assistant is available on the internet.
   base_url: !secret http_base_url

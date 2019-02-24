@@ -1,0 +1,9 @@
+---
+#
+# Group of Living Room
+#
+all lights custom:
+    control: hidden
+    entities:
+      - light.sengled_e11_g13_030ba3b9_1
+      - light.sengled_e11_g13_030bbd4e_1
