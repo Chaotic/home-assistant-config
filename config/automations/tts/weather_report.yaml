@@ -4,7 +4,7 @@
 #
 id: Weather Report
 alias: Weather Report
-initial_state: 'on'
+initial_state: 'off'
 trigger:
   platform: state
   entity_id: binary_sensor.living_room_motion_sensor
