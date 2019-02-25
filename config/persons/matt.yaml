@@ -1,0 +1,12 @@
+---
+#
+# The Configuration for me
+#
+# https://www.home-assistant.io/components/person
+#
+name: Matt
+id: Matt
+user_id: 12345678912345678912345678912345
+device_trackers:
+  - device_tracker.stacey
+  - device_tracker.beacon
