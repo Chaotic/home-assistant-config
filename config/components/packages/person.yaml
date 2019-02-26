@@ -10,4 +10,4 @@
 #
 # https://www.home-assistant.io/components/person
 #
-person: !include_dir_list ../../persons
+person: !include_dir_merge_named ../../persons
