@@ -7,8 +7,8 @@ all lights custom:
     entities:
       - light.kids_bedroom
 #       Living Room
-      - light.sengled_e11_g13_030ba3b9_1
-      - light.sengled_e11_g13_030bbd4e_1
+      - light.kohree2
+      - light.kohree_1
       - light.master_bedroom
 #       Master Bedroom Closet
       - light.sengled_e11_g13_030ba25e_1
