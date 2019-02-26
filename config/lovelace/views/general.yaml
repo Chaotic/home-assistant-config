@@ -18,11 +18,11 @@ cards:
   - type: vertical-stack
     cards:
       - type: entities
-        title: Devices
+        title: People
         entities:
-          - device_tracker.owntracks_erin
-          - device_tracker.owntracks_kedar
-          - device_tracker.owntracks_matt
+          - person.erin
+          - person.kedar
+          - person.matt
   - type: "custom:day-countdown"
     date: "January 28 2020"
     title: "Kedar's Birthday"

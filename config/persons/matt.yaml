@@ -4,9 +4,9 @@
 #
 # https://www.home-assistant.io/components/person
 #
-name: Matt
-id: Matt
-user_id: 12345678912345678912345678912345
+name: matt
+id: matt1
+user_id: !secret matt_id
 device_trackers:
-  - device_tracker.stacey
-  - device_tracker.beacon
+  - device_tracker.matt
+  - device_tracker.owntracks_matt

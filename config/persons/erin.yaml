@@ -1,0 +1,11 @@
+---
+#
+# The Configuration for erin
+#
+# https://www.home-assistant.io/components/person
+#
+name: erin
+id: erin1
+device_trackers:
+  - device_tracker.erins
+  - device_tracker.owntracks_erin

@@ -1,0 +1,11 @@
+---
+#
+# The Configuration for kedar
+#
+# https://www.home-assistant.io/components/person
+#
+name: kedar
+id: kedar1
+device_trackers:
+  - device_tracker.kedars
+  - device_tracker.owntracks_kedar
