@@ -22,6 +22,7 @@ action:
   service: light.turn_on
   data:
     brightness: 255
+    Color temperature: 500
     entity_id:
       - light.kohree2
       - light.kohree_1

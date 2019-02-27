@@ -3,5 +3,3 @@ logger:
   logs:
     custom_components.media_player.samsungtv: debug
     samsungctl: debug
-    custom_components.custom_updater: debug
-    pyupdate: debug
