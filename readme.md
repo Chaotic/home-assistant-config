@@ -14,10 +14,11 @@ Copy the config files and recreate the secrets.yaml file Also you need the same 
    
 <b>Plugs</b>
     Wemo mini plugs (wifi) (Not currently in use cause the suck)
-    Gosund (wifi) Flashed to Tasmota so connects via MQTT
+    Gosund (wifi) 
 
 <b>Lights</b>
     Sengled Light bulbs (Zigbee)
+    Kohree VHP560 Smart Lights (Wifi) Flashed to Tasmota so connects via MQTT
 
 <b>Switches</b>
     Zooz dimmer switches (Z-wave)
