@@ -4,10 +4,10 @@
 #
 name: Movie Mode Off
 entities:
-  light.sengled_e11_g13_030ba3b9_1:
+  light.kohree2:
     state: on
     brightness_pct: 100
-  light.sengled_e11_g13_030bbd4e_1:
+  light.kohree_1:
     state: on
     brightness_pct: 100
 
