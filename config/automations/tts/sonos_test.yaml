@@ -4,7 +4,7 @@
 #
 id: sonos_test
 alias: sonos_test
-initial_state: 'on'
+initial_state: 'off'
 trigger:
   - platform: state
     entity_id: input_text.sonos_says

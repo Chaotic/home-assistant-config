@@ -1,0 +1,23 @@
+---
+#
+# Discord Test
+#
+id: discord_test
+alias: discord_test
+initial_state: 'off'
+trigger:
+  - platform: state
+    entity_id: input_text.sonos_says
+action:
+- service: notify.discord
+  data:
+    message: "{{ states.input_text.sonos_says.state }}"
+    target: !secret discord_target1
+- service: persistent_notification.create
+  data_template:
+    notification_id: Test
+    title: Test
+    message: "{{ states.input_text.sonos_says.state }}"
+- service: notify.pushbullet
+  data_template:
+    message: "{{ states.input_text.sonos_says.state }}"
