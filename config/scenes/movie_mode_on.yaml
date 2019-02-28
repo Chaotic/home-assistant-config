@@ -7,6 +7,8 @@ entities:
   light.kohree2:
     state: on
     brightness_pct: 35
+    color_temp: 243
   light.kohree_1:
     state: on
     brightness_pct: 35
+    color_temp: 243

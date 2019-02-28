@@ -25,6 +25,7 @@ action:
   service: light.turn_on
   data:
     brightness: 50
+    rgb_color: 255,0,0
     entity_id:
       - light.kohree2
       - light.kohree_1
