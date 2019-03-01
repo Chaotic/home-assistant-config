@@ -1,13 +1,16 @@
 ---
 #
-# shut the kids room off in the mornings when they should be in school
+# shut the kids room off when no motion
 #
-id: Kids off for school
-alias: Kids off for school
+id: Kids off when no motion
+alias: Kids off when no motion
 initial_state: 'on'
 trigger:
-  - platform: time
-    at: "07:15:00"
+  platform: state
+  entity_id: sensor.zooz_zse40_4in1_sensor_alarm_level
+  to: '0'
+  for:
+    minutes: 3
 condition:
   - condition: state
     entity_id: 'binary_sensor.workday'
