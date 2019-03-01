@@ -9,4 +9,4 @@
 # https://www.ncei.noaa.gov/news/meteorological-versus-astronomical-seasons
 #
 platform: season
-type: meteorological
+type: astronomical
