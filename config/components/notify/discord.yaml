@@ -1,0 +1,10 @@
+---
+#
+# The Discord service is a platform for the notify component.
+# This allows components to send messages to the user using Discord.
+#
+# https://www.home-assistant.io/components/notify.discord/
+#
+platform: discord
+name: discord
+token: !secret discord_token
