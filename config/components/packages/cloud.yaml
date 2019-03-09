@@ -9,7 +9,8 @@
 cloud:
   alexa:
     filter:
-#      include_entities:
+      include_entities:
+        - automation.weather_report
 #      include_domains:
       exclude_entities:
         - light.kohree2
