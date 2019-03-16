@@ -3,6 +3,7 @@ id: First Floor
 title: First Floor
 icon: mdi:sofa
 cards:
+  - type: custom:compact-custom-header
   - type: vertical-stack
     cards:
       - type: entities
@@ -15,6 +16,17 @@ cards:
             entity: light.kohree_1
             toggle: true
           - group.living_room
+  - type: vertical-stack
+    cards:
+      - type: entities
+        title: Outside Lights
+        entities:
+          - type: custom:slider-entity-row
+            entity: light.sengled_e11_g13_030bbd4e_1
+            toggle: true
+          - type: custom:slider-entity-row
+            entity: light.sengled_e11_g13_030ba3b9_1
+            toggle: true
   - type: custom:monster-card
     card:
       type: entities

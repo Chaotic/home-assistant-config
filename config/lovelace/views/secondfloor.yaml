@@ -3,6 +3,7 @@ id: Second Floor
 title: Second Floor
 icon: mdi:bed-empty
 cards:
+  - type: custom:compact-custom-header
   - type: vertical-stack
     cards:
       - type: entities
@@ -12,14 +13,7 @@ cards:
             entity: light.master_bedroom
             name: Bedroom
             toggle: true
-          - type: custom:slider-entity-row
-            entity: light.sengled_e11_g13_030ba25e_1
-            name: Closet 1
-            toggle: true
-          - type: custom:slider-entity-row
-            entity: light.sengled_e11_g13_030bbabf_1
-            name: Closet 2
-            toggle: true
+          - group.master_bedroom_closet
           - scene.laying_in_bed
   - type: vertical-stack
     cards:

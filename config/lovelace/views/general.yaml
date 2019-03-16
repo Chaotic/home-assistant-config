@@ -3,6 +3,7 @@ id: General
 title: General
 icon: mdi:function
 cards:
+  - type: custom:compact-custom-header
   - type: custom:dual-thermostat
     name: Thermostat
     entities:

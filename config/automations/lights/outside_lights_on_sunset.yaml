@@ -1,0 +1,14 @@
+---
+#
+# turn on outside lights at sunset
+#
+id: Turn on Outside Lights at sunset
+alias: Outside lights on at Sunset
+initial_state: 'on'
+trigger:
+  platform: sun
+  event: sunset
+  offset: "-00:45:00"
+action:
+  - service: homeassistant.turn_on
+    entity_id: group.outside_lights
