@@ -7,7 +7,7 @@ alias: Master Bedroom Light Fade In
 initial_state: 'on'
 trigger:
   - platform: time
-    at: "05:30:00"
+    at: "05:50:00"
 condition:
   - condition: state
     entity_id: 'binary_sensor.workday'
@@ -16,10 +16,8 @@ condition:
     entity_id: 'input_boolean.vacation'
     state: 'off'
 action:
-  - service: python_script.fade_in_light
+  - service: python_script.fade_in_light_2
     data:
       entity_id: light.master_bedroom
-      delay_in_sec: 18
-      start_level_pct: 5
-      end_level_pct: 100
-      step_in_level_pct: 1
+      brightness_pct: 100
+      transition: 600

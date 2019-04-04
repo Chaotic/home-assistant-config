@@ -19,10 +19,8 @@ condition:
     entity_id: 'input_boolean.kids_vacation'
     state: 'off'
 action:
-  - service: python_script.fade_in_light
+  - service: python_script.fade_in_light_2
     data:
       entity_id: light.kids_bedroom
-      delay_in_sec: 3
-      start_level_pct: 5
-      end_level_pct: 100
-      step_in_level_pct: 1
+      brightness_pct: 100
+      transition: 300

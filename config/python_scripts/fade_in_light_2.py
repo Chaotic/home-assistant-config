@@ -1,21 +1,11 @@
-"""
-https://community.home-assistant.io/t/light-fade-in/35509
-
-automation:
-- alias: Light 15min Fade to 100% starting an hour before sunset
-    trigger:
-    platform: sun
-    event: sunset
-    offset: "-01:00:00"
-    action:
-    - service: python_script.zwave_fade
-        data:
-          entity_id: light.level  # Entity ID to fade
-          transition: 20  # Seconds to go from current to end brightness
-          brightness: 255  # Brightness to end at
-          brightness_pct: 100  # Brightness to end at as a percentage
-"""
-
+#
+# Script to fade lights in slowly
+# Takes the following inputs
+# entity_id = The light you want to fade in
+# transition: = # Seconds to go from current to end brightness
+# brightness: = # Brightness to end at
+# brightness_pct: = # Brightness to end at as a percentage
+#
 entity_id = data.get('entity_id')
 brightness = data.get('brightness', None)
 brightness_pct = data.get('brightness_pct', None)
