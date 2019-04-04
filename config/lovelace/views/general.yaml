@@ -7,9 +7,13 @@ cards:
   - type: custom:dual-thermostat
     name: Thermostat
     entities:
-      cool: climate.2gig_technologies_ct101_thermostat_iris_cooling_1
-      heat: climate.2gig_technologies_ct101_thermostat_iris_heating_1
+      - entity: climate.2gig_technologies_ct101_thermostat_iris_cooling_1
+        type: cool
+      - entity: climate.2gig_technologies_ct101_thermostat_iris_heating_1
+        type: heat
     fan_control: true
+    min_slider: 50
+    max_slider: 90
   - type: custom:mini-graph-card
     entities:
      - sensor.global_temperature

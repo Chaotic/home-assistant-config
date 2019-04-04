@@ -47,7 +47,9 @@ cards:
           - type: custom:mini-media-player
             entity: media_player.livingroom_sonos
             tts:
-              platform: 'google'
-            sonos: 
-              show_group_count: true
-              entities: !include sonosgroups.yaml
+              platform: 'sonos'
+              volume: 0.75
+            speaker_group:
+              platform: sonos 
+                show_group_count: true
+                entities: !include sonosgroups.yaml
