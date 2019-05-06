@@ -7,4 +7,3 @@
 #
 zha:
   usb_path: /dev/zigbee
-  database_path: zigbee_new.db 
