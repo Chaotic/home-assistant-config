@@ -4,3 +4,5 @@
   name: Kids Bedroom Sonos
 - entity_id: media_player.livingroom_sonos
   name: Living Room Sonos
+- entity_id: media_player.spare
+  name: Spare Sonos
