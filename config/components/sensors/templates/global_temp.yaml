@@ -10,4 +10,4 @@ sensors:
     friendly_name: "Global Temperature"
     unit_of_measurement: "°F"
     value_template: >-
-      {{ ((states('sensor.master_bedroom_closet_motion_sensor_temp')|int)+ (states('sensor.living_room_motion_sensor_temp')|int) + (states('sensor.2gig_technologies_ct101_thermostat_iris_temperature')|int) + (states('sensor.2gig_technologies_ct101_thermostat_iris_temperature_2')|int)+ (states('sensor.zooz_zse40_4in1_sensor_temperature')|int)+ (states('sensor.freezer_sensor_temp')|int))/6 }}
+      {{ ((states('sensor.master_bedroom_closet_motion_sensor_temp')|int)+ (states('sensor.living_room_motion_sensor_temp')|int) + (states('sensor.2gig_technologies_ct101_thermostat_iris_temperature')|int) + (states('sensor.2gig_technologies_ct101_thermostat_iris_temperature_2')|int)+ (states('sensor.zooz_zse40_4in1_sensor_temperature')|int)+ (states('sensor.visonic_mct_340_e_0b3e1c50_1_1026')|int))/6 }}
