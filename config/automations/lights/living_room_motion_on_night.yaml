@@ -7,7 +7,7 @@ alias: Turn on living room light when there is movement night
 initial_state: 'on'
 trigger:
   platform: state
-  entity_id: binary_sensor.living_room_motion_sensor
+  entity_id: binary_sensor.bosch_isw_zpr1_wp13_b44cc34b_5_1280
   to: 'on'
 condition:
   - condition: template
