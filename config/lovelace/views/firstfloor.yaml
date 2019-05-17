@@ -43,11 +43,17 @@ cards:
           - type: custom:mini-media-player
             entity: media_player.living_room_tv
           - type: custom:mini-media-player
-            entity: media_player.samsung_living_room
-          - type: custom:mini-media-player
             entity: media_player.livingroom_sonos
             tts:
-              platform: 'sonos'
+              platform: 'google'
+              volume: 0.75
+            sonos: 
+              show_group_count: true
+              entities: !include sonosgroups.yaml
+          - type: custom:mini-media-player
+            entity: media_player.spare
+            tts:
+              platform: 'google'
               volume: 0.75
             sonos: 
               show_group_count: true
