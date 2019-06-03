@@ -3,6 +3,7 @@ python:
   - "3.6"
 before_install:
   - mv not_secrets.yaml config/secrets.yaml
+  - sudo apt-get install -y libudev-dev
 install:
   - pip3 install homeassistant
 script:
