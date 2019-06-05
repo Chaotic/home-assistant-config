@@ -17,8 +17,7 @@ action:
 - service: notify.pushbullet
   data_template:
     message: 'Hey!  Close the {{ trigger.to_state.name }}! '
-- service: script.sonos_say
-  data_template:
-    sonos_entity: livingroom_sonos
-    volume: 0.5
+- service: notify.discord
+  data:
     message: 'Hey!  Close the {{ trigger.to_state.name }}! '
+    target: !secret discord_target1
