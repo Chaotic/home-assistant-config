@@ -1,0 +1,9 @@
+---
+#
+# Custom Component to handle updating and installing other custom
+# components and lovelace cards
+#
+# https://custom-components.github.io/hacs/
+#
+hacs:
+  token: !secret my_github_access_token
