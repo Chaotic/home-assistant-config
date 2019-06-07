@@ -4,14 +4,4 @@ title: Server
 icon: mdi:nas
 cards:
   - type: custom:compact-custom-header
-  - type: vertical-stack
-    cards:
-      - type: custom:tracker-card
-        title: "Custom Components"
-      - type: custom:monster-card
-        card:
-          type: entities
-          title: "Dockers"
-        filter:
-          include:
-            - entity_id: "switch.ha_dockermon_*"
+              - entity_id: "switch.ha_dockermon_*"

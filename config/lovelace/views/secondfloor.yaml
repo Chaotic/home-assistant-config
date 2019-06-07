@@ -22,6 +22,7 @@ cards:
         entities:
           - switch.gosund_1
           - switch.gosund_2
+          - switch.gosund_3
   - type: vertical-stack
     cards:
       - type: entities
