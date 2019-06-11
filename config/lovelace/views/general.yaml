@@ -29,9 +29,6 @@ cards:
           - person.kedar
           - person.matt
   - type: "custom:day-countdown"
-    date: "June 10 2019"
-    title: "David's Last Day of School"
-  - type: "custom:day-countdown"
     date: "June 17 2019"
     title: "Henry's Last Day of School"
   - type: "custom:day-countdown"

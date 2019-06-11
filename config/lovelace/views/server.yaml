@@ -4,4 +4,17 @@ title: Server
 icon: mdi:nas
 cards:
   - type: custom:compact-custom-header
-              - entity_id: "switch.ha_dockermon_*"
+  - type: custom:monster-card
+    card:
+      type: entities
+      title: "Sensors"
+    filter:
+      include:
+        - entity_id: sensor.potential_breaking_changes
+  - type: custom:monster-card
+    card:
+      type: entities
+      title: "Sensors"
+    filter:
+      include:
+        - entity_id: "switch.ha_dockermon_*"
