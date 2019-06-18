@@ -6,5 +6,5 @@
 #
 kids_vacation:
   name: Enables kids vacation Mode
-  initial: false
+  initial: true
   icon: mdi:beach
