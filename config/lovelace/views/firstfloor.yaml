@@ -45,7 +45,7 @@ cards:
           - type: custom:mini-media-player
             entity: media_player.livingroom_sonos
             tts:
-              platform: 'google'
+              platform: 'google_translate'
               volume: 0.75
             sonos: 
               show_group_count: true
@@ -53,7 +53,7 @@ cards:
           - type: custom:mini-media-player
             entity: media_player.spare
             tts:
-              platform: 'google'
+              platform: 'google_translate'
               volume: 0.75
             sonos: 
               show_group_count: true

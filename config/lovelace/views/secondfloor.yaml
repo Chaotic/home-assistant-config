@@ -33,7 +33,7 @@ cards:
           - type: custom:mini-media-player
             entity: media_player.adult_sonos
             tts:
-              platform: 'google'
+              platform: 'google_translate'
               volume: 0.75
             sonos: 
               show_group_count: true

@@ -22,7 +22,7 @@ cards:
           - type: custom:mini-media-player
             entity: media_player.kids_bedroom
             tts:
-              platform: 'google'
+              platform: 'google_translate'
               volume: 0.75
             sonos: 
               show_group_count: true
