@@ -3,7 +3,6 @@ id: Automations
 title: Automations
 icon: mdi:settings
 cards:
-  - type: custom:compact-custom-header
   - type: custom:monster-card
     card:
       type: entities

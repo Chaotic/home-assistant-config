@@ -3,7 +3,6 @@ id: Second Floor
 title: Second Floor
 icon: mdi:bed-empty
 cards:
-  - type: custom:compact-custom-header
   - type: vertical-stack
     cards:
       - type: entities

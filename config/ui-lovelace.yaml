@@ -9,6 +9,9 @@
 #
 title: Home Control Panel
 resources: !include_dir_list lovelace/resources
+cch:
+  swipe: true
+  swipe_animate: swipe
 views:
   - !include lovelace/views/general.yaml
   - !include lovelace/views/firstfloor.yaml
