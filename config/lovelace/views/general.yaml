@@ -28,9 +28,6 @@ cards:
           - person.kedar
           - person.matt
   - type: "custom:day-countdown"
-    date: "July 5 2019"
-    title: "New Jersery Vacation"
-  - type: "custom:day-countdown"
     date: "August 16 2019"
     title: "Cruise Vacation"
   - type: "custom:birthday-card"
