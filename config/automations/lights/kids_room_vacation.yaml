@@ -13,5 +13,6 @@ condition:
     entity_id: 'input_boolean.vacation'
     state: 'on'
 action:
-  service: light.turn_on
-  entity_id: light.kids_bedroom
+  - delay: '{{ "00:" ~ ((range(0, 1) | random) | int)  ~ ":" ~  ((range(5, 55) | random) | int) }}'
+  - service: light.turn_on
+    entity_id: light.kids_bedroom
