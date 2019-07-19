@@ -12,7 +12,7 @@ cards:
         type: heat
     fan_control: true
     min_slider: 50
-    max_slider: 90
+    max_slider: 95
   - type: custom:mini-graph-card
     entities:
      - sensor.global_temperature
