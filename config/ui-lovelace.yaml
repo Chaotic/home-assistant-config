@@ -17,5 +17,6 @@ views:
   - !include lovelace/views/firstfloor.yaml
   - !include lovelace/views/secondfloor.yaml
   - !include lovelace/views/thirdfloor.yaml
+  - !include lovelace/views/cameras.yaml
   - !include lovelace/views/automations.yaml
   - !include lovelace/views/server.yaml
