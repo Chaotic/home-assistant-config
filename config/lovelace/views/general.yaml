@@ -14,8 +14,17 @@ cards:
     min_slider: 50
     max_slider: 95
   - type: custom:mini-graph-card
+    name: Temperature
+    icon: mdi:home-thermometer
+    hours_to_show: 168
+    points_per_hour: 0.25
     entities:
-     - sensor.global_temperature
+     - entity: sensor.global_temperature
+       name: Internal
+       show_state: true
+     - entity: sensor.dark_sky_temperature
+       name: External
+       show_state: true
   - type: custom:weather-card
     entity: weather.dark_sky
     icons: '/local/lovelace/cards/weather-card/icons/'
