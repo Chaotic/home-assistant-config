@@ -1,1 +1,14 @@
-cameras.yaml
+---
+id: Cameras
+title: Cameras
+icon: mdi:camera-wireless
+cards:
+  - type: picture-entity
+    entity: camera.camera1
+    camera_view: live
+    tap_action:
+      action: call-service
+      service: camera.snapshot
+      service_data:
+        entity_id: camera.camera1
+        filename: '/shared/camera-{{ now().strftime("%Y-%m-%d-%H%M%S") }}.jpg'
