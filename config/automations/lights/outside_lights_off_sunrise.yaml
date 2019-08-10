@@ -2,8 +2,8 @@
 #
 # turn off outside lights at sunrise
 #
-id: Turn off Outside Lights at sunset
-alias: Outside lights off at Sunset
+id: Turn off Outside Lights at Sunrise
+alias: Outside lights off at Sunrise
 initial_state: 'on'
 trigger:
   platform: sun
