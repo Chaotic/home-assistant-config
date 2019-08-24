@@ -36,9 +36,6 @@ cards:
           - person.erin
           - person.kedar
           - person.matt
-  - type: "custom:day-countdown"
-    date: "August 16 2019"
-    title: "Cruise Vacation"
   - type: "custom:birthday-card"
     title: "Birthdays"
     numberofdays: 365
