@@ -14,7 +14,8 @@ Copy the config files and recreate the secrets.yaml file Also you need the same 
    
 <b>Plugs</b>
     Wemo mini plugs (wifi) (Not currently in use cause the suck)
-    Gosund (wifi) 
+    Gosund (wifi) Flashed to Tasmota so connects via MQTT
+    Ikea Tradfri Zigbee plug (mostly for repeating)
 
 <b>Lights</b>
     Sengled Light bulbs (Zigbee)
@@ -28,6 +29,9 @@ Copy the config files and recreate the secrets.yaml file Also you need the same 
    Zooz 4-in-1 sensors (Z-wave),
    smartthings door sensor (Zigbee),
    NEO Z-wave pluss door sensors (Z-wave)
+   
+<b>Camera</b>
+   ESPCam (Wifi)
 
 <b>Speakers</b>
    Sonos speakers (wifi)
@@ -43,6 +47,7 @@ Copy the config files and recreate the secrets.yaml file Also you need the same 
    Xiaomi Smart Cube (Zigbee),
    SmartThings Hub (Wired),
    Tomato Router (Wired)
+   Ikea Tardfri Zigbee Repeater
 
 ## Software
    SmartThings to MQTT Bridge,

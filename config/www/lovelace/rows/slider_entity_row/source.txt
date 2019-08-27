@@ -1,1 +1,0 @@
-https://github.com/thomasloven/lovelace-slider-entity-row
