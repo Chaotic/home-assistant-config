@@ -8,7 +8,7 @@ initial_state: 'on'
 trigger:
   - platform: state
     entity_id: 
-      - switch.gosund_8
+      - switch.gosund_6
     from: 'on'
 action:
 - service: notify.pushbullet
