@@ -4,7 +4,7 @@
 #
 id: check minecraft2
 alias: check minecraft2
-initial_state: 'on'
+initial_state: 'off'
 trigger:
   - platform: state
     entity_id: switch.ha_dockermon_chaotics_minecraft_server2
