@@ -1,0 +1,18 @@
+---
+id: Basement
+title: Basement
+icon: mdi:home-floor-b
+cards:
+  - type: vertical-stack
+    cards:
+      - type: entities
+        title: Media
+        entities:
+          - type: custom:mini-media-player
+            entity: media_player.spare
+            tts:
+              platform: 'google_translate'
+              volume: 0.75
+            sonos: 
+              show_group_count: true
+              entities: !include sonosgroups.yaml

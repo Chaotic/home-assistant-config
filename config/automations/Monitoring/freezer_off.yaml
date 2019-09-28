@@ -1,0 +1,18 @@
+---
+#
+# notify when a freezer is off
+#
+id: Freezer Off
+alias: freezer off
+initial_state: 'on'
+trigger:
+  - platform: state
+    entity_id: 
+      - switch.gosund_8
+    from: 'on'
+action:
+- service: script.sonos_say
+  data_template:
+    sonos_entity: livingroom_sonos
+    volume: 0.5
+    message: 'Welcome to our Home!  Please close the {{ trigger.to_state.name }} behind you.! '
