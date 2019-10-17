@@ -7,6 +7,6 @@
 #
 platform: samsungtv_custom
 host: !secret 192.168.1.218
-port: PORT (8001 or 8002)
+port: 8001
 mac: !secret living_room_tv_mac
 sourcelist: '{"Chromecast": "KEY_HDMI1", "Switch": "KEY_HDMI2"}'
