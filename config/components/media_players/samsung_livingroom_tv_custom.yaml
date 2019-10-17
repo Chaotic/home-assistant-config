@@ -1,0 +1,12 @@
+---
+# This is my Livingroom Samsung TV using the custom component.
+#
+# https://github.com/xchwarze/ha-samsungtv-custom
+#
+#     port: PORT (8001 or 8002)
+#
+platform: samsungtv_custom
+host: !secret 192.168.1.218
+port: PORT (8001 or 8002)
+mac: !secret living_room_tv_mac
+sourcelist: '{"Chromecast": "KEY_HDMI1", "Switch": "KEY_HDMI2"}'
