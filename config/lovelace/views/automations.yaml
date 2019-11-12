@@ -3,42 +3,42 @@ id: Automations
 title: Automations
 icon: mdi:settings
 cards:
-  - type: custom:monster-card
+  - type: custom:auto-entities
     card:
       type: entities
       title: "Automations"
     filter:
       include:
         - entity_id: automation.*
-  - type: custom:monster-card
+  - type: custom:auto-entities
     card:
       type: entities
       title: "Scenes"
     filter:
       include:
         - entity_id: scene.*
-  - type: custom:monster-card
+  - type: custom:auto-entities
     card:
       type: entities
       title: "Booleans"
     filter:
       include:
         - entity_id: input_boolean.*
-  - type: custom:monster-card
+  - type: custom:auto-entities
     card:
       type: entities
       title: "Sensors"
     filter:
       include:
         - entity_id: sensor.*
-  - type: custom:monster-card
+  - type: custom:auto-entities
     card:
       type: entities
       title: "Binary Sensors"
     filter:
       include:
         - entity_id: binary_sensor.*
-  - type: custom:monster-card
+  - type: custom:auto-entities
     card:
       type: entities
       title: "Input Text"

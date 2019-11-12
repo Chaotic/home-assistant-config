@@ -3,14 +3,14 @@ id: Server
 title: Server
 icon: mdi:nas
 cards:
-  - type: custom:monster-card
+  - type: custom:auto-entities
     card:
       type: entities
       title: "Sensors"
     filter:
       include:
         - entity_id: sensor.potential_breaking_changes
-  - type: custom:monster-card
+  - type: custom:auto-entities
     card:
       type: entities
       title: "Sensors"

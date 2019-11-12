@@ -27,7 +27,7 @@ cards:
        show_state: true
   - type: custom:weather-card
     entity: weather.dark_sky
-    icons: '/local/lovelace/cards/weather-card/icons/'
+    icons: '/community_plugin/weather-card/icons/'
   - type: vertical-stack
     cards:
       - type: entities

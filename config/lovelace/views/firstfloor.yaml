@@ -26,7 +26,7 @@ cards:
           - type: custom:slider-entity-row
             entity: light.sengled_e11_g13_030ba3b9_1
             toggle: true
-  - type: custom:monster-card
+  - type: custom:auto-entities
     card:
       type: entities
       title: "Movie Mode"
@@ -35,7 +35,14 @@ cards:
         - entity_id: input_boolean.movie_mode
         - entity_id: scene.movie_mode_off
         - entity_id: scene.movie_mode_on
-  - type: custom:monster-card
+  - type: custom:auto-entities
+    card:
+      type: entities
+      title: "Plugs"
+    filter:
+      include:
+        - entity_id: switch.ikea_of_sweden_tradfri_control_outlet_fe2d4470_1
+  - type: custom:auto-entities
     card:
       type: entities
       title: "Doors"
