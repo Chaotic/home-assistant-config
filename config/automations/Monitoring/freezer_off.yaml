@@ -10,7 +10,6 @@ trigger:
     entity_id: 
       - switch.gosund_6
     from: 'on'
-    for: "00:05:00"
 action:
 - service: notify.pushbullet
   data_template:
