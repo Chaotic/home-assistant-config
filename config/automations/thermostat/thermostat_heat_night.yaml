@@ -9,7 +9,7 @@ trigger:
   - platform: time
     at: "23:00:00"
 condition:
-  - condition: state
+  - condition: numeric_state
     entity_id: 'sensor.dark_sky_temperature_low_0d'
     above: 50
 action:
