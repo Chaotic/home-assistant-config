@@ -11,7 +11,6 @@ api_key: !secret dark_sky_api
 forecast:
   - 0
 monitored_conditions:
-  - summary
-  - icon
   - temperature
-  - hourly_summary
+  - temperature_high
+  - temperature_low

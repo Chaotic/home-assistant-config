@@ -12,8 +12,8 @@ trigger:
     for: "00:02:00"
 condition:
   - condition: state
-    entity_id: 'sensor.season'
-    state: 'winter'
+    entity_id: 'sensor.dark_sky_temperature_low_0d'
+    above: 50
 action:
   - service: climate.set_temperature
     data:

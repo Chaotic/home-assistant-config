@@ -10,8 +10,8 @@ trigger:
     at: "06:30:00"
 condition:
   - condition: state
-    entity_id: 'sensor.season'
-    state: 'summer'
+    entity_id: 'sensor.dark_sky_temperature_high_0d'
+    above: 85
   - condition: state
     entity_id: 'binary_sensor.workday'
     state: 'off'

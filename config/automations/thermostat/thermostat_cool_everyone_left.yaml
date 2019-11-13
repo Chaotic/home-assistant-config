@@ -14,9 +14,6 @@ condition:
   - condition: state
     entity_id: 'input_boolean.guest_mode'
     state: 'off'
-  - condition: state
-    entity_id: 'sensor.season'
-    state: 'summer'
 action:
   - service: climate.set_temperature
     data:

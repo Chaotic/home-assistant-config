@@ -12,8 +12,8 @@ trigger:
     for: "00:02:00"
 condition:
   - condition: state
-    entity_id: 'sensor.season'
-    state: 'summer'
+    entity_id: 'sensor.dark_sky_temperature_high_0d'
+    above: 85
 action:
   - service: climate.set_temperature
     data:
