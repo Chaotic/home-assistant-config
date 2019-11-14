@@ -11,7 +11,7 @@ trigger:
 condition:
   - condition: numeric_state
     entity_id: 'sensor.dark_sky_temperature_low_0d'
-    above: 50
+    below: 50
 action:
   - service: climate.set_temperature
     data:
