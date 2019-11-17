@@ -10,7 +10,7 @@ trigger:
     at: "06:30:00"
 condition:
   - condition: numeric_state
-    entity_id: 'sensor.dark_sky_temperature_low_0d'
+    entity_id: 'sensor.dark_sky_overnight_low_temperature_0d'
     below: 50
   - condition: state
     entity_id: 'binary_sensor.workday'

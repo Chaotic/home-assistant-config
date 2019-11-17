@@ -12,7 +12,7 @@ trigger:
     for: "00:02:00"
 condition:
   - condition: numeric_state
-    entity_id: 'sensor.dark_sky_temperature_high_0d'
+    entity_id: 'sensor.dark_sky_daytime_high_temperature_0d'
     above: 85
 action:
   - service: climate.set_temperature
