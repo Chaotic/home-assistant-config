@@ -42,6 +42,8 @@ cards:
     filter:
       include:
         - entity_id: switch.ikea_of_sweden_tradfri_control_outlet_fe2d4470_1
+    sort:
+      method: name
   - type: custom:auto-entities
     card:
       type: entities
@@ -50,6 +52,8 @@ cards:
       include:
         - entity_id: binary_sensor.neo_coolcam_door_window_detector_sensor_2
         - entity_id: binary_sensor.neo_coolcam_door_window_detector_sensor
+    sort:
+      method: name
   - type: vertical-stack
     cards:
       - type: entities

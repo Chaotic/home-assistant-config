@@ -10,6 +10,8 @@ cards:
     filter:
       include:
         - entity_id: automation.*
+    sort:
+      method: name
   - type: custom:auto-entities
     card:
       type: entities
@@ -17,6 +19,8 @@ cards:
     filter:
       include:
         - entity_id: scene.*
+    sort:
+      method: name
   - type: custom:auto-entities
     card:
       type: entities
@@ -24,6 +28,8 @@ cards:
     filter:
       include:
         - entity_id: input_boolean.*
+    sort:
+      method: name
   - type: custom:auto-entities
     card:
       type: entities
@@ -31,6 +37,8 @@ cards:
     filter:
       include:
         - entity_id: sensor.*
+    sort:
+      method: name
   - type: custom:auto-entities
     card:
       type: entities
@@ -38,6 +46,8 @@ cards:
     filter:
       include:
         - entity_id: binary_sensor.*
+    sort:
+      method: name
   - type: custom:auto-entities
     card:
       type: entities
@@ -45,3 +55,5 @@ cards:
     filter:
       include:
         - entity_id: input_text.*
+    sort:
+      method: name

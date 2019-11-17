@@ -10,6 +10,8 @@ cards:
     filter:
       include:
         - entity_id: sensor.potential_breaking_changes
+    sort:
+      method: name
   - type: custom:auto-entities
     card:
       type: entities
@@ -17,3 +19,5 @@ cards:
     filter:
       include:
         - entity_id: "switch.ha_dockermon_*"
+    sort:
+      method: name
