@@ -1,0 +1,10 @@
+---
+# This is an input boolean to use with automations
+# for when the kids have a snowday.
+#
+# https://www.home-assistant.io/components/input_boolean/
+#
+snow_day:
+  name: Enables snow day Mode
+  initial: false
+  icon: mdi:snowman

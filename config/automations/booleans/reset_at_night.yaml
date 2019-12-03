@@ -11,3 +11,5 @@ trigger:
 action:
   - service: homeassistant.turn_off
     entity_id: input_boolean.movie_mode
+  - service: homeassistant.turn_off
+    entity_id: input_boolean.snow_day
