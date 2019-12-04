@@ -8,6 +8,8 @@
 #
 platform: darksky
 api_key: !secret dark_sky_api
+scan_interval:
+  minutes: 30
 forecast:
   - 0
 monitored_conditions:
