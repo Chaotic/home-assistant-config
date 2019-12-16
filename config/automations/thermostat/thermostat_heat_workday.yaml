@@ -24,5 +24,5 @@ condition:
 action:
   - service: climate.set_temperature
     data:
-      entity_id: climate.2gig_technologies_ct101_thermostat_iris_heating_1
-      temperature: 65
+      entity_id: climate.2gig_technologies_ct101_thermostat_iris_mode
+      target_temp_low: 65

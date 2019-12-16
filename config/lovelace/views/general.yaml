@@ -3,16 +3,9 @@ id: General
 title: General
 icon: mdi:function
 cards:
-  - type: custom:dual-thermostat
+  - type: thermostat
+    entity: climate.2gig_technologies_ct101_thermostat_iris_mode
     name: Thermostat
-    entities:
-      - entity: climate.2gig_technologies_ct101_thermostat_iris_cooling_1
-        type: cool
-      - entity: climate.2gig_technologies_ct101_thermostat_iris_heating_1
-        type: heat
-    fan_control: true
-    min_slider: 50
-    max_slider: 95
   - type: custom:mini-graph-card
     name: Temperature
     icon: mdi:home-thermometer
