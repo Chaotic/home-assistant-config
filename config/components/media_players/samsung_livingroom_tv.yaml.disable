@@ -1,6 +1,0 @@
----
-# This is my Livingroom Samsung TV.
-#
-# https://www.home-assistant.io/components/media_player.samsungtv/
-#
-platform: samsungtv

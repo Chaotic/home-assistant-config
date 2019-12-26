@@ -1,0 +1,14 @@
+---
+# This is my Livingroom Samsung TV.
+#
+# https://www.home-assistant.io/components/media_player.samsungtv/
+#
+# Model # UN43NU6900 
+#
+platform: samsungtv_custom
+host: !secret living_room_tv_ip
+mac: !secret living_room_tv_mac
+name: "Samsung Living Room TV"
+port: 8002
+protocol: ws
+sourcelist: '{"Chromecast": "KEY_HDMI1", "Switch": "KEY_HDMI2"}'
