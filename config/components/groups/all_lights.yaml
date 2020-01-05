@@ -7,7 +7,7 @@ all lights custom:
     entities:
       - light.kids_bedroom
 #       Living Room
-      - light.kohree2
+      - light.kohree_2
       - light.kohree_1
       - light.master_bedroom
 #       Master Bedroom Closet

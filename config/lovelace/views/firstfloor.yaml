@@ -9,7 +9,7 @@ cards:
         title: Lights
         entities:
           - type: custom:slider-entity-row
-            entity: light.kohree2
+            entity: light.kohree_2
             toggle: true
           - type: custom:slider-entity-row
             entity: light.kohree_1
