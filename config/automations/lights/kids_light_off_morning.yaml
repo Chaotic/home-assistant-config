@@ -18,3 +18,4 @@ condition:
 action:
   - service: light.turn_off
     entity_id: light.kids_bedroom
+    entity_id: light.kohree_4
