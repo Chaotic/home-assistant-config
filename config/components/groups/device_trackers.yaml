@@ -5,11 +5,6 @@
 device_trackers:
     control: hidden
     entities:
-      - device_tracker.owntracks_erin
-      - device_tracker.owntracks_kedar
-      - device_tracker.owntracks_matt
-      - device_tracker.erins_pixel
-      - device_tracker.kedars_pixel
-      - device_tracker.matt_pixel
-      - device_tracker.patricksiphone
-      - device_tracker.wendysiphone
+      - person.erin
+      - person.kedar
+      - person.matt
