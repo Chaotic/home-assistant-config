@@ -1,0 +1,19 @@
+---
+#
+# Kids "clock" light green
+#
+id: Kids Clock Light Green
+alias: Kids clock light green
+initial_state: 'on'
+trigger:
+  - platform: time
+    at: "06:00:00"
+condition:
+  - condition: state
+    entity_id: 'input_boolean.kids_vacation'
+    state: 'off'
+action:
+  - service: light.turn_off
+    entity_id: light.kohree_4
+    color_name: green
+    brightness_pct: 100
