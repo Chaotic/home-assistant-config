@@ -17,4 +17,4 @@ action:
     data:
       entity_id: light.kohree_4
       color_name: red
-      brightness_pct: 20
+      brightness_pct: 2
