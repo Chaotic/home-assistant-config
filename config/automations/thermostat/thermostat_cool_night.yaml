@@ -8,10 +8,6 @@ initial_state: 'on'
 trigger:
   - platform: time
     at: "23:00:00"
-condition:
-  - condition: numeric_state
-    entity_id: 'sensor.dark_sky_daytime_high_temperature_0d'
-    above: 85
 action:
   - service: climate.set_temperature
     data:

@@ -16,5 +16,5 @@ condition:
     entity_id: 'input_boolean.kids_vacation'
     state: 'off'
 action:
-  - service: light.turn_off
+  - service: homeassistant.turn_off
     entity_id: light.kids_bedroom
