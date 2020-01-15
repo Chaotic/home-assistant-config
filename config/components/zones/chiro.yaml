@@ -4,9 +4,9 @@
 #
 # https://www.home-assistant.io/components/zone
 #
-name: Kedars Work chelmsford
-latitude: !secret zone_ktwork2_latitude
-longitude: !secret zone_ktwork2_longitude
+name: Chiropractor
+latitude: !secret zone_chiropractor_latitude
+longitude: !secret zone_chiropractor_longitude
 radius: 100
 passive: false
-icon: mdi:domain
+icon: mdi:doctor
