@@ -3,6 +3,8 @@
 #
 # https://www.home-assistant.io/components/media_player.samsungtv/
 #
+# https://github.com/roberodin/ha-samsungtv-custom
+#
 # Model # UN43NU6900 
 #
 platform: samsungtv_custom
