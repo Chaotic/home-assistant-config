@@ -5,6 +5,7 @@ before_install:
   - mv not_secrets.yaml config/secrets.yaml
   - sudo apt-get install -y libudev-dev
 install:
+  - pip3 install websocket-client==0.56.0
   - pip3 install homeassistant
 script:
   - hass -c ./config/ --script check_config
