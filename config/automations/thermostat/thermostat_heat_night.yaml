@@ -13,3 +13,5 @@ action:
     data:
       entity_id: climate.2gig_technologies_ct101_thermostat_iris_mode
       target_temp_low: 60
+      target_temp_high: 85
+      hvac_mode: heat_cool

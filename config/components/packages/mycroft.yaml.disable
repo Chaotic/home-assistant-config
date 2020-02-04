@@ -1,2 +1,0 @@
-mycroft:
-  host: !secret mycroft_ip

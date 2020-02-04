@@ -20,7 +20,4 @@ action:
     data:
       entity_id: 2climate.2gig_technologies_ct101_thermostat_iris_mode
       target_temp_high: 80
-  - service: climate.set_temperature
-    data:
-      entity_id: 2climate.2gig_technologies_ct101_thermostat_iris_mode
       target_temp_low: 55
