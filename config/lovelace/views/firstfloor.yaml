@@ -6,18 +6,6 @@ cards:
   - type: vertical-stack
     cards:
       - type: entities
-        title: Lights
-        entities:
-          - type: custom:slider-entity-row
-            entity: light.kohree_2
-            toggle: true
-          - type: custom:slider-entity-row
-            entity: light.kohree_1
-            toggle: true
-          - group.living_room
-  - type: vertical-stack
-    cards:
-      - type: entities
         title: Outside Lights
         entities:
           - type: custom:slider-entity-row
@@ -26,15 +14,6 @@ cards:
           - type: custom:slider-entity-row
             entity: light.sengled_e11_g13_030ba3b9_1
             toggle: true
-  - type: custom:auto-entities
-    card:
-      type: entities
-      title: "Movie Mode"
-    filter:
-      include:
-        - entity_id: input_boolean.movie_mode
-        - entity_id: scene.movie_mode_off
-        - entity_id: scene.movie_mode_on
   - type: custom:auto-entities
     card:
       type: entities
