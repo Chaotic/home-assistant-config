@@ -21,5 +21,3 @@ homeassistant:
 person:
 hacs:
   token: !secret my_github_access_token
-  python_script: true
-  theme: true

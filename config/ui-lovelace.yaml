@@ -8,10 +8,9 @@
 # the tabs of the view in the UI.
 #
 title: Home Control Panel
+custom_header:
+  compact_mode: true
 resources: !include_dir_list lovelace/resources
-cch:
-  swipe: true
-  swipe_animate: swipe
 views:
   - !include lovelace/views/general.yaml
   - !include lovelace/views/basement.yaml
