@@ -7,7 +7,7 @@ alias: Kids off for school
 initial_state: 'on'
 trigger:
   - platform: time
-    at: "07:15:00"
+    at: "08:00:00"
 condition:
   - condition: state
     entity_id: 'binary_sensor.workday'
@@ -16,5 +16,5 @@ condition:
     entity_id: 'input_boolean.kids_vacation'
     state: 'off'
 action:
-  - service: homeassistant.turn_off
+  - service: light.turn_off
     entity_id: light.kids_bedroom
