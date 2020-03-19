@@ -7,7 +7,7 @@ alias: Kids Bedroom Light Fade In
 initial_state: 'on'
 trigger:
   - platform: time
-    at: "05:55:00"
+    at: "07:25:00"
 condition:
   - condition: state
     entity_id: 'binary_sensor.workday'
