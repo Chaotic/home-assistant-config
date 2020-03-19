@@ -3,7 +3,6 @@
 # Group used to shut everything off
 #
 device_trackers:
-    control: hidden
     entities:
       - person.erin
       - person.kedar

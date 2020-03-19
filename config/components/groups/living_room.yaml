@@ -3,7 +3,6 @@
 # Group of Living Room
 #
 living_room:
-    control: hidden
     entities:
       - light.kohree_2
       - light.kohree_1

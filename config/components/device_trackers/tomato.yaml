@@ -12,4 +12,3 @@ password: !secret tomato_password
 http_id: !secret tomato_http_id
 new_device_defaults:
   track_new_devices: false
-  hide_if_away: False
