@@ -10,7 +10,6 @@
 title: Home Control Panel
 custom_header:
   compact_mode: true
-resources: !include_dir_list lovelace/resources
 views:
   - !include lovelace/views/general.yaml
   - !include lovelace/views/basement.yaml
