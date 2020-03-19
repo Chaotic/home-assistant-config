@@ -7,7 +7,7 @@ alias: Kids off for school
 initial_state: 'on'
 trigger:
   - platform: time
-    at: "08:00:00"
+    at: "09:00:00"
 action:
   - service: homeassistant.turn_off
     entity_id: light.kohree_4
