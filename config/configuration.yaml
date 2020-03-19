@@ -18,7 +18,8 @@ homeassistant:
 
   # Load packages
   packages: !include_dir_named components/packages
-zone: !include_dir_list components/zones
+
 person:
 hacs:
   token: !secret my_github_access_token
+zone: !include_dir_list components/zones
