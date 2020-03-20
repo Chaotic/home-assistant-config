@@ -23,3 +23,13 @@ person:
 hacs:
   token: !secret my_github_access_token
 zone: !include_dir_list components/zones
+discovery:
+owntracks:
+  max_gps_accuracy: 200
+  waypoints: true
+  mqtt_topic: "owntracks/#"
+  events_only: false
+  waypoint_whitelist:
+    - matt
+    - kedar
+    - erin
