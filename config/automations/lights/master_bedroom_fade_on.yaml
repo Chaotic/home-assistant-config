@@ -4,7 +4,7 @@
 #
 id: Master Bedroom Wake up
 alias: Master Bedroom Light Fade In
-initial_state: 'on'
+initial_state: 'off'
 trigger:
   - platform: time
     at: "07:20:00"
