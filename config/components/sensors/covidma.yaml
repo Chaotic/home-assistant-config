@@ -1,0 +1,20 @@
+---
+# The rest sensor platform is consuming a given endpoint which is exposed by a 
+# RESTful API of a device, an application, or a web service. The sensor has support 
+# for GET and POST requests.
+#
+# https://www.home-assistant.io/integrations/rest/
+#
+platform: rest
+name: statewide_covid_stats
+resource: https://covidtracking.com/api/states?state=MA
+json_attributes:
+  - positive
+  - negative
+  - pending
+  - hospitalized
+  - death
+  - total
+  - lastUpdateEt
+value_template: '{{ value_json.state }}'
+scan_interval: 3600
