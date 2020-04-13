@@ -1,23 +1,23 @@
 sonos_say:
-  alias: "Sonos TTS script"
-  sequence:
+    alias: "Sonos TTS script"
+    sequence:
     - service: sonos.snapshot
       data_template:
-        entity_id: "{{ 'media_player.' ~ sonos_entity }}"
+        entity_id: "{{ sonos_entity }}"
     - service: sonos.unjoin
       data_template:
-        entity_id:  "{{ 'media_player.' ~ sonos_entity }}"
+        entity_id:  "{{ sonos_entity }}"
     - service: media_player.volume_set
       data_template:
-        entity_id:  "{{ 'media_player.' ~ sonos_entity }}"
+        entity_id:  "{{ sonos_entity }}"
         volume_level: "{{ volume }}"
     - service: tts.google_say
       data_template:
-        entity_id:  "{{ 'media_player.' ~ sonos_entity }}"
+        entity_id:  "{{ sonos_entity }}"
         message: "{{ message }}"
     - delay: '00:00:01'
     - delay: >-
-        {% set duration = states.media_player[sonos_entity].attributes.media_duration %}
+        {% set duration = states[sonos_entity].attributes.media_duration %}
         {% if duration > 0 %}
           {% set duration = duration - 1 %}
         {% endif %}
@@ -27,4 +27,4 @@ sonos_say:
         {{ [hours, minutes, seconds]|join(':') }}
     - service: sonos.restore
       data_template:
-        entity_id:  "{{ 'media_player.' ~ sonos_entity }}"
+        entity_id:  "{{ sonos_entity }}"
