@@ -59,21 +59,6 @@ cards:
       - entity: sensor.us_coronavirus_deaths
         icon: 'mdi:emoticon-dead-outline'
         name: Deaths
-  - type: glance
-    title: Massachusetts
-    entities:
-      - entity: sensor.covid_total_state
-        icon: 'mdi:emoticon-neutral-outline'
-        name: Confirmed
-      - entity: sensor.covid_positive_state
-        icon: 'mdi:emoticon-frown-outline'
-        name: Current
-      - entity: sensor.covid_negative_state
-        icon: 'mdi:emoticon-happy-outline'
-        name: Negative
-      - entity: sensor.covid_death_state
-        icon: 'mdi:emoticon-dead-outline'
-        name: Deaths
   - type: "custom:birthday-card"
     title: "Birthdays"
     numberofdays: 365

@@ -14,7 +14,6 @@ cards:
           - type: custom:slider-entity-row
             entity: light.kohree_4
             toggle: true
-          - switch.gosund_4
   - type: vertical-stack
     cards:
       - type: entities
