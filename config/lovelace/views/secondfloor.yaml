@@ -19,10 +19,10 @@ cards:
       - type: entities
         title: Devices
         entities:
-          - switch.gosund_1
-          - switch.gosund_2
-          - switch.gosund_3
-          - switch.gosund_7
+          - switch.kedar_night_light
+          - switch.matts_night_light
+          - switch.master_bedroom_window_fan
+          - switch.henrys_computer
   - type: vertical-stack
     cards:
       - type: entities

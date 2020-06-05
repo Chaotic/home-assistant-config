@@ -15,6 +15,6 @@ condition:
 action:
   - service: light.turn_on
     data:
-      entity_id: light.kohree_4
+      entity_id: light.kids_night_light
       color_name: red
       brightness_pct: 2

@@ -6,7 +6,7 @@ name: Laying in Bed
 entities:
   light.master_bedroom:
     state: off
-  switch.gosund_1:
+  switch.kedar_night_light:
     state: on
-  switch.gosund_2:
+  switch.matts_night_light:
     state: on
