@@ -1,9 +1,9 @@
 ---
 #
-# Shut the AC off at night in the summer
+# Thermostat baseline
 #
-id: Thermostat AC up at night
-alias: Thermostat AC up at night
+id: Thermostat baseline
+alias: Thermostat baseline
 initial_state: 'on'
 trigger:
   - platform: time
@@ -18,6 +18,6 @@ condition:
 action:
   - service: climate.set_temperature
     data:
-      entity_id: 2climate.2gig_technologies_ct101_thermostat_iris_mode
+      entity_id: climate.radio_thermostat_company_of_america_ct101_thermostat_iris_mode
       target_temp_high: 80
       target_temp_low: 55

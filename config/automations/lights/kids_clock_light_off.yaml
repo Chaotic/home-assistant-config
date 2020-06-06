@@ -2,7 +2,7 @@
 #
 # shut the kids clock light
 #
-id: Kids off for school
+id: Kids clock off for school
 alias: Kids off for school
 initial_state: 'on'
 trigger:
