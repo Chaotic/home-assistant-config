@@ -10,9 +10,9 @@ entities:
     state: on
     color_name: white
     brightness_pct: 100
-    color_temp: 500
+    color_temp: 321
   light.matt_s_night_light:
     state: on
     color_name: white
     brightness_pct: 100
-    color_temp: 500
+    color_temp: 321
