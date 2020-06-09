@@ -4,10 +4,11 @@
 #
 # https://www.home-assistant.io/components/sensor.template/
 # 
+#      {{ ((states('sensor.living_room_temp')|int) + (states('sensor.master_bedroom_closet_temp')|int) + (states('sensor.radio_thermostat_company_of_america_ct101_thermostat_iris_temperature')|int) + (states('sensor.radio_thermostat_company_of_america_ct101_thermostat_iris_temperature_2')|int) + (states('sensor.third_floor_sensor_temperature')|int) + (states('sensor.visonic_mct_340_e_0b3e1c50_1_1026')|int))/6 }}
 platform: template
 sensors:
   global_temperature:
     friendly_name: "Global Temperature"
     unit_of_measurement: "°F"
     value_template: >-
-      {{ ((states('sensor.living_room_temp')|int) + (states('sensor.master_bedroom_closet_temp')|int) + (states('sensor.radio_thermostat_company_of_america_ct101_thermostat_iris_temperature')|int) + (states('sensor.radio_thermostat_company_of_america_ct101_thermostat_iris_temperature_2')|int) + (states('sensor.third_floor_sensor_temperature')|int) + (states('sensor.visonic_mct_340_e_0b3e1c50_1_1026')|int))/6 }}
+      {{ ((states('sensor.living_room_temp')|int) + (states('sensor.master_bedroom_closet_temp')|int) + (states('sensor.radio_thermostat_company_of_america_ct101_thermostat_iris_temperature')|int) + (states('sensor.radio_thermostat_company_of_america_ct101_thermostat_iris_temperature_2')|int) + (states('sensor.visonic_mct_340_e_0b3e1c50_1_1026')|int))/5 }}

@@ -6,7 +6,13 @@ name: Laying in Bed
 entities:
   light.master_bedroom:
     state: off
-  switch.kedar_night_light:
+  light.kedar_s_night_light:
     state: on
-  switch.matts_night_light:
+    color_name: white
+    brightness_pct: 100
+    color_temp: 500
+  light.matt_s_night_light:
     state: on
+    color_name: white
+    brightness_pct: 100
+    color_temp: 500

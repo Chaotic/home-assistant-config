@@ -13,14 +13,15 @@ cards:
             name: Bedroom
             toggle: true
           - group.master_bedroom_closet
+          - group.master_bedroom_night_lights
           - scene.laying_in_bed
   - type: vertical-stack
     cards:
       - type: entities
         title: Devices
         entities:
-          - switch.kedar_night_light
-          - switch.matts_night_light
+          - light.kedar_s_night_light
+          - light.matt_s_night_light
           - switch.master_bedroom_window_fan
           - switch.henrys_computer
   - type: vertical-stack
