@@ -2,7 +2,7 @@
 #
 # shut the kids clock light
 #
-id: Kids off for school
+id: Kids clock off for school
 alias: Kids off for school
 initial_state: 'on'
 trigger:
@@ -10,4 +10,4 @@ trigger:
     at: "09:00:00"
 action:
   - service: homeassistant.turn_off
-    entity_id: light.kohree_4
+    entity_id: light.kids_night_light

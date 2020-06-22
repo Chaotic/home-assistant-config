@@ -12,9 +12,17 @@ cards:
             entity: light.kids_bedroom
             toggle: true
           - type: custom:slider-entity-row
-            entity: light.kohree_4
+            entity: light.kids_night_light
             toggle: true
-          - switch.gosund_4
+      - type: custom:mini-graph-card
+        name: Temperature
+        icon: mdi:home-thermometer
+        hours_to_show: 168
+        points_per_hour: 0.25
+        entities:
+         - entity: sensor.third_floor_sensor_temperature
+           name: Internal
+           show_state: true
   - type: vertical-stack
     cards:
       - type: entities

@@ -5,13 +5,9 @@
 all lights custom:
     entities:
       - light.kids_bedroom
-#       Living Room
-      - light.kohree_2
-      - light.kohree_1
       - light.master_bedroom
 #       Master Bedroom Closet
       - light.sengled_e11_g13_030ba25e_1
       - light.sengled_e11_g13_030bbabf_1
-#      These switches control lights normally
-      - switch.gosund_1
-      - switch.gosund_2
+      - light.kedar_s_night_light
+      - light.matt_s_night_light
