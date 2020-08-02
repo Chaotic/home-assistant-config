@@ -4,7 +4,7 @@
 #
 id: Kids morning Wake Up
 alias: Kids Bedroom Light Fade In
-initial_state: 'off'
+initial_state: 'on'
 trigger:
   - platform: time
     at: "07:25:00"
