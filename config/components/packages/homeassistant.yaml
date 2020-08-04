@@ -14,3 +14,5 @@ homeassistant:
 
   # Lets me custimize entities based on a matching pattern
   customize_glob: !include_dir_merge_named ../../customizations/globs
+  external_url: !secret http_base_url
+  internal_url: !secret http_base_url

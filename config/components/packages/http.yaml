@@ -8,11 +8,6 @@ http:
   # Protects Home Assistant with a password.
  # api_password: !secret http_password
 
-  # Contains the URL that Home Assistant is available on the internet.
-  #base_url: !secret http_base_url
-  external_url: !secret http_base_url
-  internal_url: !secret http_base_url
-
   # Enable parsing of the X-Forwarded-For header, passing on the client’s
   # correct IP address, since I'm using a proxied setup.
   use_x_forwarded_for: true
