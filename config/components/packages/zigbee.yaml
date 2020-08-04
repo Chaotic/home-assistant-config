@@ -6,4 +6,3 @@
 # https://www.home-assistant.io/components/zha/
 #
 zha:
-  usb_path: /dev/zigbee
