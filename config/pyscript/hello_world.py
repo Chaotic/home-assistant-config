@@ -1,3 +1,6 @@
+"""
+Hello World example script
+"""
 @service
 def hello_world(action=None, id=None):
     """hello_world example using pyscript."""
