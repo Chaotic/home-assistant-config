@@ -4,7 +4,7 @@
 #
 id: Thermostat heat down at night
 alias: Thermostat heat down at night
-initial_state: 'on'
+initial_state: 'off'
 trigger:
   - platform: time
     at: "23:00:00"

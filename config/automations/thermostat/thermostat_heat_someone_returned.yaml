@@ -4,7 +4,7 @@
 #
 id: Thermostat turn heat on cause someone is home
 alias: Thermostat Heat on cause someone is home
-initial_state: 'on'
+initial_state: 'off'
 trigger:
   - entity_id: group.device_trackers
     platform: state
