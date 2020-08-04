@@ -7,7 +7,7 @@ alias: Thermostat AC up at night
 initial_state: 'on'
 trigger:
   - platform: time
-    at: "23:00:00"
+    at: "1:00:00"
 action:
   - service: climate.set_temperature
     data:

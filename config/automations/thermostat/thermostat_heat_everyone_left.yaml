@@ -4,7 +4,7 @@
 #
 id: Thermostat shut heat off cause everyone left
 alias: Thermostat Heat off when everyone leaves
-initial_state: 'on'
+initial_state: 'off'
 trigger:
   - entity_id: group.device_trackers
     platform: state

@@ -41,8 +41,6 @@ cards:
           - type: custom:mini-media-player
             entity: media_player.living_room_tv
           - type: custom:mini-media-player
-            entity: media_player.samsung_tv
-          - type: custom:mini-media-player
             entity: media_player.livingroom_sonos
             tts:
               platform: 'google_translate'

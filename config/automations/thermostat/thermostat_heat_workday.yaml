@@ -4,7 +4,7 @@
 #
 id: Thermostat heat on in the morning workday
 alias: Thermostat heat on in the morning workday
-initial_state: 'on'
+initial_state: 'off'
 trigger:
   - platform: time
     at: "07:30:00"

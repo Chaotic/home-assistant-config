@@ -23,6 +23,7 @@ cards:
           - light.kedar_s_night_light
           - light.matt_s_night_light
           - switch.master_bedroom_window_fan
+          - switch.fan_matts_side
           - switch.henrys_computer
   - type: vertical-stack
     cards:
