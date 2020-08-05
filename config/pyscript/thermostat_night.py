@@ -1,7 +1,7 @@
 """
-Thermostat test script
+Thermostat night script
 """
-@service
+@time_trigger("once(23:00:00)")
 def thermostat_night():
     """Trigger at 11pm every test example using pyscript."""
     log.info(f"thermostat Trigger test:")
@@ -13,5 +13,4 @@ def thermostat_night():
         lowtemp = 55
     elif float(sensor.dark_sky_overnight_low_temperature_0d) < 50.0:
         lowtemp = 65
-    log.info(f"thermostat test: lowtemp: {lowtemp} hightemp: {hightemp}")    
     climate.set_temperature(entity_id="climate.radio_thermostat_company_of_america_ct101_thermostat_iris_mode",target_temp_low=lowtemp,target_temp_high=hightemp,hvac_mode="heat_cool")

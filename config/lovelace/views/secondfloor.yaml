@@ -31,7 +31,7 @@ cards:
         title: Media
         entities:
           - type: custom:mini-media-player
-            entity: media_player.master_bedroom_tv
+            entity: media_player.living_room_tv
           - type: custom:mini-media-player
             entity: media_player.adult_sonos
             tts:
