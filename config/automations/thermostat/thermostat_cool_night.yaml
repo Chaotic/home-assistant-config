@@ -4,7 +4,7 @@
 #
 id: Thermostat AC up at night
 alias: Thermostat AC up at night
-initial_state: 'on'
+initial_state: 'off'
 trigger:
   - platform: time
     at: "1:00:00"
