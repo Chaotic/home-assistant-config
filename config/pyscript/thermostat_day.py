@@ -9,9 +9,9 @@ def thermostat_work_day():
     if binary_sensor.workday == 'on':
         """Set High Temp"""
         if float(sensor.dark_sky_daytime_high_temperature_0d) > 85.0:
-            hightemp = 85
-        elif float(sensor.dark_sky_daytime_high_temperature_0d) < 85.0:
             hightemp = 75
+        elif float(sensor.dark_sky_daytime_high_temperature_0d) < 85.0:
+            hightemp = 85
         """Set Low Temp"""
         if float(sensor.dark_sky_overnight_low_temperature_0d) > 50.0:
             lowtemp = 55
@@ -27,9 +27,9 @@ def thermostat_nonwork_day():
     if binary_sensor.workday != 'on':
         """Set High Temp"""
         if float(sensor.dark_sky_daytime_high_temperature_0d) > 85.0:
-            hightemp = 85
-        elif float(sensor.dark_sky_daytime_high_temperature_0d) < 85.0:
             hightemp = 75
+        elif float(sensor.dark_sky_daytime_high_temperature_0d) < 85.0:
+            hightemp = 85
         """Set Low Temp"""
         if float(sensor.dark_sky_overnight_low_temperature_0d) > 50.0:
             lowtemp = 55
