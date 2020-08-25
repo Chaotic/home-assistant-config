@@ -58,11 +58,4 @@ cloud:
       group.master_bedroom_closet:
         name: Master Bedroom Closet
         description: The light in the Master Bedroom Closet
-      switch.gosund_1:
-        display_categories: LIGHT
-        name: Kedar's Night Light
-        description: Kedar's Night Light
-      switch.gosund_2:
-        display_categories: LIGHT
-        name: Matt's Night Light
-        description: Matt's Night Light
+
