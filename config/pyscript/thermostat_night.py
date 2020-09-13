@@ -4,7 +4,6 @@ Thermostat night script
 @time_trigger("once(23:00:00)")
 def thermostat_night():
     """Trigger at 11pm every night"""
-    log.info(f"Thermostat Night")
     """Set High Temp"""
     if float(sensor.dark_sky_daytime_high_temperature_0d) > 85.0:
         hightemp = 75

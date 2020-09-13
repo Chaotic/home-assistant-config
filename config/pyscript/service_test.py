@@ -1,11 +1,11 @@
 """
-Thermostat night script
+Service test script
 """
 @service
 def test():
-    if binary_sensor.workday == 'on':
-        log.info(f"State Trigger test: fail")
+    if input_boolean.vacation == 'on':
+        log.warning(f"Service Trigger test: fail")
         pass
     else:
-        log.info(f"State Trigger test: pass")
+        log.warning(f"Service Trigger test: pass")
         pass

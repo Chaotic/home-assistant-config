@@ -1,3 +1,6 @@
+"""
+State trigger test script
+"""
 @state_trigger("group.device_trackers == 'not_home'")
 def state_trigger():
     log.info(f"State Trigger test:")

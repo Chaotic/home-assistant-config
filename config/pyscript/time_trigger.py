@@ -1,5 +1,5 @@
 """
-Time test script
+Time trigger test script
 """
 @time_trigger("once(17:15:00)")
 def thermostat_night():
