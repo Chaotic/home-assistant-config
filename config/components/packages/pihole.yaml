@@ -1,9 +1,0 @@
----
-# The pi_hole integration allows you to retrieve statistics and
-# interact with a Pi-hole system.
-#
-# https://www.home-assistant.io/integrations/pi_hole/
-#
-pi_hole:
-	- host: 192.168.1.246
-	- api_key: a67ec951caaf0ef47b5bb660d5fc523bf00db348ba0b22d0b6e5b9f93e33bb54
