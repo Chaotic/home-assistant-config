@@ -1,7 +1,7 @@
 ---
 id: Automations
 title: Automations
-icon: mdi:settings
+icon: mdi:cog
 cards:
   - type: custom:auto-entities
     card:
