@@ -3,4 +3,4 @@ logger:
   logs:
     custom_components.media_player.samsungtv: debug
     samsungctl: debug
-    homeassistant.components.pyscript: info
+    custom_components.pyscript: info

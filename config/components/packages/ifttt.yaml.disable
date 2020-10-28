@@ -1,9 +1,0 @@
----
-#
-# IFTTT is a web service that allows users to create chains
-# of simple conditional statements, so-called “Applets”.
-#
-# https://www.home-assistant.io/components/ifttt/
-#
-ifttt:
-  key: !secret ifttt_api_key
