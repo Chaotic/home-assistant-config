@@ -20,8 +20,8 @@ cards:
       - type: entities
         title: Devices
         entities:
-          - light.kedar_s_night_light
-          - light.matt_s_night_light
+          - light.kedar_night_light
+          - light.matt_night_light
   - type: vertical-stack
     cards:
       - type: entities
