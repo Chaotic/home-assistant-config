@@ -1,5 +1,5 @@
 """
-State trigger test script
+tag event trigger test script
 """
 @event_trigger('tag_scanned') 
 def handle_scanned_tag(tag_id=None, device_id=None, context=None):
