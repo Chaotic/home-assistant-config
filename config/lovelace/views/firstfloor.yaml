@@ -33,6 +33,21 @@ cards:
         - entity_id: binary_sensor.neo_coolcam_door_window_detector_sensor
     sort:
       method: name
+  - type: custom:mini-graph-card
+    name: Temperature
+    icon: mdi:home-thermometer
+    hours_to_show: 168
+    points_per_hour: 0.25
+    entities:
+      - entity: sensor.kitchen_temperature
+        name: Kitchen
+        show_state: true
+      - entity: sensor.living_room_temp
+        name: Living Room
+        show_state: true
+      - entity: sensor.radio_thermostat_company_of_america_ct101_thermostat_iris_temperature
+        name: Thermostat
+        show_state: true
   - type: vertical-stack
     cards:
       - type: entities
