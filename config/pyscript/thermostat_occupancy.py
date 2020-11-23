@@ -19,7 +19,7 @@ def themostat_left():
         if float(sensor.dark_sky_overnight_low_temperature_0d) > 50.0:
             lowtemp = 55
         elif float(sensor.dark_sky_overnight_low_temperature_0d) < 50.0:
-            lowtemp = 65
+            lowtemp = 55
         """Send the actual command to the thermostat"""
         climate.set_temperature(entity_id="climate.radio_thermostat_company_of_america_ct101_thermostat_iris_mode",target_temp_low=lowtemp,target_temp_high=hightemp,hvac_mode="heat_cool")
         pass
