@@ -2,6 +2,8 @@
 id: Automations
 title: Automations
 icon: mdi:cog
+visible:
+  - user: 2e85aebd0a9c436c8567c5435f0d0df8
 cards:
   - type: custom:auto-entities
     card:

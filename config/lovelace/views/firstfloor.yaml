@@ -14,6 +14,7 @@ cards:
           - type: custom:slider-entity-row
             entity: light.sengled_e11_g13_030ba3b9_1
             toggle: true
+          - light.christmas_lights
   - type: custom:auto-entities
     card:
       type: entities
