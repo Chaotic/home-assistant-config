@@ -1,0 +1,10 @@
+---
+#
+# Scene turn on christmas lights
+#
+name: Merry christmas
+entities:
+  light.christmas_lights:
+    state: on
+    effect: "cust_Rainbow"
+    brightness_pct: 100
