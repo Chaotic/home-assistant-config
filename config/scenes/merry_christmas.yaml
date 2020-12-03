@@ -6,5 +6,5 @@ name: Merry christmas
 entities:
   light.christmas_lights:
     state: on
-    effect: "cust_Rainbow"
+    effect: "Rainbow"
     brightness_pct: 100
