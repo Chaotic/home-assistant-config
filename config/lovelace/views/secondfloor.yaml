@@ -16,6 +16,7 @@ cards:
           - group.master_bedroom_night_lights
           - scene.laying_in_bed
           - switch.henry_desklight_gosund_2
+          - switch.hallway_lights_gosund_6
   - type: vertical-stack
     cards:
       - type: entities
