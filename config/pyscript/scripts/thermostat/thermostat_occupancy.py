@@ -5,7 +5,7 @@ Thermostat occupancy script
 def themostat_left():
     trig_info = task.wait_until(
                     state_trigger="group.device_trackers == 'home'",
-                    timeout=120
+                    timeout=600
                 )
     if trig_info["trigger_type"] == "timeout":
         pass
