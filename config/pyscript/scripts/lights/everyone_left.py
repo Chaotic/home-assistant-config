@@ -10,8 +10,8 @@ def themostat_left():
     if trig_info["trigger_type"] == "timeout":
         pass
     else:
-        if input_boolean.guest_mode == on
+        if input_boolean.guest_mode == "on":
             pass
-        elif input_boolean.guest_mode == off
+        elif input_boolean.guest_mode == "off":
             homeassistant.off(entity_id="group.all_lights_custom")
         pass
