@@ -13,5 +13,5 @@ def themostat_left():
         if input_boolean.guest_mode == "on":
             pass
         elif input_boolean.guest_mode == "off":
-            homeassistant.off(entity_id="group.all_lights_custom")
+            homeassistant.turn_off(entity_id="group.all_lights_custom")
         pass
