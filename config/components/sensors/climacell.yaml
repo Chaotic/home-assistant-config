@@ -68,7 +68,7 @@ monitored_conditions:
         - "23:30"
         - "06:00"
   daily:
-    forecast_observations: 1
+    forecast_observations: 5
     conditions:
       - temperature
       - feels_like
@@ -128,7 +128,7 @@ monitored_conditions:
         - "00:00"
         - "06:30"
   hourly:
-    forecast_observations: 1
+    forecast_observations: 5
     conditions:
       - temperature
       - feels_like
@@ -186,7 +186,7 @@ monitored_conditions:
         - "05:00"
   nowcast:
     timestep: 5
-    forecast_observations: 1
+    forecast_observations: 
     conditions:
       - temperature
       - feels_like
