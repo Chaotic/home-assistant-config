@@ -1,0 +1,17 @@
+---
+#
+# toogle Henry's light
+#
+alias: Toggle Henry's Light
+id: henry_light_toggle
+initial_state: 'on'
+description: ''
+trigger:
+  - device_id: 21bd765128d348bb987219f2ecd53587
+    domain: zha
+    platform: device
+    type: device_flipped
+    subtype: face_any
+action:
+  - service: homeassistant.toggle
+    entity_id: switch.henry_desklight_gosund_2

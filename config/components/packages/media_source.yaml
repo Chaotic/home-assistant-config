@@ -1,0 +1,6 @@
+---
+# This loads up my media sources
+#
+# https://www.home-assistant.io/integrations/media_source/
+#
+media_source:
