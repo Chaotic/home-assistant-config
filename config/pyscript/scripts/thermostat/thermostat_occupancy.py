@@ -4,8 +4,8 @@ Thermostat occupancy script
 @state_trigger("group.device_trackers == 'not_home'")
 def themostat_left():
     trig_info = task.wait_until(
-                    state_trigger="group.device_trackers == 'home'",
-                    timeout=600
+                    state_trigger="group.device_trackers == 'not_home'",
+                    state_hold=600,
                 )
     if trig_info["trigger_type"] == "timeout":
         pass
@@ -25,9 +25,9 @@ def themostat_left():
         pass
 
 @state_trigger("group.device_trackers == 'home'")
-def themostat_left():
+def themostat_returned():
     trig_info = task.wait_until(
-                    state_trigger="group.device_trackers == 'not_home'",
+                    state_trigger="group.device_trackers == 'home'",
                     timeout=30
                 )
     if trig_info["trigger_type"] == "timeout":

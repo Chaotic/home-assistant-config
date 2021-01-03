@@ -17,4 +17,4 @@ action:
     data:
       entity_id: light.kids_night_light
       color_name: red
-      brightness_pct: 2
+      brightness_pct: 75

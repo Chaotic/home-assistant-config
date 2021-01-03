@@ -15,7 +15,6 @@ cards:
             entity: light.kids_night_light
             toggle: true
           - switch.third_floor_reading_light_gosund_4
-          - switch.third_floor_string_lights_gosund_7
       - type: custom:mini-graph-card
         name: Temperature
         icon: mdi:home-thermometer
