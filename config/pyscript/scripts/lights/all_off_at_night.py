@@ -8,5 +8,5 @@ def all_lights_off():
 
 @time_trigger("once(1:00:00)")
 def all_lights_off2():
-    """Trigger at 11:00pm every night"""
+    """Trigger at 1:00am every night"""
     homeassistant.turn_off(entity_id="group.all_lights_custom")

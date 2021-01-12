@@ -186,7 +186,7 @@ monitored_conditions:
         - "05:00"
   nowcast:
     timestep: 5
-    forecast_observations: 
+    forecast_observations: 5
     conditions:
       - temperature
       - feels_like
