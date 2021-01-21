@@ -32,6 +32,9 @@ cards:
       - entity: sensor.master_bedroom_temperature
         name: Master Bedroom
         show_state: true
+      - entity: sensor.master_bath_temperature
+        name: Master Bathroom
+        show_state: true
       - entity: sensor.master_bedroom_closet_temp
         name: Master Bedroom Closet
         show_state: true

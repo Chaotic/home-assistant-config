@@ -39,9 +39,6 @@ cards:
     hours_to_show: 168
     points_per_hour: 0.25
     entities:
-      - entity: sensor.kitchen_temperature
-        name: Kitchen
-        show_state: true
       - entity: sensor.living_room_temp
         name: Living Room
         show_state: true
