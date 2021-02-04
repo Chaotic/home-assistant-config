@@ -18,7 +18,7 @@ def thermostat_work_day():
             elif float(sensor.dark_sky_overnight_low_temperature_0d) < 50.0:
                 lowtemp = 68
             """Send the actual command to the thermostat"""
-            climate.set_temperature(entity_id="climate.radio_thermostat_company_of_america_ct101_thermostat_iris_mode",target_temp_low=lowtemp,target_temp_high=hightemp,hvac_mode="heat_cool")
+            climate.set_temperature(entity_id="climate.z_wave_thermostat_mode",target_temp_low=lowtemp,target_temp_high=hightemp,hvac_mode="heat_cool")
 
 @time_trigger("once(7:30:00)")
 def thermostat_nonwork_day():
@@ -36,4 +36,4 @@ def thermostat_nonwork_day():
             elif float(sensor.dark_sky_overnight_low_temperature_0d) < 50.0:
                 lowtemp = 68
             """Send the actual command to the thermostat"""
-            climate.set_temperature(entity_id="climate.radio_thermostat_company_of_america_ct101_thermostat_iris_mode",target_temp_low=lowtemp,target_temp_high=hightemp,hvac_mode="heat_cool")
+            climate.set_temperature(entity_id="climate.z_wave_thermostat_mode",target_temp_low=lowtemp,target_temp_high=hightemp,hvac_mode="heat_cool")

@@ -4,7 +4,7 @@ title: General
 icon: mdi:function
 cards:
   - type: thermostat
-    entity: climate.radio_thermostat_company_of_america_ct101_thermostat_iris_mode
+    entity: climate.z_wave_thermostat_mode
     name: Thermostat
   - type: custom:mini-graph-card
     name: Temperature

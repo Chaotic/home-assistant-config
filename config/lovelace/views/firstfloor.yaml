@@ -42,7 +42,7 @@ cards:
       - entity: sensor.living_room_temp
         name: Living Room
         show_state: true
-      - entity: sensor.radio_thermostat_company_of_america_ct101_thermostat_iris_temperature
+      - entity: sensor.z_wave_thermostat_air_temperature
         name: Thermostat
         show_state: true
   - type: vertical-stack
