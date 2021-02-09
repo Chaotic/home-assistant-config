@@ -13,7 +13,6 @@ Copy the config files and recreate the secrets.yaml file Also you need the same 
 ## Hardware
    
 <b>Plugs</b>
-    Wemo mini plugs (wifi) (Not currently in use cause the suck)
     Gosund (wifi) Flashed to Tasmota so connects via MQTT
     Ikea Tradfri Zigbee plug (mostly for repeating)
 
@@ -28,11 +27,10 @@ Copy the config files and recreate the secrets.yaml file Also you need the same 
    Bosch Motion sensors (Zigbee),
    Zooz 4-in-1 sensors (Z-wave),
    smartthings door sensor (Zigbee),
-   NEO Z-wave pluss door sensors (Z-wave)
+   NEO Z-wave plus door sensors (Z-wave),
+   Xiaomi Thermometer LYWSD03MMC (Bluetooth) Flashed with [Custom Firmware](https://github.com/atc1441/ATC_MiThermometer),
+   ESPHome bluetooth tracker (to read the Xiaomi sensors)
    
-<b>Camera</b>
-   ESPCam (Wifi)
-
 <b>Speakers</b>
    Sonos speakers (wifi)
 
@@ -45,30 +43,21 @@ Copy the config files and recreate the secrets.yaml file Also you need the same 
 
 <b>Other</b>
    Xiaomi Smart Cube (Zigbee),
-   SmartThings Hub (Wired),
    Tomato Router (Wired)
    Ikea Tardfri Zigbee Repeater
 
 ## Software
-   SmartThings to MQTT Bridge,
-   Plex Media Server,
    MQTT Broker,
    Owntracks,
-   qBittorrent,
-   Transmission,
    MariaDB,
-   Tautulli
-   InfluxDB
-   Grafana
+   InfluxDB,
+   Grafana,
    [Dockermon](https://philhawthorne.com/ha-dockermon-use-home-assistant-to-monitor-start-or-stop-docker-containers/) (Lets me monitor dockers with Home Assistant and restart them.)
    
 ## Other Components
 These are various Components that don't directly link to hardware/software
 
-   Pushbullet (notifications),
-   ISS (virtual sensors for if the ISS is overhead),
    Workday (virtual sensor for if it's a workday),
-   Waze (travel time),
    WAke on Lan (let me wake up other computers),
    Launch (Next space launch),
    Moon (Moon phases),
