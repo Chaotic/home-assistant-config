@@ -14,6 +14,8 @@ cards:
           - type: custom:slider-entity-row
             entity: light.kids_night_light
             toggle: true
+          - light.henry_infinity_mirror
+          - light.david_infinity_mirror
           - switch.third_floor_reading_light_gosund_4
       - type: custom:mini-graph-card
         name: Temperature

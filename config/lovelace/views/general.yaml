@@ -4,7 +4,7 @@ title: General
 icon: mdi:function
 cards:
   - type: thermostat
-    entity: climate.z_wave_thermostat_mode
+    entity: climate.z_wave_thermostat_thermostat_mode
     name: Thermostat
   - type: custom:mini-graph-card
     name: Temperature

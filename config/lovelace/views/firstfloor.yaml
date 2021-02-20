@@ -17,6 +17,15 @@ cards:
   - type: custom:auto-entities
     card:
       type: entities
+      title: "Fun Lights"
+    filter:
+      include:
+        - entity_id: light.big_inifinity_mirror
+    sort:
+      method: name
+  - type: custom:auto-entities
+    card:
+      type: entities
       title: "Plugs"
     filter:
       include:
