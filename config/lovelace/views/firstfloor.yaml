@@ -38,8 +38,8 @@ cards:
       title: "Doors"
     filter:
       include:
-        - entity_id: binary_sensor.neo_coolcam_door_window_detector_sensor_2
-        - entity_id: binary_sensor.neo_coolcam_door_window_detector_sensor
+        - entity_id: binary_sensor.door_window_sensor_access_control_window_door_is_open_2
+        - entity_id: binary_sensor.door_window_sensor_access_control_window_door_is_open
     sort:
       method: name
   - type: custom:mini-graph-card
