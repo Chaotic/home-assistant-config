@@ -29,6 +29,10 @@ cards:
     icons: '/local/images/weather_icons/'
     name: Dark Sky
   - type: custom:weather-card
+    entity: weather.climacell_daily
+    icons: '/local/images/weather_icons/'
+    name: Climacell
+  - type: custom:weather-card
     entity: weather.openweathermap
     icons: '/local/images/weather_icons/'
     name: Open Weather
