@@ -40,6 +40,8 @@ cards:
           - type: custom:mini-media-player
             entity: media_player.erins_room_tv
           - type: custom:mini-media-player
+            entity: media_player.android_tv_1
+          - type: custom:mini-media-player
             entity: media_player.kids_bedroom
             tts:
               platform: 'google_translate'
