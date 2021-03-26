@@ -60,6 +60,8 @@ cards:
         title: Media
         entities:
           - type: custom:mini-media-player
+            entity: media_player.vizio_tv
+          - type: custom:mini-media-player
             entity: media_player.master_bedroom_tv
           - type: custom:mini-media-player
             entity: media_player.livingroom_sonos
