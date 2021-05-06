@@ -20,6 +20,4 @@ homeassistant:
   packages: !include_dir_named components/packages
 
 person:
-hacs:
-  token: !secret my_github_access_token
 
