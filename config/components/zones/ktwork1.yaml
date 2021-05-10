@@ -4,7 +4,7 @@
 #
 # https://www.home-assistant.io/components/zone
 #
-name: Kedars Work lowell
+name: Kedars Work
 latitude: !secret zone_ktwork1_latitude
 longitude: !secret zone_ktwork1_longitude
 radius: 100
