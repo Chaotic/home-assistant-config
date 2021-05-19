@@ -15,14 +15,21 @@ cards:
           - group.master_bedroom_closet
           - group.master_bedroom_night_lights
           - scene.laying_in_bed
-          - switch.henry_desklight_gosund_2
+          - switch.henrys_desklight
   - type: vertical-stack
     cards:
       - type: entities
-        title: Devices
+        title: Side Lights
         entities:
           - light.kedar_night_light
           - light.matt_night_light
+  - type: vertical-stack
+    cards:
+      - type: entities
+        title: Fans
+        entities:
+          - switch.window_fans_computer
+          - switch.window_fan_bed
   - type: custom:mini-graph-card
     name: Temperature
     icon: mdi:home-thermometer

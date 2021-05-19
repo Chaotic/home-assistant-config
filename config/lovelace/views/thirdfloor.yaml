@@ -16,7 +16,7 @@ cards:
             toggle: true
           - light.henry_infinity_mirror
           - light.david_infinity_mirror
-          - switch.third_floor_reading_light_gosund_4
+          - switch.third_floor_reading_light
       - type: custom:mini-graph-card
         name: Temperature
         icon: mdi:home-thermometer
