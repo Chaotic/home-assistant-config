@@ -38,8 +38,8 @@ cards:
       title: "Doors"
     filter:
       include:
-        - entity_id: binary_sensor.door_window_sensor_access_control_window_door_is_open_2
-        - entity_id: binary_sensor.door_window_sensor_access_control_window_door_is_open
+        - entity_id: binary_sensor.front_door_access_control_window_door_is_open
+        - entity_id: binary_sensor.back_door_access_control_window_door_is_open
     sort:
       method: name
   - type: custom:mini-graph-card
@@ -51,7 +51,7 @@ cards:
       - entity: sensor.living_room_temp
         name: Living Room
         show_state: true
-      - entity: sensor.z_wave_thermostat_air_temperature
+      - entity: sensor.thermostat_air_temperature
         name: Thermostat
         show_state: true
   - type: vertical-stack

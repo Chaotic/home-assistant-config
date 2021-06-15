@@ -10,4 +10,4 @@ sensors:
     friendly_name: "Global Temperature"
     unit_of_measurement: "°F"
     value_template: >-
-      {{ ((states('sensor.living_room_temp')|int) + (states('sensor.master_bedroom_closet_temp')|int) + (states('sensor.z_wave_thermostat_air_temperature')|int) + (states('sensor.third_floor_sensor_temperature')|int) + (states('sensor.third_floor_landing_temperature')|int) + (states('sensor.erin_s_room_temperature')|int) + (states('sensor.master_bath_temperature')|int) + (states('sensor.master_bedroom_temperature')|int))/8 }}
+      {{ ((states('sensor.living_room_temp')|int) + (states('sensor.master_bedroom_closet_temp')|int) + (states('sensor.thermostat_air_temperature')|int) + (states('sensor.kids_bedroom_sensor_air_temperature')|int) + (states('sensor.third_floor_landing_temperature')|int) + (states('sensor.erin_s_room_temperature')|int) + (states('sensor.master_bath_temperature')|int) + (states('sensor.master_bedroom_temperature')|int))/8 }}
