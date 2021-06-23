@@ -10,8 +10,8 @@ all lights custom:
       - light.sengled_e11_g13_030ba25e_1
       - light.sengled_e11_g13_030bbabf_1
 #       Master Bedroom bedside lights
-      - light.kedar_s_night_light
-      - light.matt_s_night_light
+      - light.kedar_night_light
+      - light.matt_night_light
 #       These switches control lights
       - switch.henry_desklight_gosund_2
       - switch.third_floor_reading_light_gosund_4
