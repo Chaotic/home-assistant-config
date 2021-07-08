@@ -1,0 +1,18 @@
+---
+#
+# min_max sensor to display the average temp from various sensors
+#
+# https://www.home-assistant.io/components/sensor.template/
+# 
+platform: min_max
+entity_ids:
+  - sensor.living_room_temp
+  - sensor.master_bedroom_closet_temp
+  - sensor.thermostat_air_temperature
+  - sensor.kids_bedroom_sensor_air_temperature
+  - sensor.third_floor_landing_temperature
+  - sensor.erin_s_room_temperature
+  - sensor.master_bath_temperature
+  - sensor.master_bedroom_temperature
+name: "Global Temperature"
+type: median
