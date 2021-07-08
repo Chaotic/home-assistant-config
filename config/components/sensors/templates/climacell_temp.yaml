@@ -1,0 +1,13 @@
+---
+#
+# Template sensor to display the daily climacell temp
+#
+# https://www.home-assistant.io/components/sensor.template/
+# 
+platform: template
+sensors:
+  climacell_temperature:
+    friendly_name: "Climacell Temperature"
+    unit_of_measurement: "°F"
+    value_template: >-
+      {{ state_attr('weather.climacell_daily', 'temperature') }}

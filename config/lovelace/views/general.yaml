@@ -24,21 +24,24 @@ cards:
      - entity: sensor.weatherbit_temperature
        name: Weatherbit
        show_state: true
+     - entity: sensor.climacell_temperature
+       name: Climacell
+       show_state: true
   - type: custom:weather-card
     entity: weather.dark_sky
-    icons: '/local/images/weather_icons/'
+    icons: '/local/community/weather-card/icons/'
     name: Dark Sky
   - type: custom:weather-card
     entity: weather.climacell_daily
-    icons: '/local/images/weather_icons/'
+    icons: '/local/community/weather-card/icons/'
     name: Climacell
   - type: custom:weather-card
     entity: weather.openweathermap
-    icons: '/local/images/weather_icons/'
+    icons: '/local/community/weather-card/icons/'
     name: Open Weather
   - type: custom:weather-card
     entity: weather.weatherbit_lowell
-    icons: '/local/images/weather_icons/'
+    icons: '/local/community/weather-card/icons/'
     name: Weatherbit.io
   - type: vertical-stack
     cards:
