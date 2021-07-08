@@ -2,7 +2,7 @@
 #
 # min_max sensor to display the average temp from various sensors
 #
-# https://www.home-assistant.io/components/sensor.template/
+# https://www.home-assistant.io/integrations/min_max/
 # 
 platform: min_max
 entity_ids:

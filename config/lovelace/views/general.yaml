@@ -15,6 +15,9 @@ cards:
      - entity: sensor.global_temperature
        name: Internal
        show_state: true
+     - entity: sensor.average_weather_temperature
+       name: average weather
+       show_state: true
      - entity: sensor.dark_sky_temperature
        name: Dark Sky
        show_state: true

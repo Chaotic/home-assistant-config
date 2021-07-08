@@ -1,0 +1,14 @@
+---
+#
+# min_max sensor to display the average temp from various sensors
+#
+# https://www.home-assistant.io/integrations/min_max/
+# 
+platform: min_max
+entity_ids:
+  - sensor.dark_sky_temperature
+  - sensor.openweathermap_temperature
+  - sensor.weatherbit_temperature
+  - sensor.climacell_temperature
+name: "Average Weather Temperature"
+type: median
