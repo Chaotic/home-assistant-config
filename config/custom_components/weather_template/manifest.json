@@ -1,0 +1,10 @@
+{
+    "domain": "weather_template",
+    "name": "Weather Template",
+    "documentation": "https://github.com/xannor/weather_template",
+    "issue_tracker": "https://github.com/xannor/weather_template/issues",
+    "version": "1.1.1",
+    "dependencies": [],
+    "codeowners": ["@xannor"],
+    "requirements": []
+}
