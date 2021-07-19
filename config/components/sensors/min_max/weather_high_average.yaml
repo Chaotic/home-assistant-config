@@ -1,0 +1,14 @@
+---
+#
+# min_max sensor to display the average temp from various sensors
+#
+# https://www.home-assistant.io/integrations/min_max/
+# 
+platform: min_max
+entity_ids:
+  - sensor.dark_sky_daytime_high_temperature_0d
+  - sensor.openweathermap_forecast_temperature
+  - sensor.weatherbit_forecast_high_temperature
+  - sensor.climacell_forecast_high_temperature
+name: "Average Weather High Temperature"
+type: median
