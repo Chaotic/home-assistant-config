@@ -18,7 +18,7 @@ def thermostat_work_day():
             elif float(sensor.average_weather_low_temperature) < 50.0:
                 lowtemp = 68
             """Send the actual command to the thermostat"""
-            climate.set_temperature(entity_id="climate.z_wave_thermostat_thermostat_mode",target_temp_low=lowtemp,target_temp_high=hightemp,hvac_mode="heat_cool")
+            climate.set_temperature(entity_id="climate.thermostat_2",target_temp_low=lowtemp,target_temp_high=hightemp,hvac_mode="heat_cool")
 
 @time_trigger("once(7:30:00)")
 def thermostat_nonwork_day():
@@ -36,4 +36,4 @@ def thermostat_nonwork_day():
             elif float(sensor.average_weather_low_temperature) < 50.0:
                 lowtemp = 68
             """Send the actual command to the thermostat"""
-            climate.set_temperature(entity_id="climate.z_wave_thermostat_thermostat_mode",target_temp_low=lowtemp,target_temp_high=hightemp,hvac_mode="heat_cool")
+            climate.set_temperature(entity_id="climate.thermostat_2",target_temp_low=lowtemp,target_temp_high=hightemp,hvac_mode="heat_cool")
