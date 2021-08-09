@@ -30,6 +30,7 @@ cards:
         entities:
           - switch.window_fans_computer
           - switch.window_fan_bed
+          - switch.matt_side_fan
   - type: custom:mini-graph-card
     name: Temperature
     icon: mdi:home-thermometer
