@@ -23,12 +23,6 @@ cards:
         hours_to_show: 168
         points_per_hour: 0.25
         entities:
-         - entity: sensor.kids_bedroom_sensor_air_temperature
-           name: Kids Room
-           show_state: true
-         - entity: sensor.erin_s_room_temperature
-           name: Erin's Room
-           show_state: true
          - entity: sensor.third_floor_landing_temperature
            name: Third Floor Landing
            show_state: true
