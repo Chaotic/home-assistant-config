@@ -1,0 +1,12 @@
+---
+#
+# Zones allow you to specify certain regions on earth (for now). 
+#
+# https://www.home-assistant.io/components/zone
+#
+name: Kedars Work
+latitude: !secret zone_ktwork_latitude
+longitude: !secret zone_ktwork_longitude
+radius: 100
+passive: false
+icon: mdi:domain
