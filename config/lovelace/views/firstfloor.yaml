@@ -3,14 +3,6 @@ id: First Floor
 title: First Floor
 icon: mdi:sofa
 cards:
-  - type: vertical-stack
-    cards:
-      - type: entities
-        title: Outside Lights
-        entities:
-          - type: custom:slider-entity-row
-            entity: light.sengled_e11_g13_030bbd4e_1
-            toggle: true
   - type: custom:auto-entities
     card:
       type: entities
@@ -27,16 +19,6 @@ cards:
     filter:
       include:
         - entity_id: switch.ikea_of_sweden_tradfri_control_outlet_fe2d4470_1
-    sort:
-      method: name
-  - type: custom:auto-entities
-    card:
-      type: entities
-      title: "Doors"
-    filter:
-      include:
-        - entity_id: binary_sensor.front_door_access_control_window_door_is_open
-        - entity_id: binary_sensor.back_door_access_control_window_door_is_open
     sort:
       method: name
   - type: custom:mini-graph-card

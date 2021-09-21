@@ -9,9 +9,6 @@ cards:
         title: Lights
         entities:
           - type: custom:slider-entity-row
-            entity: light.kids_bedroom
-            toggle: true
-          - type: custom:slider-entity-row
             entity: light.kids_night_light
             toggle: true
           - light.henry_infinity_mirror
