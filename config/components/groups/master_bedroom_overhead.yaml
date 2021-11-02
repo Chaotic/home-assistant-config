@@ -1,0 +1,10 @@
+---
+#
+# Master Bedroom overhead Lights
+#
+Master Bedroom overhead lights:
+    name: Master Bedroom Overhead Lights
+    entities:
+      - light.master_bedroom_overhead_1
+      - light.master_bedroom_overhead_2
+      - light.master_bedroom_overhead_3

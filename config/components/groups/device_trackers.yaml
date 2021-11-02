@@ -1,9 +1,0 @@
----
-#
-# Group used to shut everything off
-#
-device_trackers:
-    entities:
-      - person.erin
-      - person.kedar
-      - person.matt

@@ -12,24 +12,6 @@ cards:
         - entity_id: light.big_inifinity_mirror
     sort:
       method: name
-  - type: custom:auto-entities
-    card:
-      type: entities
-      title: "Plugs"
-    filter:
-      include:
-        - entity_id: switch.ikea_of_sweden_tradfri_control_outlet_fe2d4470_1
-    sort:
-      method: name
-  - type: custom:mini-graph-card
-    name: Temperature
-    icon: mdi:home-thermometer
-    hours_to_show: 168
-    points_per_hour: 0.25
-    entities:
-      - entity: sensor.thermostat_air_temperature
-        name: Thermostat
-        show_state: true
   - type: vertical-stack
     cards:
       - type: entities
@@ -38,9 +20,17 @@ cards:
           - type: custom:mini-media-player
             entity: media_player.vizio_tv
           - type: custom:mini-media-player
-            entity: media_player.master_bedroom_tv
+            entity: media_player.sunroom_tv
           - type: custom:mini-media-player
             entity: media_player.livingroom_sonos
+            tts:
+              platform: 'google_translate'
+              volume: 0.75
+            sonos: 
+              show_group_count: true
+              entities: !include sonosgroups.yaml
+          - type: custom:mini-media-player
+            entity: media_player.spare
             tts:
               platform: 'google_translate'
               volume: 0.75

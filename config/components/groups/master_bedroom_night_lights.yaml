@@ -1,9 +1,0 @@
----
-#
-# Master Bedroom Night Lights
-#
-Master Bedroom night lights:
-    name: Master Bedroom Night Lights
-    entities:
-      - light.kedar_night_light
-      - light.matt_night_light

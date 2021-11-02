@@ -1,8 +1,0 @@
----
-#
-# Group of Living Room
-#
-living_room:
-    entities:
-      - light.kohree_2
-      - light.kohree_1

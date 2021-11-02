@@ -8,44 +8,25 @@ cards:
       - type: entities
         title: Lights
         entities:
-          - type: custom:slider-entity-row
-            entity: light.master_bedroom
-            name: Bedroom
-            toggle: true
-          - group.master_bedroom_night_lights
-          - scene.laying_in_bed
-          - switch.henrys_desklight
+          - group.master_bedroom_overhead_lights
+          - light.master_bedroom_extra_room
   - type: vertical-stack
     cards:
       - type: entities
-        title: Side Lights
+        title: Individual lights
         entities:
-          - light.kedar_night_light
-          - light.matt_night_light
-  - type: vertical-stack
-    cards:
-      - type: entities
-        title: Fans
-        entities:
-          - switch.window_fans_computer
-          - switch.window_fan_bed
-          - switch.matt_side_fan
-  - type: custom:mini-graph-card
-    name: Temperature
-    icon: mdi:home-thermometer
-    hours_to_show: 168
-    points_per_hour: 0.25
-    entities:
-      - entity: sensor.master_bedroom_temperature
-        name: Master Bedroom
-        show_state: true
+          - light.master_bedroom_overhead_1
+          - light.master_bedroom_overhead_2
+          - light.master_bedroom_overhead_3
   - type: vertical-stack
     cards:
       - type: entities
         title: Media
         entities:
           - type: custom:mini-media-player
-            entity: media_player.living_room_tv
+            entity: media_player.erins_room_tv
+          - type: custom:mini-media-player
+            entity: media_player.master_bedroom_tv
           - type: custom:mini-media-player
             entity: media_player.adult_sonos
             tts:
@@ -54,3 +35,18 @@ cards:
             sonos: 
               show_group_count: true
               entities: !include sonosgroups.yaml
+          - type: custom:mini-media-player
+            entity: media_player.kids_bedroom
+            tts:
+              platform: 'google_translate'
+              volume: 0.75
+            sonos: 
+              show_group_count: true
+              entities: !include sonosgroups.yaml
+  - type: vertical-stack
+    cards:
+      - type: entities
+        title: Fun Lights
+        entities:
+          - light.henry_infinity_mirror
+          - light.david_infinity_mirror

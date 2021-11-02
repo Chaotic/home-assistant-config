@@ -9,6 +9,7 @@
 config/.cloud
 config/.storage
 config/deps
+old_config
 
 # Specific file ignores
 config/.config_entries.json

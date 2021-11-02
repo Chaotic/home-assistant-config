@@ -1,42 +1,11 @@
 ---
 id: Third Floor
 title: Third Floor
-icon: mdi:bed-empty
+icon: mdi:briefcase
 cards:
   - type: vertical-stack
     cards:
       - type: entities
         title: Lights
         entities:
-          - type: custom:slider-entity-row
-            entity: light.kids_night_light
-            toggle: true
-          - light.henry_infinity_mirror
-          - light.david_infinity_mirror
-          - switch.third_floor_reading_light
-      - type: custom:mini-graph-card
-        name: Temperature
-        icon: mdi:home-thermometer
-        hours_to_show: 168
-        points_per_hour: 0.25
-        entities:
-         - entity: sensor.third_floor_landing_temperature
-           name: Third Floor Landing
-           show_state: true
-  - type: vertical-stack
-    cards:
-      - type: entities
-        title: Media
-        entities:
-          - type: custom:mini-media-player
-            entity: media_player.erins_room_tv
-          - type: custom:mini-media-player
-            entity: media_player.android_tv_1
-          - type: custom:mini-media-player
-            entity: media_player.kids_bedroom
-            tts:
-              platform: 'google_translate'
-              volume: 0.75
-            sonos: 
-              show_group_count: true
-              entities: !include sonosgroups.yaml
+          - light.matt_night_light
