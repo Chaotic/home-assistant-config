@@ -10,6 +10,7 @@ cards:
         entities:
           - group.master_bedroom_overhead_lights
           - light.master_bedroom_extra_room
+          - light.kids_night_light
   - type: vertical-stack
     cards:
       - type: entities
