@@ -1,0 +1,13 @@
+---
+#
+# Master Bedroom overhead Lights
+#
+all_ lights_custom:
+    name: All lights
+    entities:
+      - light.master_bedroom_overhead_1
+      - light.master_bedroom_overhead_2
+      - light.master_bedroom_overhead_3
+#       Master Bedroom bedside lights
+      - light.kedar_night_light
+      - light.matt_night_light
