@@ -12,6 +12,16 @@ cards:
         - entity_id: light.big_inifinity_mirror
     sort:
       method: name
+  - type: custom:auto-entities
+    card:
+      type: entities
+      title: "Boy's Computers"
+    filter:
+      include:
+        - entity_id: switch.david_s_computer
+        - entity_id: switch.henry_s_computer
+    sort:
+      method: name
   - type: vertical-stack
     cards:
       - type: entities
