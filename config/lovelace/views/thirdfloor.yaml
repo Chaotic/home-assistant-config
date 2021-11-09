@@ -8,4 +8,4 @@ cards:
       - type: entities
         title: Lights
         entities:
-          - light.matt_night_light
+          - light.matt_office_light
