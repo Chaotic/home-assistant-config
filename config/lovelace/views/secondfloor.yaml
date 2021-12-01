@@ -8,17 +8,8 @@ cards:
       - type: entities
         title: Lights
         entities:
-          - group.master_bedroom_overhead_lights
           - light.master_bedroom_extra_room
           - light.kids_night_light
-  - type: vertical-stack
-    cards:
-      - type: entities
-        title: Individual Master Bedroom lights
-        entities:
-          - light.master_bedroom_overhead_1
-          - light.master_bedroom_overhead_2
-          - light.master_bedroom_overhead_3
   - type: vertical-stack
     cards:
       - type: entities
