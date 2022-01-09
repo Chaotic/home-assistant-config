@@ -3,9 +3,6 @@ id: General
 title: General
 icon: mdi:function
 cards:
-  - type: thermostat
-    entity: climate.thermostat_2
-    name: Thermostat
   - type: custom:mini-graph-card
     name: Temperature
     icon: mdi:home-thermometer
@@ -43,7 +40,7 @@ cards:
     icons: '/local/community/weather-card/icons/'
     name: Open Weather
   - type: custom:weather-card
-    entity: weather.weatherbit_lowell
+    entity: weather.weatherbit
     icons: '/local/community/weather-card/icons/'
     name: Weatherbit.io
   - type: vertical-stack

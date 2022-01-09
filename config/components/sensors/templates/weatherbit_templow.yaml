@@ -10,4 +10,4 @@ sensors:
     friendly_name: "Weatherbit Forecast Low Temperature"
     unit_of_measurement: "°F"
     value_template: >-
-      {{ state_attr('sensor.weatherbit_forecast_day_1', 'templow') }}
+      {{ state_attr('sensor.weatherbit_forecast_day_1_2', 'templow') }}
