@@ -9,9 +9,6 @@ cards:
     hours_to_show: 168
     points_per_hour: 0.25
     entities:
-     - entity: sensor.global_temperature
-       name: Internal
-       show_state: true
      - entity: sensor.average_weather_temperature
        name: average weather
        show_state: true
