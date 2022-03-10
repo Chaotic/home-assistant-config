@@ -12,7 +12,6 @@ custom_header:
   compact_mode: true
 views:
   - !include lovelace/views/general.yaml
-  - !include lovelace/views/basement.yaml
   - !include lovelace/views/firstfloor.yaml
   - !include lovelace/views/secondfloor.yaml
   - !include lovelace/views/thirdfloor.yaml
