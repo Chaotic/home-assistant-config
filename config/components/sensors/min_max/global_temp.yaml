@@ -14,5 +14,6 @@ entity_ids:
   - sensor.erin_s_room_temperature
   - sensor.master_bath_temperature
   - sensor.master_bedroom_temperature
+  - sensor.office_temp_humidity_sensor_air_temperature
 name: "Global Temperature"
 type: median

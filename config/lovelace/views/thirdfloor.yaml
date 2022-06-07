@@ -9,3 +9,12 @@ cards:
         title: Lights
         entities:
           - light.matt_office_light
+  - type: custom:mini-graph-card
+    name: Temperature
+    icon: mdi:home-thermometer
+    hours_to_show: 168
+    points_per_hour: 0.25
+    entities:
+     - entity: sensor.office_temp_humidity_sensor_air_temperature
+       name: Office Weather
+       show_state: true
