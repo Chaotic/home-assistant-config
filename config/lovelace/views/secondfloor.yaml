@@ -22,6 +22,14 @@ cards:
   - type: vertical-stack
     cards:
       - type: entities
+        title: Air Conditioners
+        entities:
+          - switch.erins_room_ac
+          - switch.master_bedroom_ac
+          - switch.kids_room_ac
+  - type: vertical-stack
+    cards:
+      - type: entities
         title: Media
         entities:
           - type: custom:mini-media-player
