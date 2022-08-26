@@ -1,0 +1,11 @@
+---
+# The pirate weather platform uses the NOAA as a source for
+# meteorological data for your location.
+#
+# https://pirateweather.net/
+#
+platform: pirateweather
+api_key: !secret pirate_weather_api
+mode: daily
+latitude: !secret latitude
+longitude: !secret longitude

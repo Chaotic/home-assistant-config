@@ -1,0 +1,17 @@
+---
+# 
+# The pirate weather platform uses the NOAA as a source for
+# meteorological data for your location.
+#
+# https://pirateweather.net/
+#
+platform: pirateweather
+api_key: !secret pirate_weather_api
+scan_interval:
+  minutes: 30
+forecast:
+  - 0
+monitored_conditions:
+  - temperature
+  - temperature_high
+  - temperature_low
