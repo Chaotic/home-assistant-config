@@ -10,5 +10,6 @@ entity_ids:
   - sensor.openweathermap_temperature
   - sensor.weatherbit_temperature
   - sensor.climacell_temperature
+  - sensor.pirateweather_temperature
 name: "Average Weather Temperature"
 type: median

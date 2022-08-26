@@ -10,5 +10,6 @@ entity_ids:
   - sensor.openweathermap_forecast_temperature_low
   - sensor.weatherbit_forecast_low_temperature
   - sensor.climacell_forecast_low_temperature
+  - sensor.pirateweather_overnight_low_temperature_0d
 name: "Average Weather Low Temperature"
 type: median

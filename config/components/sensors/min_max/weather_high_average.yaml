@@ -10,5 +10,6 @@ entity_ids:
   - sensor.openweathermap_forecast_temperature
   - sensor.weatherbit_forecast_high_temperature
   - sensor.climacell_forecast_high_temperature
+  - sensor.pirateweather_daytime_high_temperature_0d
 name: "Average Weather High Temperature"
 type: median
