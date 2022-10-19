@@ -1,6 +1,0 @@
----
-# The moon sensor platform is tracking the moon phases.
-#
-# https://www.home-assistant.io/components/sensor.moon/
-#
-platform: moon
