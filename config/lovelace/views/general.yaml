@@ -18,9 +18,6 @@ cards:
      - entity: sensor.openweathermap_temperature
        name: Open Weather Map
        show_state: true
-     - entity: sensor.weatherbit_temperature
-       name: Weatherbit
-       show_state: true
      - entity: sensor.climacell_temperature
        name: Climacell
        show_state: true
@@ -39,10 +36,6 @@ cards:
     entity: weather.openweathermap
     icons: '/local/community/weather-card/icons/'
     name: Open Weather
-  - type: custom:weather-card
-    entity: weather.weatherbit
-    icons: '/local/community/weather-card/icons/'
-    name: Weatherbit.io
   - type: custom:weather-card
     entity: weather.pirateweather
     icons: '/local/community/weather-card/icons/'

@@ -8,7 +8,6 @@ platform: min_max
 entity_ids:
   - sensor.dark_sky_daytime_high_temperature_0d
   - sensor.openweathermap_forecast_temperature
-  - sensor.weatherbit_forecast_high_temperature
   - sensor.climacell_forecast_high_temperature
   - sensor.pirateweather_daytime_high_temperature_0d
 name: "Average Weather High Temperature"
