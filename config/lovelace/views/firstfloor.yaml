@@ -10,6 +10,7 @@ cards:
     filter:
       include:
         - entity_id: light.big_inifinity_mirror
+        - entity_id: switch.livingroom_tree
     sort:
       method: name
   - type: custom:auto-entities

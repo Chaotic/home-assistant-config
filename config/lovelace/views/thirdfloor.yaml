@@ -9,6 +9,7 @@ cards:
         title: Lights
         entities:
           - light.matt_office_light
+          - switch.office_christmas_tree
   - type: custom:mini-graph-card
     name: Temperature
     icon: mdi:home-thermometer
