@@ -8,3 +8,9 @@ entities:
     state: on
     effect: "Rainbow"
     brightness_pct: 100
+  switch.livingroom_tree:
+    state: on
+  switch.kedar_office_tree:
+    state: on
+  switch.office_christmas_tree:
+    state: on

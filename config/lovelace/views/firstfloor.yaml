@@ -9,8 +9,9 @@ cards:
       title: "Fun Lights"
     filter:
       include:
-        - entity_id: light.big_inifinity_mirror
+        - entity_id: light.christmas_lights
         - entity_id: switch.livingroom_tree
+        - entity_id: switch.kedar_office_tree
     sort:
       method: name
   - type: custom:auto-entities

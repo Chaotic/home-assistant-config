@@ -3,13 +3,22 @@ id: Third Floor
 title: Third Floor
 icon: mdi:briefcase
 cards:
+  - type: custom:auto-entities
+    card:
+      type: entities
+      title: "Fun Lights"
+    filter:
+      include:
+        - entity_id: light.big_inifinity_mirror
+        - entity_id: switch.office_christmas_tree
+    sort:
+      method: name
   - type: vertical-stack
     cards:
       - type: entities
         title: Lights
         entities:
           - light.matt_office_light
-          - switch.office_christmas_tree
   - type: custom:mini-graph-card
     name: Temperature
     icon: mdi:home-thermometer
