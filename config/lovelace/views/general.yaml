@@ -12,9 +12,6 @@ cards:
      - entity: sensor.average_weather_temperature
        name: average weather
        show_state: true
-     - entity: sensor.dark_sky_temperature
-       name: Dark Sky
-       show_state: true
      - entity: sensor.openweathermap_temperature
        name: Open Weather Map
        show_state: true
@@ -24,10 +21,6 @@ cards:
      - entity: sensor.pirateweather_temperature
        name: Pirate Weather
        show_state: true
-  - type: custom:weather-card
-    entity: weather.dark_sky
-    icons: '/local/community/weather-card/icons/'
-    name: Dark Sky
   - type: custom:weather-card
     entity: weather.climacell_daily
     icons: '/local/community/weather-card/icons/'

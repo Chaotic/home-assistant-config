@@ -1,4 +1,9 @@
 homeassistant:
+  name: Home
+  latitude: !secret latitude
+  longitude: !secret longitude
+  elevation: !secret elevation
+  currency: USD
   # Load packages
   packages: !include_dir_named components/packages
 

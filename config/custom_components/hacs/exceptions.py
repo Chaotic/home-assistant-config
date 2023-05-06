@@ -1,37 +1,49 @@
-"""Custom Exceptions."""
+"""Custom Exceptions for HACS."""
 
-class HacsBaseException(Exception):
+
+class HacsException(Exception):
     """Super basic."""
 
-class HacsUserScrewupException(HacsBaseException):
-    """Raise this when the user does something they should not do."""
+
+class HacsRepositoryArchivedException(HacsException):
+    """For repositories that are archived."""
 
 
-class HacsNotSoBasicException(HacsBaseException):
-    """Not that basic."""
+class HacsNotModifiedException(HacsException):
+    """For responses that are not modified."""
 
 
-class HacsDataFileMissing(HacsBaseException):
-    """Raise this storage datafile is missing."""
-
-class HacsDataNotExpected(HacsBaseException):
-    """Raise this when data returned from storage is not ok."""
+class HacsExpectedException(HacsException):
+    """For stuff that are expected."""
 
 
-class HacsRepositoryInfo(HacsBaseException):
-    """Raise this when repository info is missing/wrong."""
+class HacsRepositoryExistException(HacsException):
+    """For repositories that are already exist."""
 
-class HacsRequirement(HacsBaseException):
-    """Raise this when repository is missing a requirement."""
 
-class HacsMissingManifest(HacsBaseException):
-    """Raise this when manifest is missing."""
-    def __init__(self, message="The manifest file is missing in the repository."):
-        super().__init__(message)
-        self.message = message
+class HacsExecutionStillInProgress(HacsException):
+    """Exception to raise if execution is still in progress."""
 
-class HacsBlacklistException(HacsBaseException):
-    """Raise this when the repository is currently in the blacklist."""
-    def __init__(self, message="The repository is currently in the blacklist."):
-        super().__init__(message)
-        self.message = message
+
+class AddonRepositoryException(HacsException):
+    """Exception to raise when user tries to add add-on repository."""
+
+    exception_message = (
+        "The repository does not seem to be a integration, "
+        "but an add-on repository. HACS does not manage add-ons."
+    )
+
+    def __init__(self) -> None:
+        super().__init__(self.exception_message)
+
+
+class HomeAssistantCoreRepositoryException(HacsException):
+    """Exception to raise when user tries to add the home-assistant/core repository."""
+
+    exception_message = (
+        "You can not add homeassistant/core, to use core integrations "
+        "check the Home Assistant documentation for how to add them."
+    )
+
+    def __init__(self) -> None:
+        super().__init__(self.exception_message)
