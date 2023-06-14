@@ -25,6 +25,6 @@ cards:
     hours_to_show: 168
     points_per_hour: 0.25
     entities:
-     - entity: sensor.office_temp_humidity_sensor_air_temperature
+     - entity: sensor.office_temp_humidity_sensor_temperature
        name: Office Temperature
        show_state: true

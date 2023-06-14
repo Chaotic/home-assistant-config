@@ -44,10 +44,3 @@ cards:
             sonos: 
               show_group_count: true
               entities: !include sonosgroups.yaml
-  - type: vertical-stack
-    cards:
-      - type: entities
-        title: Fun Lights
-        entities:
-          - light.henry_infinity_mirror
-          - light.david_infinity_mirror
